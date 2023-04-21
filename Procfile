@@ -1,0 +1,1 @@
+web: gunicorn vegan-recipe-app.wsgi
