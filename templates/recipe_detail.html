@@ -4,6 +4,8 @@
 
 {% block content %}
 
+<!-- Recipe card detail -->
+
 <div class="container">
     <div class="row">
         <div class='col card mb-4 mt-3 left top'>
@@ -33,6 +35,8 @@
     </div>
 </div>
 
+<!-- Recipe comments -->
+
 {% for comment in comments %}
 
 <div class="container">
@@ -40,8 +44,7 @@
         <div class='col card mb-4 mt-3 left top'>
             <div class='card-body mx-auto'>
                 <p class='card-text'>
-                    <strong>{{ comment.name }}</strong>
-                    {{ comment.author }}
+                    <strong>{{ comment.name }}</strong> by {{ comment.author }}
                     <br>
                     {{ comment.created_on }}
                     <br>
@@ -59,4 +62,6 @@
 {% endfor %}
 
 {% endblock %}
+
+
 
