@@ -28,12 +28,12 @@ def recipe_detail(request, slug):
     if request.method == 'POST':
         form = CommentForm(request.POST)
         if form.is_valid():
+            form.instance.name = request.user.username
             comment = form.save(commit=False)
             comment.recipe = recipe
-            comment.author = request.user
             comment.save()
-            messages.info(request, "Your comment is awaiting approval!")
-            return redirect('recipe-detail', slug=recipe.slug)
+            # messages.info(request, "Your comment is awaiting approval!")
+            # return redirect('recipe-detail', slug=recipe.slug)
     else:
         form = CommentForm()
  
