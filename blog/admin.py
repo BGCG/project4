@@ -7,4 +7,4 @@ from django_summernote.admin import SummernoteModelAdmin
 class RecipeAdmin(SummernoteModelAdmin):
 
     summernote_fields = ('ingredients', 'instructions',)
-    
+    prepopulated_fields = {"slug": ("title",)}
