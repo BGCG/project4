@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic
 from .models import Recipe
+from .forms import CommentForm
 
 
 class RecipeList(generic.ListView):
@@ -24,7 +25,8 @@ def recipe_detail(request, slug):
     context = {
         'recipe': recipe,
         'comments': comments,
-        'liked': liked
+        'liked': liked,
+        'comment_form': CommentForm(),
     }
     
     return render(request, 'recipe_detail.html', context)
