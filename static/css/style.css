@@ -145,8 +145,12 @@ footer {
     float: right;
     padding: 5px;
 }
-
+/* 
 body > section > footer > ul {
+    padding: 0;
+} */
+
+body > footer > ul, #content > footer > ul {
     padding: 0;
 }
 
@@ -229,6 +233,18 @@ body > section > footer > ul {
         float: none;
         margin: 0 auto;
         padding:0;
+    }
+
+    header {
+        width: 100px;
+    }
+
+}
+
+@media (max-width: 350px) {
+
+    #social-media-heading {
+        display: none;
     }
 
 }
