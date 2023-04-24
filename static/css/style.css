@@ -178,11 +178,21 @@ body > section > footer > ul {
     padding: 0 10px;
 }
 
+
 #recipe-list-title {
     justify-content: center;
     text-align: center;
 }
 
+/* recipe detail page styling  */
+
+#content > div:nth-child(1) {
+    padding-top: 80px;
+}
+
+.recipe-comment-title {
+    text-align: center;
+}
 
 @media (max-width: 400px) {
 
@@ -190,10 +200,6 @@ body > section > footer > ul {
         float: none;
         margin: 0 auto;
         padding:0;
-    }
-
-    #content {
-        padding: 0;
     }
 
 }
