@@ -194,6 +194,35 @@ body > section > footer > ul {
     text-align: center;
 }
 
+/* logout, login and register page styling */
+
+#logout-background, #login-background, #signup-background {
+    background-color: #359359;
+    padding-top: 20px;
+    height: 700px;
+    align-items: center;
+    margin-top: 80px;
+}
+
+#logout-box, #login-box, #signup-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+/* #login-box > form {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+} */
+
+#id_login, #id_password, #id_username, #id_email, 
+#id_password, #id_password1, #id_password2 {
+    /* width: auto; */
+    display: block;
+    /* float: none; */
+}
+
 @media (max-width: 400px) {
 
     #logo, .dropdown {

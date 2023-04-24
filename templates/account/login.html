@@ -7,9 +7,10 @@
 
 {% block content %}
 
-<div class="container">
+<div class="container" id="login-background">
   <div class="row">
-    <div class="col-md-8 mt-3 offset-md-2">
+    <div class="col-md-8 mt-3 offset-md-2" id="login-box">
+
 
 <h1>{% trans "Sign In" %}</h1>
 
@@ -22,7 +23,7 @@
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
   {% endif %}
-  <button class="primaryAction" type="submit">{% trans "Sign In" %}</button>
+  <button class="primaryAction btn btn-secondary" type="submit">{% trans "Sign In" %}</button>
 </form>
 
 </div>
