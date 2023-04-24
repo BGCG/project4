@@ -1,7 +1,8 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.views import generic
 from .models import Recipe
 from .forms import CommentForm
+from django.contrib import messages
 
 
 class RecipeList(generic.ListView):
@@ -21,12 +22,27 @@ def recipe_detail(request, slug):
     
     if recipe.likes.filter(id=request.user.id).exists():
         liked = True
+    
+    comment = None
+    
+    if request.method == 'POST':
+        form = CommentForm(request.POST)
+        if form.is_valid():
+            comment = form.save(commit=False)
+            comment.recipe = recipe
+            comment.author = request.user
+            comment.save()
+            messages.info(request, "Your comment is awaiting approval!")
+            return redirect('recipe-detail', slug=recipe.slug)
+    else:
+        form = CommentForm()
  
     context = {
         'recipe': recipe,
         'comments': comments,
+        'comment': comment,
         'liked': liked,
-        'comment_form': CommentForm(),
+        'comment_form': form,
     }
     
     return render(request, 'recipe_detail.html', context)
