@@ -182,3 +182,18 @@ body > section > footer > ul {
     justify-content: center;
     text-align: center;
 }
+
+
+@media (max-width: 400px) {
+
+    #logo, .dropdown {
+        float: none;
+        margin: 0 auto;
+        padding:0;
+    }
+
+    #content {
+        padding: 0;
+    }
+
+}
