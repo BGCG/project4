@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block title %}Recipes{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class='col card mb-4 mt-3 left top'>
+            <div class='card-body mx-auto'>
+                
+                <p class='card-text'>
+                    <h2 class="post-title">{{ recipe.title }}</h2>
+                    <strong>Author:</strong> {{ recipe.author }}<br>
+                    <strong>Publication date:</strong> {{ recipe.publication_date }}<br>
+                    <hr>
+                    {% if 'placeholder' in recipe.recipe_image.url %}
+                    <img class="card-image" alt="recipe-image"
+                    src="https://res.cloudinary.com/delase5lw/image/upload/v1682324192/project/default.jpg.jpg" width="400" height="300">
+                    {% else %}
+                    <img class="card-image" src="{{ recipe.recipe_image.url }}" width="300" height="300">
+                    {% endif %} 
+                    <strong>Taste type:</strong> {{ recipe.get_taste_type_display }}<br>
+                    <strong>Skill level:</strong> {{ recipe.get_skill_level_display }}<br>
+                    <strong>Prepartion time: </strong>{{ recipe.preparation_time }} minutes
+                    <hr>
+                    <strong>Ingredients:</strong> {{ recipe.ingredients|linebreaks }}
+                    <hr>
+                    <strong>Instructions:</strong> {{ recipe.instructions|linebreaks }}
+                </p>
+         </div>
+       </div>
+    </div>
+</div>
+
+{% for comment in comments %}
+
+<div class="container">
+    <div class="row">
+        <div class='col card mb-4 mt-3 left top'>
+            <div class='card-body mx-auto'>
+                <p class='card-text'>
+                    <strong>{{ comment.name }}</strong>
+                    {{ comment.author }}
+                    <br>
+                    {{ comment.created_on }}
+                    <br>
+                    {{ comment.body }}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% empty %}
+
+<p>There are no comments for this post</p>
+
+{% endfor %}
+
+{% endblock %}
+
