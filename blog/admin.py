@@ -14,7 +14,7 @@ class RecipeAdmin(SummernoteModelAdmin):
     search_fields = ['title', 'instructions', 'ingredients']
 
     actions = ['approve_recipe']
-    
+  
     def approve_recipe(self, request, queryset):
         queryset.update(article_approved=True)
 

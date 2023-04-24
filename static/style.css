@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Crimson+Pro:wght@300;400;500&family=EB+Garamond:wght@400;600&family=NTR&display=swap');
+
+
+/* Creation of stick footer helped by following post -
+https://stackoverflow.com/questions/21805590/css-sticky-footer */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+h1 {
+    font-family: "Caveat", sans-serif;
+    font-size: 50px;
+    color: #359359;
+}
+
+h2 {
+    font-size: 30.9px;
+}
+
+h3 {
+    font-size: 25px;
+    color: #359359;
+}
+
+
+body {
+    font-family: "EB Garamond", sans-serif;
+    font-size: 20px;
+}
+
+
+#logo {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    float: left;
+    height: 70px;
+    padding: 10px;
+    color: white;
+    margin-left: 10px;
+}
+
+.dropdown {
+    float: right;
+    padding-top: 15px;
+    margin-right: 55px;
+}
+
+#social-media-heading {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo-small {
+    font-family: "Caveat", sans-serif;
+    padding-left: 5px;
+    padding-right: 8px;
+}
+
+#social-media-links li {
+    display: inline-block;
+}
+
+#social-media-links li a {
+    padding: 10px;
+}
+
+footer {
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#copyright {
+    font-size: 15px;
+    color: #406551;
+    font-weight: bold;
+    float: right;
+    padding: 10px;
+}
