@@ -25,6 +25,12 @@
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
               <button class="dropdown-item" type="button"><a href="{% url 'home' %}">Home</a></button>
+              {% if user.is_authenticated%}
+              <button class="dropdown-item" type="button"><a href="{% url 'account_logout' %}">Logout</a></button>
+              {% else %}
+              <button class="dropdown-item" type="button"><a href="{% url 'account_login' %}">Login</a></button>
+              <button class="dropdown-item" type="button"><a href="{% url 'account_signup' %}">Signup</a></button>
+              {% endif%}
             </div>
           </div>
           <br>
