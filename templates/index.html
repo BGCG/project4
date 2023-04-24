@@ -23,12 +23,21 @@
 </div>
 <!-- Recipe cards -->
 <div class="sm-sceen-box">
-<h2>Recently posted recipes</h2>
-<div id="home-box">
+
+<div id="recipe-list-title">
+    <h2>Recently posted recipes</h2>
+</div>
+
 <div class="container">
     <div class="row">
         {% for recipe in recipe_list %}
             <div  class="mx-auto card recipe-box col-sm-5 d-inline">
+                {% if 'placeholder' in recipe.recipe_image.url %}
+                <img class="card-img-top" alt="recipe image"
+                src="https://res.cloudinary.com/delase5lw/image/upload/v1682324192/project/default.jpg.jpg">
+                {% else %}
+                <img class="card-image" src="{{ recipe.recipe_image.url }}">
+                {% endif %} 
             <div class='card-body'>
                 <p class='card-text'>
                     <a href="{{ recipe.get_absolute_url }}">
@@ -36,18 +45,12 @@
                     </a>
                     Posted on {{ reicpe.publication_date }} by <strong>{{ recipe.author }}</strong>
                 </p>
-                {% if 'placeholder' in recipe.recipe_image.url %}
-                <img class="card-image" alt="fries"
-                src="https://res.cloudinary.com/delase5lw/image/upload/v1682324192/project/default.jpg.jpg" width="400" height="300">
-                {% else %}
-                <img class="card-image" src="{{ recipe.recipe_image.url }}" width="300" height="300">
-                {% endif %} 
             </div>
         </div>
         {% endfor %}
     </div>
 </div>
 </div>
-</div>    
+    
 
 {% endblock %}

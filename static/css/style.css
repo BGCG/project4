@@ -166,6 +166,19 @@ body > section > footer > ul {
     width: fit-content;
 }
 
-.card-image {
-    padding-top: 10px;
+.post-title>a:hover {
+    opacity: 0.5;
+}
+
+.recipe-box {
+    padding: 0;
+}
+
+.card-body {
+    padding: 0 10px;
+}
+
+#recipe-list-title {
+    justify-content: center;
+    text-align: center;
 }
