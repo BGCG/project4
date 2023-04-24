@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static  %}
+{% block title %}Recipes{% endblock %}
+
+{% block content %}
+
+<div id="hero-image">
+    <div id="intro-text"><h2>Plant-based recipes for all.</h2>
+    </div>
+</div>
+
+<div id="welcome-text">
+    <hr>
+    <p>
+    Here at VeganVivera we provide a platform for users to share plant-based recipes. 
+    Switching partially or completely to a plant-based diet can be overwhelming as many of our favourite dishes often require animal products. 
+    Here we and the commnuity provide recipes of varying difficulties - allowing users of varying confidence levels in cooking to try plant-based recipes.
+    Whether your concerned about animal welfare, the environment, or simply just want to focus on eating healthier - this is the place for you! 
+    If you would like to post your own plant-based recipes, interact with the conversation or create your own favourite recipe list - please sign up with us and join the community!
+    </p>
+    <hr>
+</div>
+
+<div class="sm-sceen-box">
+<h2>Recently posted recipes</h2>
+<div id="home-box">
+<div class="container">
+    <div class="row">
+        {% for recipe in recipe_list %}
+            <div  class="mx-auto card recipe-box col-sm-5 d-inline">
+            <div class='card-body'>
+                <p class='card-text'>
+                    <a href="{{ recipe.get_absolute_url }}">
+                        <h3 class="post-title">{{ recipe.title }}</h3>
+                    </a>
+                    Posted on {{ reicpe.publication_date }} by <strong>{{ recipe.author }}</strong>
+                </p>
+                {% if 'placeholder' in recipe.recipe_image.url %}
+                <img class="card-image" alt="fries"
+                src="https://res.cloudinary.com/delase5lw/image/upload/v1682324192/project/default.jpg.jpg" width="400" height="300">
+                {% else %}
+                <img class="card-image" src="{{ recipe.recipe_image.url }}" width="300" height="300">
+                {% endif %} 
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+</div>
+</div>    
+
+{% endblock %}

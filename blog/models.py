@@ -40,8 +40,8 @@ class Recipe(models.Model):
         self.slug = slugify(self.title)
         super().save(*args, **kwargs)
 
-    def get_absolute_url(self):
-        return reverse("post-detail", kwargs={"slug": self.slug})
+    # def get_absolute_url(self):
+    #     return reverse("post-detail", kwargs={"slug": self.slug})
 
     def num_of_likes(self):
         return self.likes.count()

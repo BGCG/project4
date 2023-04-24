@@ -24,24 +24,6 @@
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
               <button class="dropdown-item" type="button"><a href="{% url 'home' %}">Home</a></button>
-              {% if user.is_authenticated %}
-              <button class="dropdown-item" type="button"><a href="{% url 'favourite-list' %}">Your favourites list</a></button>
-              <button class="dropdown-item" type="button"><a href="{% url 'your-posts-list' %}">Your post list</a></button>
-              {% endif %}
-              {% if not user.is_authenticated %}
-              <button class="dropdown-item" type="button"><a href="{% url 'signup-login' %}">Signup</button>
-              {% endif %}
-              {% if user.is_authenticated %}
-              <button class="dropdown-item" type="button"><a href="{% url 'create-post' %}">Create Post</a></button>
-              <button class="dropdown-item" type="button"><a href="{% url 'logout-request' %}">Logout</a></button>
-              {% else %}
-              <button class="dropdown-item" type="button"><a href="{% url 'login-here' %}">Login</a></button>
-              {% endif %}
-              <div id="login-info">
-                {% if user.is_authenticated %}
-                <li>You are logged in as <strong>{{ user.username }}</strong></li>
-                {% endif %}
-                </div>
             </div>
           </div>
           <br>
