@@ -13,6 +13,11 @@ class RecipeAdmin(SummernoteModelAdmin):
                     'publication_date', 'article_approved')
     search_fields = ['title', 'instructions', 'ingredients']
 
+    actions = ['approve_recipe']
+    
+    def approve_recipe(self, request, queryset):
+        queryset.update(article_approved=True)
+
 
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
