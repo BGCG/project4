@@ -7,7 +7,7 @@ class PostForm(forms.ModelForm):
     class Meta:
         model = Recipe
         fields = ('title', 'ingredients', 'instructions', 'taste_type', 'skill_level', 'preparation_time', 'status')
-        #labels = {'prepartion_time' : 'Prepartion Time (mins)',}
+        labels = {'preparation_time' : 'Preparation Time (minutes)'}
 
 
 class CommentForm(forms.ModelForm):
