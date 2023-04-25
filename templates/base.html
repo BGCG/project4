@@ -27,6 +27,7 @@
               <button class="dropdown-item" type="button"><a href="{% url 'home' %}">Home</a></button>
               {% if user.is_authenticated%}
               <button class="dropdown-item" type="button"><a href="{% url 'favourite-list' %}">Favourite list</a></button>
+              <button class="dropdown-item" type="button"><a href="{% url 'your-posts-list' %}">Your post list</a></button>
               <button class="dropdown-item" type="button"><a href="{% url 'create-post' %}">Create Post</a></button>
               <button class="dropdown-item" type="button"><a href="{% url 'account_logout' %}">Logout</a></button>
               {% else %}

@@ -9,4 +9,5 @@ urlpatterns = [
     path('favourites/<slug:slug>', views.FavouriteView.as_view(), name='favourite-view'),
     path('favourites/', views.FavouriteView.as_view(), name='favourite-list'),
     path('create-post/', views.create_post, name='create-post'),
+    path('your-posts/', views.your_posts_view, name='your-posts-list'),
 ]

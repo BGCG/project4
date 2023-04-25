@@ -122,3 +122,16 @@ def create_post(request):
     }
     
     return render(request, 'create_post.html', context)
+
+
+def your_posts_view(request):
+    
+    your_published_posts = Recipe.objects.filter(author=request.user, status=1, article_approved=True)
+    your_draft_posts = Recipe.objects.filter(author=request.user, status=0)
+    
+    context = {
+        'your_published_posts': your_published_posts,
+        'your_draft_posts': your_draft_posts,
+    }
+    
+    return render(request, 'your_posts.html', context)
