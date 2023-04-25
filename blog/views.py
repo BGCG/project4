@@ -69,7 +69,7 @@ class LikeToggle(View):
         return HttpResponseRedirect(reverse('recipe-detail', args=[slug]))
 
 
-class FavouriteToggle(View):
+class FavouriteView(View):
 
     def post(self, request, slug, *args, **kwargs):
 
@@ -81,3 +81,10 @@ class FavouriteToggle(View):
             recipe.favourites.add(request.user)
 
         return HttpResponseRedirect(reverse('recipe-detail', args=[slug]))
+
+    def get(self, request, *args, **kwargs):
+
+        fav_recipes = Recipe.objects.filter(favourites=request.user, article_approved=True)
+        
+        return render(request, 'favourite_list.html', {'fav_recipes': fav_recipes})
+
