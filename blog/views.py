@@ -15,12 +15,12 @@ class RecipeList(generic.ListView):
 
 
 def recipe_detail(request, slug):
-    
+
     recipe = get_object_or_404(Recipe, slug=slug)
     comments = recipe.comments.filter(approved=True)
 
     liked = False
-    
+
     if recipe.likes.filter(id=request.user.id).exists():
         liked = True
 
@@ -28,9 +28,9 @@ def recipe_detail(request, slug):
 
     if recipe.favourites.filter(id=request.user.id).exists():
         favourited = True
-    
+
     comment = None
-    
+
     if request.method == 'POST':
         form = CommentForm(request.POST)
         if form.is_valid():
@@ -42,16 +42,16 @@ def recipe_detail(request, slug):
             # return redirect('recipe-detail', slug=recipe.slug)
     else:
         form = CommentForm()
- 
+
     context = {
         'recipe': recipe,
         'comments': comments,
         'comment': comment,
         'comment_form': form,
         'liked': liked,
-        'favourited' : favourited,
+        'favourited': favourited,
     }
-    
+
     return render(request, 'recipe_detail.html', context)
 
 
@@ -65,7 +65,7 @@ class LikeToggle(View):
             recipe.likes.remove(request.user)
         else:
             recipe.likes.add(request.user)
-        
+
         return HttpResponseRedirect(reverse('recipe-detail', args=[slug]))
 
 
@@ -79,5 +79,5 @@ class FavouriteToggle(View):
             recipe.favourites.remove(request.user)
         else:
             recipe.favourites.add(request.user)
-        
+
         return HttpResponseRedirect(reverse('recipe-detail', args=[slug]))
