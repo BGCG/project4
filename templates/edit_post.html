@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}Edit post{% endblock %}
+
+{% block content %}
+
+{% load crispy_forms_tags %}
+
+<div class="container">
+
+    {% if new_post and new_post.status == 1 %}
+    <div class="alert alert-success" role="alert">
+    Your post is awaiting approval </div>
+    {% elif new_post and new_post.status == 0 %}
+    <div class="alert alert-success" role="alert">
+    Your draft has been saved </div>
+    {% else %}
+
+    {% if user.is_authenticated %}
+            <form method="post">
+            <h3>Edit Post</h3>
+            <div class="row">
+                <div class='col card mb-4 mt-4 left top mx-auto'>
+                    <div class='card-body mx-auto'>
+                        <p class='card-text'>
+                            {{ post_form | crispy}}
+                            {% csrf_token %}
+                        <button type="submit" class="btn btn-primary btn-md">Update</buttom>
+                       </p>
+                   </div>
+                </div>
+            </div>
+            </form>
+        {% endif %}
+    {% endif %}
+
+</div>
+
+
+{% endblock %}

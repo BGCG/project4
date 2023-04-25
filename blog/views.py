@@ -125,13 +125,39 @@ def create_post(request):
 
 
 def your_posts_view(request):
-    
+
     your_published_posts = Recipe.objects.filter(author=request.user, status=1, article_approved=True)
     your_draft_posts = Recipe.objects.filter(author=request.user, status=0)
-    
+
     context = {
         'your_published_posts': your_published_posts,
         'your_draft_posts': your_draft_posts,
     }
-    
+
     return render(request, 'your_posts.html', context)
+
+
+def edit_post(request, slug):
+
+    recipe = get_object_or_404(Recipe, slug=slug)
+
+    if request.method == 'POST':
+        post_form = PostForm(request.POST, instance=recipe)
+
+        if post_form.is_valid():
+            recipe.article_approved = False
+            post_form.save()
+            if recipe.status == 0:
+                messages.info(request, "Your draft post has been saved in 'Your post list'!")
+            elif recipe.status == 1:
+                messages.info(request, "Your edited post is awaiting approval!")
+            return redirect('home')
+        else:
+            if IntegrityError:
+                messages.error(request, "We could not create your post due to invalid input. Please ensure your title is unqiue.")
+            else:
+                messages.error(request, "Something went wrong - please try to create your post again.")
+
+    post_form = PostForm(instance=recipe)
+
+    return render(request, 'edit_post.html', {'post_form':post_form, 'recipe': recipe})
