@@ -1,9 +1,11 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.views import generic, View
+from django.views.generic import CreateView
 from django.http import HttpResponseRedirect
 from .models import Recipe
-from .forms import CommentForm
+from .forms import CommentForm, PostForm
 from django.contrib import messages
+from django.db import IntegrityError
 
 
 class RecipeList(generic.ListView):
@@ -85,6 +87,38 @@ class FavouriteView(View):
     def get(self, request, *args, **kwargs):
 
         fav_recipes = Recipe.objects.filter(favourites=request.user, article_approved=True)
-        
+
         return render(request, 'favourite_list.html', {'fav_recipes': fav_recipes})
 
+
+def create_post(request):
+
+    new_post = None
+    
+    if request.method == 'POST':
+        post_form = PostForm(request.POST)
+        if post_form.is_valid():
+            
+            new_post = post_form.save(commit=False)
+            new_post.author = request.user
+            post_form.save()
+            
+            if new_post.status == 0:
+                messages.info(request, "Your draft post has been saved in 'Your post list'!")
+            elif new_post.status == 1:
+                messages.info(request, "Your post is awaiting approval!")
+            return redirect('home')
+        else:
+            if IntegrityError:
+                messages.error(request, "We could not create your post due to invalid input. Please ensure your title is unqiue.")
+            else: 
+                messages.error(request, "Something went wrong - please try to create your post again.")
+    
+    post_form = PostForm()
+    
+    context = {
+        'post_form': post_form,
+        'new_post': new_post,
+    }
+    
+    return render(request, 'create_post.html', context)

@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}Create a recipe post{% endblock %}
+
+{% block content %}
+
+{% load crispy_forms_tags %}
+
+<div id="create-post-background">
+<div class="container">
+
+    {% if new_post %}
+    <div class="alert alert-success" role="alert">
+    Your post is awaiting approval </div>
+    {% else %}
+    {% if user.is_authenticated %}
+            <form method="post">
+            <div class="row">
+                <div class='col card mb-4 mt-4 left top mx-auto'>
+                    <div class='card-body mx-auto'>
+                        <p class='card-text'>
+                            <h3>Create a Post</h3>
+                            <hr>
+                            {{ post_form | crispy }}
+                            {% csrf_token %}
+                        <button type="submit" class="btn btn-primary btn-md" id="post-btn">Submit</buttom>
+                       </p>
+                   </div>
+                </div>
+            </form>
+        {% endif %}
+    {% endif %}
+
+</div>
+</div>
+
+
+{% endblock %}
+
