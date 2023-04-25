@@ -31,10 +31,30 @@
                     <hr>
                     <strong>Instructions:</strong> {{ recipe.instructions|linebreaks }}
                 </p>
+                <!-- Like/Unlike button -->
+                <div class="container">
+                    <div class="row">
+                            <div class="col-sm-2">
+                                <form action="{% url 'like-recipe' recipe.slug %}" method="POST">
+                                    {% csrf_token %}
+                                    {% if user.is_authenticated %}
+                                    {% if liked %}
+                                    <button input="submit" name="likes-button" class="text-success border-0 like-button" value="{{ recipe.slug }}"><i class="fas fa-heart"></i></button>
+                                    {% else %}
+                                    <button input="submit" name="likes-button" class="text-success border-0 like-button" value="{{ recipe.slug }}"><i class="far fa-heart"></i></button>
+                                    {% endif %}
+                                    {% endif %}
+                                </form>
+                                {% if user.is_authenticated %}
+                                <span>{{ recipe.num_of_likes }}</span>
+                                {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                     </div>
          </div>
        </div>
     </div>
-</div>
 
 <div class="container">
     {% if comment %}

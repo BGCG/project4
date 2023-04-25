@@ -188,6 +188,10 @@ body > footer > ul, #content > footer > ul {
     text-align: center;
 }
 
+.like-button {
+    background-color: inherit;
+}
+
 /* recipe detail page styling  */
 
 #content > div:nth-child(1) {
