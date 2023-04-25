@@ -231,6 +231,15 @@ body > footer > ul, #content > footer > ul {
     /* float: none; */
 }
 
+/* edit post page styling */
+
+#delete-btn {
+    width: fit-content !important;
+    background-color: white !important;
+} 
+
+
+
 @media (max-width: 400px) {
 
     #logo, .dropdown {

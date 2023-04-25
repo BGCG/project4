@@ -161,3 +161,10 @@ def edit_post(request, slug):
     post_form = PostForm(instance=recipe)
 
     return render(request, 'edit_post.html', {'post_form':post_form, 'recipe': recipe})
+
+
+def delete_post(request, slug):
+    recipe = get_object_or_404(Recipe, slug=slug)
+    recipe.delete()
+    messages.info(request, "Post successfully deleted")
+    return redirect('home')
