@@ -43,11 +43,11 @@
                                     {% else %}
                                     <button input="submit" name="likes-button" class="text-success border-0 like-button" value="{{ recipe.slug }}"><i class="far fa-heart"></i></button>
                                     {% endif %}
+                                    {% else %}
+                                    <span class="text-secondary"><i class="far fa-heart"></i></span>
                                     {% endif %}
                                 </form>
-                                {% if user.is_authenticated %}
                                 <span>{{ recipe.num_of_likes }}</span>
-                                {% endif %}
                                 </div>
                             </div>
                         </div>
