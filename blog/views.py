@@ -23,6 +23,11 @@ def recipe_detail(request, slug):
     
     if recipe.likes.filter(id=request.user.id).exists():
         liked = True
+
+    favourited = False
+
+    if recipe.favourites.filter(id=request.user.id).exists():
+        favourited = True
     
     comment = None
     
@@ -42,8 +47,9 @@ def recipe_detail(request, slug):
         'recipe': recipe,
         'comments': comments,
         'comment': comment,
-        'liked': liked,
         'comment_form': form,
+        'liked': liked,
+        'favourited' : favourited,
     }
     
     return render(request, 'recipe_detail.html', context)
@@ -59,5 +65,19 @@ class LikeToggle(View):
             recipe.likes.remove(request.user)
         else:
             recipe.likes.add(request.user)
+        
+        return HttpResponseRedirect(reverse('recipe-detail', args=[slug]))
+
+
+class FavouriteToggle(View):
+
+    def post(self, request, slug, *args, **kwargs):
+
+        recipe = get_object_or_404(Recipe, slug=slug)
+
+        if recipe.favourites.filter(id=request.user.id).exists():
+            recipe.favourites.remove(request.user)
+        else:
+            recipe.favourites.add(request.user)
         
         return HttpResponseRedirect(reverse('recipe-detail', args=[slug]))

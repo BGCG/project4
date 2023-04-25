@@ -19,10 +19,10 @@
                     <hr>
                     {% if 'placeholder' in recipe.recipe_image.url %}
                     <img class="card-img-top" alt="recipe-image"
-                    src="https://res.cloudinary.com/delase5lw/image/upload/v1682324192/project/default.jpg.jpg">
+                        src="https://res.cloudinary.com/delase5lw/image/upload/v1682324192/project/default.jpg.jpg">
                     {% else %}
                     <img class="card-image" src="{{ recipe.recipe_image.url }}" width="300" height="300">
-                    {% endif %} 
+                    {% endif %}
                     <strong>Taste type:</strong> {{ recipe.get_taste_type_display }}<br>
                     <strong>Skill level:</strong> {{ recipe.get_skill_level_display }}<br>
                     <strong>Prepartion time: </strong>{{ recipe.preparation_time }} minutes
@@ -31,53 +31,74 @@
                     <hr>
                     <strong>Instructions:</strong> {{ recipe.instructions|linebreaks }}
                 </p>
-                <!-- Like/Unlike button -->
                 <div class="container">
                     <div class="row">
-                            <div class="col-sm-2">
-                                <form action="{% url 'like-recipe' recipe.slug %}" method="POST">
-                                    {% csrf_token %}
-                                    {% if user.is_authenticated %}
-                                    {% if liked %}
-                                    <button input="submit" name="likes-button" class="text-success border-0 like-button" value="{{ recipe.slug }}"><i class="fas fa-heart"></i></button>
-                                    {% else %}
-                                    <button input="submit" name="likes-button" class="text-success border-0 like-button" value="{{ recipe.slug }}"><i class="far fa-heart"></i></button>
-                                    {% endif %}
-                                    {% else %}
-                                    <span class="text-secondary"><i class="far fa-heart"></i></span>
-                                    {% endif %}
-                                </form>
-                                <span>{{ recipe.num_of_likes }}</span>
-                                </div>
-                            </div>
+                        <!-- Like/Unlike button -->
+                        <div class="col-sm-2">
+                            <form action="{% url 'like-recipe' recipe.slug %}" method="POST">
+                                {% csrf_token %}
+                                {% if user.is_authenticated %}
+                                {% if liked %}
+                                <button input="submit" name="likes-button" class="text-success border-0 like-button"
+                                    value="{{ recipe.slug }}"><i class="fas fa-heart"></i></button>
+                                {% else %}
+                                <button input="submit" name="likes-button" class="text-success border-0 like-button"
+                                    value="{{ recipe.slug }}"><i class="far fa-heart"></i></button>
+                                {% endif %}
+                                {% else %}
+                                <span class="text-secondary"><i class="far fa-heart"></i></span>
+                                {% endif %}
+                            </form>
+                            <span>{{ recipe.num_of_likes }}</span>
                         </div>
-                     </div>
-         </div>
-       </div>
+                        <!-- Favourite/Unfavourite button -->
+                        <div class="col-sm-2">
+                            <form action="{% url 'favourite-view' recipe.slug %}" method="POST">
+                                {% csrf_token %}
+                                {% if user.is_authenticated %}
+                                {% if favourited %}
+                                <button input="submit" name="favourite-button" class="text-success border-0 fav-button"
+                                    value="{{ recipe.slug }}"><i class="fa-solid fa-bookmark"></i></button>
+                                {% else %}
+                                <button input="submit" name="favourite-button" class="text-success border-0 fav-button"
+                                    value="{{ recipe.slug }}"><i class="fa-regular fa-bookmark"></i></i></button>
+                                {% endif %}
+                                {% else %}
+                                <span class="text-secondary"><i class="fa-regular fa-bookmark"></i></span>
+                                {% endif %}
+                            </form>
+                            <span>{{ recipe.num_of_favorites }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
 
 <div class="container">
     {% if comment %}
     <div class="alert alert-success" role="alert">
-    Your comment is awaiting approval </div>
+        Your comment is awaiting approval </div>
     {% else %}
     {% if user.is_authenticated %}
     <h3 class="recipe-comment-title">Leave a comment</h3>
-            <form method="post">
-            <div class="row">
-                <div class='col card mb-4 mt-4 left top col-lg-6 mx-auto'>
-                    <div class='card-body mx-auto'>
-                        <p class='card-text mx-auto'>
-                            {{ comment_form | crispy }}
-                            {% csrf_token %}
+    <form method="post">
+        <div class="row">
+            <div class='col card mb-4 mt-4 left top col-lg-6 mx-auto'>
+                <div class='card-body mx-auto'>
+                    <p class='card-text mx-auto'>
+                        {{ comment_form | crispy }}
+                        {% csrf_token %}
                         <button type="submit" class="btn btn-success">Submit</buttom>
-                       </p>
-                   </div>
+                    </p>
                 </div>
-            </form>
-        {% else %}
-            <p>Please <a href="{% url 'account_login' %}">Login</a> or <a href="{% url 'account_signup' %}">Signup</a> if you would wish to like, favourite or comment on this post</p>
-        {% endif %}
+            </div>
+    </form>
+    {% else %}
+    <p>Please <a href="{% url 'account_login' %}">Login</a> or <a href="{% url 'account_signup' %}">Signup</a> if you
+        would wish to like, favourite or comment on this post</p>
+    {% endif %}
     {% endif %}
 </div>
 
@@ -106,6 +127,3 @@
 {% endfor %}
 
 {% endblock %}
-
-
-
