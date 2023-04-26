@@ -27,9 +27,9 @@
                     <strong>Skill level:</strong> {{ recipe.get_skill_level_display }}<br>
                     <strong>Prepartion time: </strong>{{ recipe.preparation_time }} minutes
                     <hr>
-                    <strong>Ingredients:</strong> {{ recipe.ingredients|linebreaks }}
+                    <strong>Ingredients:</strong> {{ recipe.ingredients | safe }}
                     <hr>
-                    <strong>Instructions:</strong> {{ recipe.instructions|linebreaks }}
+                    <strong>Instructions:</strong> {{ recipe.instructions | safe }}
                 </p>
                 <div class="container">
                     <div class="d-flex flex-row-reverse">
