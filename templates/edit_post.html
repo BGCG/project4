@@ -8,56 +8,58 @@
 
 <div class="container">
 
-    {% if new_post and new_post.status == 1 %}
-    <div class="alert alert-success" role="alert">
+  {% if new_post and new_post.status == 1 %}
+  <div class="alert alert-success" role="alert">
     Your post is awaiting approval </div>
-    {% elif new_post and new_post.status == 0 %}
-    <div class="alert alert-success" role="alert">
+  {% elif new_post and new_post.status == 0 %}
+  <div class="alert alert-success" role="alert">
     Your draft has been saved </div>
-    {% else %}
+  {% else %}
 
-    {% if user.is_authenticated %}
-            
-            <h3>Edit Post</h3>
-            <div class="row">
-                <div class='col card mb-4 mt-4 left top mx-auto'>
-                    <form method="post">
-                    <div class='card-body mx-auto'>
-                        <p class='card-text'>
-                            {{ post_form | crispy}}
-                            {% csrf_token %}
-                        </p>
-                        <button type="submit" class="btn btn-primary btn-md d-inline">Update</buttom>
-                        </form>
-                        <br>
-                   </div>
-                   <button type="submit" class="btn btn-link" id="delete-btn">Delete post</button>
-            <div id="modal" class="modal" tabindex="-1" role="dialog">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title">Delete confirmation</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <p>Are you sure you would like to delete this post?</p>
-                    </div>
-                    <div class="modal-footer">
-                      <a class="btn btn-secondary" href="{% url 'delete-post' recipe.slug %}" role="button">Delete post</a>
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-                </div>
-            </div>
-            
-            
-        {% endif %}
-    {% endif %}
+  {% if user.is_authenticated %}
+
+  <h3>Edit Post</h3>
+  <div class="row">
+    <div class='col card mb-4 mt-4 left top mx-auto'>
+      <form method="post">
+        <div class='card-body mx-auto'>
+          <p class='card-text'>
+            {{ post_form | crispy }}
+            {% csrf_token %}
+          </p>
+          <button type="submit" class="btn btn-primary btn-md d-inline">Update</buttom>
+      </form>
+      <br>
+    </div>
+    <div class="d-flex flex-row-reverse">
+      <button type="submit" class="btn btn-link" id="delete-btn">Delete post</button>
+    </div>
+    <div id="modal" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Delete confirmation</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Are you sure you would like to delete this post?</p>
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-secondary" href="{% url 'delete-post' recipe.slug %}" role="button">Delete post</a>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+{% endif %}
+{% endif %}
 
 </div>
 

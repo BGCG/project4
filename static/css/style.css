@@ -30,6 +30,21 @@ body {
     font-size: 20px;
 }
 
+a:hover {
+    color: #406551;
+    text-decoration: none;
+}
+
+/* 
+.dropdown-item:active {
+    color: black;
+} */
+
+#delete-btn {
+    text-decoration: none;
+    color: #359359;
+    font-size: 18px;
+}
 /* logo and navigation dropdown styling */
 
 #logo {
