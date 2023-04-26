@@ -32,27 +32,13 @@
                     <strong>Instructions:</strong> {{ recipe.instructions|linebreaks }}
                 </p>
                 <div class="container">
-                    <div class="row">
-                        <!-- Like/Unlike button -->
-                        <div class="col-sm-2">
-                            <form action="{% url 'like-recipe' recipe.slug %}" method="POST">
-                                {% csrf_token %}
-                                {% if user.is_authenticated %}
-                                {% if liked %}
-                                <button input="submit" name="likes-button" class="text-success border-0 like-button"
-                                    value="{{ recipe.slug }}"><i class="fas fa-heart"></i></button>
-                                {% else %}
-                                <button input="submit" name="likes-button" class="text-success border-0 like-button"
-                                    value="{{ recipe.slug }}"><i class="far fa-heart"></i></button>
-                                {% endif %}
-                                {% else %}
-                                <span class="text-secondary"><i class="far fa-heart"></i></span>
-                                {% endif %}
-                            </form>
-                            <span>{{ recipe.num_of_likes }}</span>
-                        </div>
+                    <div class="d-flex flex-row-reverse">
                         <!-- Favourite/Unfavourite button -->
-                        <div class="col-sm-2">
+                        <div class="col-sm-1 mb-3">
+                            <span class="text-success">{{ recipe.num_of_favorites }}</span>
+                        </div>
+                        <div class="col-sm-1 mb-3">
+
                             <form action="{% url 'favourite-view' recipe.slug %}" method="POST">
                                 {% csrf_token %}
                                 {% if user.is_authenticated %}
@@ -67,7 +53,28 @@
                                 <span class="text-secondary"><i class="fa-regular fa-bookmark"></i></span>
                                 {% endif %}
                             </form>
-                            <span>{{ recipe.num_of_favorites }}</span>
+
+                        </div>
+                        <!-- Like/Unlike button -->
+                        <div class="col-sm-1 mb-3">
+                            <span class="text-success">{{ recipe.num_of_likes }}</span>
+                        </div>
+
+                        <div class="col-sm-1 mb-3">
+                            <form action="{% url 'like-recipe' recipe.slug %}" method="POST">
+                                {% csrf_token %}
+                                {% if user.is_authenticated %}
+                                {% if liked %}
+                                <button input="submit" name="likes-button" class="text-success border-0 like-button"
+                                    value="{{ recipe.slug }}"><i class="fas fa-heart"></i></button>
+                                {% else %}
+                                <button input="submit" name="likes-button" class="text-success border-0 like-button"
+                                    value="{{ recipe.slug }}"><i class="far fa-heart"></i></button>
+                                {% endif %}
+                                {% else %}
+                                <span class="text-secondary"><i class="far fa-heart"></i></span>
+                                {% endif %}
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -98,7 +105,8 @@
             </div>
     </form>
     {% else %}
-    <p class="recipe-page-text">Please <a href="{% url 'account_login' %}">Login</a> or <a href="{% url 'account_signup' %}">Signup</a> if you
+    <p class="recipe-page-text">Please <a href="{% url 'account_login' %}">Login</a> or <a
+            href="{% url 'account_signup' %}">Signup</a> if you
         would wish to like, favourite or comment on this post</p>
     {% endif %}
     {% endif %}

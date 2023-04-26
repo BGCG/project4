@@ -188,7 +188,7 @@ body > footer > ul, #content > footer > ul {
     text-align: center;
 }
 
-.like-button {
+.like-button,.fav-button {
     background-color: inherit;
 }
 
