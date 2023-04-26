@@ -224,7 +224,10 @@ body > footer > ul, #content > footer > ul {
 /* logout, login and register page styling */
 
 #logout-background, #login-background, #signup-background {
-    background-color: #359359;
+    /* background-color: #359359; */
+    background-image: url('https://res.cloudinary.com/delase5lw/image/upload/v1682512836/pexels-engin-akyurt-2456435_2_k5lqzn.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     padding-top: 20px;
     height: 700px;
     align-items: center;
@@ -279,14 +282,6 @@ body > footer > ul, #content > footer > ul {
     width: fit-content;
 }
 
-#fav-box {
-    height: 1000px;
-    /* background-color: #D7CED1; */
-    /* background-color: #D3CFCE; */
-    background-color: #ebe9e4;
-    margin-left: 50px;
-    margin-right: 50px;
-}
 
 @media (max-width: 750px) {
 
