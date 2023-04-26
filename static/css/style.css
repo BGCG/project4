@@ -268,7 +268,7 @@ body > footer > ul, #content > footer > ul {
     background-image: url('https://res.cloudinary.com/delase5lw/image/upload/v1682515487/fav-list-image_baw0u7.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: 100px;
+    margin-top: 50px;
     /* background-color: #359359; */
     width: 100%;
     height: 400px;
@@ -295,7 +295,6 @@ body > footer > ul, #content > footer > ul {
         background-image: url('https://res.cloudinary.com/delase5lw/image/upload/v1682515733/fav-list-image_baw0u7_a83c61_4ee779.jpg');
         background-size: cover;
         background-repeat: no-repeat;
-        margin-top: 100px;
         width: 100%;
         height: 200px;
     }
@@ -329,6 +328,10 @@ body > footer > ul, #content > footer > ul {
 
     div>.container {
         padding-top: 0;
+    }
+
+    #fav-page-image {
+        margin-top: 0;
     }
 
 }
