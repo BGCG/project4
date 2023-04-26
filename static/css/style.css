@@ -289,6 +289,8 @@ body > footer > ul, #content > footer > ul {
     text-align: center;
 }
 
+
+
 @media (max-width: 750px) {
 
     #fav-page-image {
@@ -332,6 +334,10 @@ body > footer > ul, #content > footer > ul {
 
     #fav-page-image {
         margin-top: 0;
+    }
+
+    #your-posts-break, #home-break {
+        display: none;
     }
 
 }
