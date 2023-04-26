@@ -5,7 +5,7 @@
 {% block content %}
 
 {% load crispy_forms_tags %}
-
+{% load cloudinary %}
 
 <div class="container">
 
@@ -14,7 +14,7 @@
     Your post is awaiting approval </div>
     {% else %}
     {% if user.is_authenticated %}
-            <form method="post">
+            <form method="post" enctype="multipart/form-data">
             <div class="row">
                 <div class='col card mb-4 mt-4 left top mx-auto'>
                     <div class='card-body mx-auto'>

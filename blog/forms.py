@@ -7,7 +7,7 @@ class PostForm(forms.ModelForm):
 
     class Meta:
         model = Recipe
-        fields = ('title', 'ingredients', 'instructions', 'taste_type', 'skill_level', 'preparation_time', 'status')
+        fields = ('title', 'recipe_image', 'ingredients', 'instructions', 'taste_type', 'skill_level', 'preparation_time', 'status')
         labels = {'preparation_time': 'Preparation Time (minutes)'}
         # widgets = {
         #     'ingredients': SummernoteWidget(),

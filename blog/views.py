@@ -96,9 +96,8 @@ def create_post(request):
     new_post = None
     
     if request.method == 'POST':
-        post_form = PostForm(request.POST)
+        post_form = PostForm(request.POST, request.FILES)
         if post_form.is_valid():
-            
             new_post = post_form.save(commit=False)
             new_post.author = request.user
             post_form.save()

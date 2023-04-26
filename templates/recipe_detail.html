@@ -21,7 +21,7 @@
                     <img class="card-img-top" alt="recipe-image"
                         src="https://res.cloudinary.com/delase5lw/image/upload/v1682324192/project/default.jpg.jpg">
                     {% else %}
-                    <img class="card-image" src="{{ recipe.recipe_image.url }}" width="300" height="300">
+                    <img class="card-img-top" src="{{ recipe.recipe_image.url }}">
                     {% endif %}
                     <strong>Taste type:</strong> {{ recipe.get_taste_type_display }}<br>
                     <strong>Skill level:</strong> {{ recipe.get_skill_level_display }}<br>
