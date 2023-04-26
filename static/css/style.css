@@ -283,6 +283,11 @@ body > footer > ul, #content > footer > ul {
     width: fit-content;
 }
 
+/* styling your posts page */
+
+.your-posts-text {
+    text-align: center;
+}
 
 @media (max-width: 750px) {
 

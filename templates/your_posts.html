@@ -5,12 +5,13 @@
 {% block content %}
 
 <br>
+<hr>
 
-<h2>Your published articles</h2>
+
+<h2 class="your-posts-text">Your published articles</h2>
 
 {% for post in your_published_posts %}
 
-<div id="your-posts-background">
     <div class="container">
         <div class="row">
             <div class="mx-auto card recipe-box col-sm-6 d-inline">
@@ -37,15 +38,13 @@
 
     {% empty %}
 
-    <p> You have no published posts. </p>
+    <p class="your-posts-text"> You have no published posts. </p>
 
     {% endfor %}
 
-</div>
-
 <hr>
 
-<h2>Your drafts</h2>
+<h2 class="your-posts-text">Your drafts</h2>
 
 {% for post in your_draft_posts %}
 
@@ -75,7 +74,7 @@
 
     {% empty %}
 
-    <p> You have no draft posts. </p>
+    <p class="your-posts-text"> You have no draft posts. </p>
 
     {% endfor %}
 
