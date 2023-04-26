@@ -264,11 +264,21 @@ body > footer > ul, #content > footer > ul {
     #logo, .dropdown {
         float: none;
         margin: 0 auto;
-        padding:0;
+        padding: 0;
     }
 
     header {
-        width: 100px;
+        margin: 0;
+        text-align: center;
+    }
+
+    #hero-image {
+        margin: 0;
+        padding: 0;
+    }
+
+    div>.container {
+        padding-top: 0;
     }
 
 }
