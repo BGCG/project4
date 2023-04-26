@@ -7,12 +7,12 @@
 
 {% block content %}
 
-<div class="container" id="login-background">
+<div class="container-fluid" id="login-background">
   <div class="row">
-    <div class="col-md-8 mt-3 offset-md-2" id="login-box">
+    <div class="col-md-6 mt-3 offset-md-2 mx-auto" id="login-box">
 
 
-<h1>{% trans "Sign In" %}</h1>
+<h2><strong>{% trans "Sign In" %}</strong></h2>
 
 <p>{% blocktrans %}If you have not created an account yet, then please
 <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>

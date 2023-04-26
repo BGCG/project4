@@ -238,6 +238,7 @@ body > footer > ul, #content > footer > ul {
     background-color: white;
     padding: 20px;
     border-radius: 25px;
+    width: fit-content;
 }
 
 /* #login-box > form {
