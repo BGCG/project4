@@ -161,7 +161,7 @@ Reason for non-completion: In the project inception, I thought the ability for u
 * Contains the recently posted recipes on the site in a card format, displaying the recipe picture, title, publication date 
 * When the recipe title is clicked it will take the user to the specific recipe detail page
 
-![screenshot-of-homepage-top](https://res.cloudinary.com/delase5lw/image/upload/v1682612722/readme-imgs/homepage-top_adtglm.jpg)
+![screenshot-of-homepage-top](https://res.cloudinary.com/delase5lw/image/upload/v1682614404/readme-imgs/homepage-top-v2_ejxmet.jpg)
 ![screenshot-of-homepage-recipes](https://res.cloudinary.com/delase5lw/image/upload/v1682611691/readme-imgs/homepage-recipes_vu71pr.jpg)
 
 #### Recipe detail page
