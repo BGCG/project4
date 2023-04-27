@@ -190,3 +190,19 @@ Reason for non-completion: In the project inception, I thought the ability for u
 * Users can create an account on the register page (accessed in the nav dropdown for unauthenticated users), where they can fill out and submit a form with their desired username, optional email and password (must enter password twice for validation).
 * If their username has already been taken they will be asked to provide new details.
 * Once they submit a form they will be redirected to the login page where they will be asked to login with their newly created login details.
+
+### Credits
+
+#### Code
+
+I found the [Bootstrap 4 documentation](https://getbootstrap.com/docs/4.2/getting-started/introduction/) particularly helpful with creation of the recipe cards. Additionally, I utilised the Bootstrap 4 dropdown navbar code. 
+
+In the image upload on the user post form, I found the following [resource](https://www.w3schools.com/tags/att_form_enctype.asp) documentation helpful.
+
+The Code Institute course materials including 'Hello Django' and 'I Think therefore I Blog' for guidelines in setting up and deploying the django app, as well as implementing the CRUD functionality.
+
+I have provided further credits in the troubleshooting section.
+
+#### Images
+
+All images were from pexels.com
