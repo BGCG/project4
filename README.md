@@ -164,6 +164,8 @@ Reason for non-completion: In the project inception, I thought the ability for u
 * For non-logged in users a help text will show 'If you wish to like, favourite or comment on this recipe please login or signup'. 'Login' and 'Signup' in the help text will contain links to the login or signup pages, respectively.
 
 ![screenshot-of-recipe-detail](https://res.cloudinary.com/delase5lw/image/upload/v1682611691/readme-imgs/recipe-detail-card_qn5qya.jpg)
+![screenshot-of-recipe-detail-comments](https://res.cloudinary.com/delase5lw/image/upload/v1682611691/readme-imgs/comment-box-w-comments_gyhytp.jpg)
+![screenshot-of-recipe-detail-comments-help-text](https://res.cloudinary.com/delase5lw/image/upload/v1682613493/readme-imgs/comment-helptext_ccfeoc.jpg)
 
 #### Your post list
 
