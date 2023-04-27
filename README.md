@@ -119,3 +119,74 @@ Epic | CONTENT REACTION
 * As a site user I can update and delete my own comments so I can manage my own comments if I'm not happy with them (SHOULDN'T HAVE)
 
 Reason for non-completion: In the project inception, I thought the ability for users to have more control over their comment reactions might be a good feature for user experience. However, when inserting this epic into the Kanban board I realised that the ability of users to delete comments might disrupt the flow of the conversation so I decided it shouldn't be implemented.
+
+### Common features
+
+### Logo 
+
+* The logo on the left-hand corner of each page displays the title of the site in the characteristic green colour present throughout the site.
+
+### Navigation dropdown bar
+
+* Is present on the top right-hand corner of each page providing navigation to authentication/signup features and home
+* If logged in it provides routes to:
+ - users published and draft posts ('your posts list') - which also contains links to 'Edit post' pages where a user can update their post or delete it.
+ - users 'favourites list' 
+ - create a post form
+
+### Footer 
+
+* Contains social media links to the VeganVivera community social media accounts (just links to the social media sites as the VeganVivera social media accounts don't exist)
+
+### Features 
+
+#### Homepage
+
+* Homepage contains the site logo, navigation dropdown and welcome text explaining purpose of the site
+* Contains the recently posted recipes on the site in a card format, displaying the recipe picture, title, publication date 
+* When the recipe title is clicked it will take the user to the specific recipe detail page
+
+#### Recipe detail page
+
+* Shows all details of the recipes in a large recipe card - title, publication date, author, recipe image, ingredients, instructions, taste type, skill level and preparation time.
+* Just prior to the end of the recipe card there is a like and favourite button - which is only active for logged in users. The number of likes and favourites for that post will appear next to the respective buttons.
+* Furthermore, for logged in users there will be a comment box where they can post a comment. When they post a comment a message will come up showing 'Your post is awaiting approval'.
+* For non-logged in users a help text will show 'If you wish to like, favourite or comment on this recipe please login or signup'. 'Login' and 'Signup' in the help text will contain links to the login or signup pages, respectively.
+
+#### Your post list
+
+* Has a list of published recipes (in the format of recipe cards) that the logged in user has posted 
+* Additionally the your post list page has a list of draft recipes (in the format of recipe cards) written by the logged in user
+* Inside both the published recipes and draft posts recipe cards has an 'Edit post' link which takes them to the edit post page for that particular post/draft
+
+#### Create a post
+
+* Logged in users will be able to fill out a form to submit their own recipe posts.
+* They can either set the status of the post to draft or published.
+* If the post is set to draft, it will be saved in your posts list, where knowone except the user (and admin in the admin panel) can see.
+* If the post is set to Published and once Admin approves it, it will be visible on the homepage.
+
+#### Edit post page
+
+* Once the user has clicked on the 'Edit post' link on the 'Your posts page', they will be taken to the edit post page where they can edit all fields of the recipe.
+* The user can also delete the post if they wish here, which a pop up box will show to make them confirm whether they do in fact wish to delete the post/draft.
+
+### Your favourites list
+
+* All recipes that the user has favourited will appear here in the form of recipe cards
+* If the user clicks on the recipe card link the user is taken to that particular recipe
+
+### Logout
+
+* For authenticated users, they can click on logout in the dropdown navigation and be taken to the logout page where they will be asked to confirm if they want to logout.
+
+### Login 
+
+* For unauthenticated users, they can access the login page in the navigation bar which will take them to the login page where they can input their username and password.
+* If their username or password is incorrect, they will be informed that their details are invalid.
+
+### Register
+
+* Users can create an account on the register page (accessed in the nav dropdown for unauthenticated users), where they can fill out and submit a form with their desired username, optional email and password (must enter password twice for validation).
+* If their username has already been taken they will be asked to provide new details.
+* Once they submit a form they will be redirected to the login page where they will be asked to login with their newly created login details.
