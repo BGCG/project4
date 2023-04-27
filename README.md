@@ -120,6 +120,14 @@ Epic | CONTENT REACTION
 
 Reason for non-completion: In the project inception, I thought the ability for users to have more control over their comment reactions might be a good feature for user experience. However, when inserting this user story into the Kanban board I realised that the ability of users to delete comments might disrupt the flow of the conversation so I decided it shouldn't be implemented.
 
+## Logic flow diagram
+
+![logic-flow-diagram](https://res.cloudinary.com/delase5lw/image/upload/v1682613513/readme-imgs/Logic_diagram_P4_ucowyt.jpg)
+
+## Database schema
+
+![database-schema](https://res.cloudinary.com/delase5lw/image/upload/v1682613505/readme-imgs/Database_schema_vausro.jpg)
+
 ### Common features
 
 ### Logo 
