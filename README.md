@@ -19,7 +19,7 @@ With UX principles in mind, I wanted to address what target audience the site wo
 * To browse the site for vegan recipes
 * To register to the site to post own recipes
 * To interact with other members through commenting of recipes
-* To connect to the Vegan Vivera social media groups
+* To connect to the VeggieBytes social media groups
 
 ### Current user goals
 
@@ -118,7 +118,7 @@ Reason for non-completion of both above epics: Time constraints
 Epic | CONTENT REACTION 
 * As a site user I can update and delete my own comments so I can manage my own comments if I'm not happy with them (SHOULDN'T HAVE)
 
-Reason for non-completion: In the project inception, I thought the ability for users to have more control over their comment reactions might be a good feature for user experience. However, when inserting this epic into the Kanban board I realised that the ability of users to delete comments might disrupt the flow of the conversation so I decided it shouldn't be implemented.
+Reason for non-completion: In the project inception, I thought the ability for users to have more control over their comment reactions might be a good feature for user experience. However, when inserting this user story into the Kanban board I realised that the ability of users to delete comments might disrupt the flow of the conversation so I decided it shouldn't be implemented.
 
 ### Common features
 
@@ -136,7 +136,7 @@ Reason for non-completion: In the project inception, I thought the ability for u
 
 ### Footer 
 
-* Contains social media links to the VeganVivera community social media accounts (just links to the social media sites as the VeganVivera social media accounts don't exist)
+* Contains social media links to the VeggieBytes community social media accounts (just links to the social media sites as the VeggieBytes social media accounts don't exist)
 
 ### Features 
 
