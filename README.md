@@ -243,3 +243,41 @@ I have provided further credits in the troubleshooting section.
 #### Images
 
 All images were from pexels.com
+
+### Deployment
+I deployed the app on Heroku by following [these](https://docs.google.com/document/d/1P5CWvS5cYalkQOLeQiijpSViDPogtKM7ZGyqK-yehhQ/edit) instructions.
+
+The steps I followed - 
+
+*Note everything labelled (secret) is a secret environmental variable, key, url so cannot be reported in this README.*
+
+**Create a new app in Heroku**
+
+1. Click new on dashboard
+2. Select app name and location (Europe)
+3. Set Config variables - `DATABASE_URL : (secret)`, `SECRET KEY : (secret)`, `PORT : 8000`, `CLOUDINARY_URL: (secret)`
+
+**In Gitpod**
+
+1. Create env.py file 
+2. Import os
+3. Set up environmental variables for database `os.environ["DATABASE_URL"]="secret"`
+4. Add secret key `os.environ["DATABASE_URL"]="secret"`
+
+
+1. Create Procfile and add the following code `web: gunicorn appname.wsgi`
+2. Commit and push changes
+
+Back in Heroku
+
+1. Click manual deploy in deployment tab
+
+## Acknowledgement
+
+I would like to thank my mentor, Martina Terlevic for advice on this project
+
+## Sources 
+
+The Code Institute student template for GitPod which has all the preinstalled tools to begin this project.
+
+
