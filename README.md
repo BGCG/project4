@@ -34,3 +34,17 @@ With UX principles in mind, I wanted to address what target audience the site wo
 * To be able to moderate post content
 * To be able to moderate comments
 * To filter through recipes and comments to ensure can ease the process of moderating site
+
+### Design
+
+#### Logo
+
+The logo displays the name of the site in Caveat, which is a handwriting family provided by Google Fonts. It has a very organic look to represent the leaves of certain vegetables or sprouts from a plant. The font is coloured in green to further add to this organic theme.
+
+#### Imagery
+
+The imagery is all of different dishes where I selected those that displayed bursts of color as I wanted to create a contrast with the white background of the body of the site.
+
+#### Colour scheme
+
+The colours scheme represents the greenness of certain fruits and vegetables, while also sporting some bursts of colors (such as various shades of oranges, reds, pink) from the imagery used in the site, all contrasting with the white background of the site. 
