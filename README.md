@@ -4,7 +4,7 @@ With UX principles in mind, I wanted to address what target audience the site wo
 
 ## Target audience
 
-* Anyone who would like to convert partially or completely to a plant-based diet
+* Anyone who would like to try out plant-based recipes
 * Is open to sharing their own recipes
 * Is open to interacting with others on the site via comments
 
