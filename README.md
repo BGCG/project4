@@ -126,6 +126,8 @@ Reason for non-completion: In the project inception, I thought the ability for u
 
 * The logo on the left-hand corner of each page displays the title of the site in the characteristic green colour present throughout the site.
 
+![screenshot-of-logo](https://res.cloudinary.com/delase5lw/image/upload/v1682611691/readme-imgs/logo_wbp1nw.jpg)
+
 ### Navigation dropdown bar
 
 * Is present on the top right-hand corner of each page providing navigation to authentication/signup features and home
@@ -134,9 +136,14 @@ Reason for non-completion: In the project inception, I thought the ability for u
  - users 'favourites list' 
  - create a post form
 
+![screenshot-of-navbar-dropdown-closed](https://res.cloudinary.com/delase5lw/image/upload/v1682611690/readme-imgs/nav-dropdown_ridbh5.jpg)
+![screenshot-of-navbar-dropdown-open](https://res.cloudinary.com/delase5lw/image/upload/v1682611690/readme-imgs/dropdown-open_jetku5.jpg)
+
 ### Footer 
 
 * Contains social media links to the VeggieBytes community social media accounts (just links to the social media sites as the VeggieBytes social media accounts don't exist)
+
+![screenshot-of-footer](https://res.cloudinary.com/delase5lw/image/upload/v1682611691/readme-imgs/footer_xvgayh.jpg)
 
 ### Features 
 
@@ -146,6 +153,9 @@ Reason for non-completion: In the project inception, I thought the ability for u
 * Contains the recently posted recipes on the site in a card format, displaying the recipe picture, title, publication date 
 * When the recipe title is clicked it will take the user to the specific recipe detail page
 
+![screenshot-of-homepage-top](https://res.cloudinary.com/delase5lw/image/upload/v1682612722/readme-imgs/homepage-top_adtglm.jpg)
+![screenshot-of-homepage-recipes](https://res.cloudinary.com/delase5lw/image/upload/v1682611691/readme-imgs/homepage-recipes_vu71pr.jpg)
+
 #### Recipe detail page
 
 * Shows all details of the recipes in a large recipe card - title, publication date, author, recipe image, ingredients, instructions, taste type, skill level and preparation time.
@@ -153,11 +163,15 @@ Reason for non-completion: In the project inception, I thought the ability for u
 * Furthermore, for logged in users there will be a comment box where they can post a comment. When they post a comment a message will come up showing 'Your post is awaiting approval'.
 * For non-logged in users a help text will show 'If you wish to like, favourite or comment on this recipe please login or signup'. 'Login' and 'Signup' in the help text will contain links to the login or signup pages, respectively.
 
+![screenshot-of-recipe-detail](https://res.cloudinary.com/delase5lw/image/upload/v1682611691/readme-imgs/recipe-detail-card_qn5qya.jpg)
+
 #### Your post list
 
 * Has a list of published recipes (in the format of recipe cards) that the logged in user has posted 
 * Additionally the your post list page has a list of draft recipes (in the format of recipe cards) written by the logged in user
 * Inside both the published recipes and draft posts recipe cards has an 'Edit post' link which takes them to the edit post page for that particular post/draft
+
+![screenshot-of-your-posts-list](https://res.cloudinary.com/delase5lw/image/upload/v1682611690/readme-imgs/your-posts_vne5j4.jpg)
 
 #### Create a post
 
@@ -166,30 +180,43 @@ Reason for non-completion: In the project inception, I thought the ability for u
 * If the post is set to draft, it will be saved in your posts list, where knowone except the user (and admin in the admin panel) can see.
 * If the post is set to Published and once Admin approves it, it will be visible on the homepage.
 
+![screenshot-of-create-post](https://res.cloudinary.com/delase5lw/image/upload/v1682611690/readme-imgs/create-post_xiftd2.jpg)
+
 #### Edit post page
 
 * Once the user has clicked on the 'Edit post' link on the 'Your posts page', they will be taken to the edit post page where they can edit all fields of the recipe.
 * The user can also delete the post if they wish here, which a pop up box will show to make them confirm whether they do in fact wish to delete the post/draft.
+
+![screenshot-of-edit-post-page](https://res.cloudinary.com/delase5lw/image/upload/v1682611690/readme-imgs/edit-post_emae3t.jpg)
+![screenshot-of-edit-post-page-delete-confirm-popup](https://res.cloudinary.com/delase5lw/image/upload/v1682611690/readme-imgs/delete-confirmation_fizwz2.jpg)
 
 ### Your favourites list
 
 * All recipes that the user has favourited will appear here in the form of recipe cards
 * If the user clicks on the recipe card link the user is taken to that particular recipe
 
+![screenshot-of-favourite-list-page](https://res.cloudinary.com/delase5lw/image/upload/v1682611690/readme-imgs/edit-post_emae3t.jpg)
+
 ### Logout
 
 * For authenticated users, they can click on logout in the dropdown navigation and be taken to the logout page where they will be asked to confirm if they want to logout.
+
+![screenshot-of-logout-page](https://res.cloudinary.com/delase5lw/image/upload/v1682611690/readme-imgs/logout-page_gbz8wj.jpg)
 
 ### Login 
 
 * For unauthenticated users, they can access the login page in the navigation bar which will take them to the login page where they can input their username and password.
 * If their username or password is incorrect, they will be informed that their details are invalid.
 
+![screenshot-of-login-page](https://res.cloudinary.com/delase5lw/image/upload/v1682611690/readme-imgs/login_shjo5r.jpg)
+
 ### Register
 
 * Users can create an account on the register page (accessed in the nav dropdown for unauthenticated users), where they can fill out and submit a form with their desired username, optional email and password (must enter password twice for validation).
 * If their username has already been taken they will be asked to provide new details.
 * Once they submit a form they will be redirected to the login page where they will be asked to login with their newly created login details.
+
+![screenshot-of-signup-page](https://res.cloudinary.com/delase5lw/image/upload/v1682611690/readme-imgs/signup_or9c8r.jpg)
 
 ### Credits
 
