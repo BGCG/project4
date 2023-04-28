@@ -14,7 +14,6 @@
 </head>
 <body>
     <header>
-        {% include 'includes/messages.html' %}
         <div id="logo">
             <h1><a href="{% url 'home' %}">VeggieBytes</a></h1>
         </div>
@@ -38,6 +37,24 @@
             </div>
           </div>
           <br>
+
+          <!-- Code for messages helped by 'I think therefore I blog' and stack overflow post - see README -->
+
+          <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    {% for message in messages %}
+                    <div class="alert {{ message.tags }} alert-dismissible fade show" id="msg" role="alert">
+                    {{ message | safe }}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                {% endfor %}
+            </div>
+          </div>
+        </div>
+
     </header>
     <div id="content">
         {% block content %}
