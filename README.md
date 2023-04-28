@@ -236,7 +236,9 @@ I found the [Bootstrap 4 documentation](https://getbootstrap.com/docs/4.2/gettin
 
 In the image upload on the user post form, I found the following [resource](https://www.w3schools.com/tags/att_form_enctype.asp) documentation helpful.
 
-The Code Institute course materials including 'Hello Django' and 'I Think therefore I Blog' for guidelines in setting up and deploying the django app, as well as implementing the CRUD functionality.
+The Code Institute course materials including 'Hello Django' and 'I Think therefore I Blog' for guidelines in setting up and deploying the django app, as well as implementing the CRUD functionality. 
+
+For the messages functionality, the 'I think therefore I blog' Code Institute tutorial helpful in setting this up, but when following the tutorial exactly for some reason the close icon on the alert wasn't functional. I found changing `data-db-dismiss` to `data-dismiss` as per this [stack overflow post](https://stackoverflow.com/questions/75037418/bootstrap-4-close-button-not-working-django) resolve this issue.
 
 I have provided further credits in the troubleshooting section.
 
