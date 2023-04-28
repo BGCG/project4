@@ -10,41 +10,44 @@
 
 <h2 class="your-posts-text">Your published articles</h2>
 
+<!-- User's published posts list -->
+
 {% for post in your_published_posts %}
 
-    <div class="container">
-        <div class="row">
-            <div class="mx-auto card recipe-box col-sm-6 d-inline">
-                {% if 'placeholder' in post.recipe_image.url %}
-                <img class="card-img-top" alt="recipe image"
-                    src="https://res.cloudinary.com/delase5lw/image/upload/v1682324192/project/default.jpg.jpg">
-                {% else %}
-                <img class="card-img-top" src="{{ post.recipe_image.url }}">
-                {% endif %}
-                <div class='card-body'>
-                    <p class='card-text'>
-                        <a href="{{ post.get_absolute_url }}">
-                            <h3 class="post-title">{{ post.title }}</h3>
-                        </a>
-
-                    </p>
-                    <div class="col-sm">
-                        <p><a href="{% url 'edit-post' post.slug %}">Edit post</a></p>
-                    </div>
+<div class="container">
+    <div class="row">
+        <div class="mx-auto card recipe-box col-sm-6 d-inline">
+            {% if 'placeholder' in post.recipe_image.url %}
+            <img class="card-img-top" alt="recipe image"
+                src="https://res.cloudinary.com/delase5lw/image/upload/v1682324192/project/default.jpg.jpg">
+            {% else %}
+            <img class="card-img-top" src="{{ post.recipe_image.url }}">
+            {% endif %}
+            <div class='card-body'>
+                <p class='card-text'>
+                    <a href="{{ post.get_absolute_url }}">
+                        <h3 class="post-title">{{ post.title }}</h3>
+                    </a>
+                </p>
+                <div class="col-sm">
+                    <p><a href="{% url 'edit-post' post.slug %}">Edit post</a></p>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    {% empty %}
+{% empty %}
 
-    <p class="your-posts-text"> You have no published posts. </p>
+<p class="your-posts-text"> You have no published posts. </p>
 
-    {% endfor %}
+{% endfor %}
 
 <hr>
 
 <h2 class="your-posts-text">Your drafts</h2>
+
+<!-- User's draft posts list -->
 
 {% for post in your_draft_posts %}
 
@@ -71,11 +74,12 @@
             </div>
         </div>
     </div>
+</div>
 
-    {% empty %}
+{% empty %}
 
-    <p class="your-posts-text"> You have no draft posts. </p>
+<p class="your-posts-text"> You have no draft posts. </p>
 
-    {% endfor %}
+{% endfor %}
 
-    {% endblock %}
+{% endblock %}
