@@ -5,35 +5,34 @@
 {% block content %}
 
 {% load crispy_forms_tags %}
-{% load cloudinary %}
+
+<!-- create a recipe post form and alert to inform post was submitted -->
 
 <div class="container">
 
     {% if new_post %}
     <div class="alert alert-success" role="alert">
-    Your post is awaiting approval </div>
+        Your post is awaiting approval </div>
     {% else %}
     {% if user.is_authenticated %}
-            <form method="post" enctype="multipart/form-data">
-            <div class="row">
-                <div class='col card mb-4 mt-4 left top mx-auto'>
-                    <div class='card-body mx-auto'>
-                        <p class='card-text'>
-                            <h3>Create a Post</h3>
-                            <hr>
-                            {{ post_form | crispy }}
-                            {% csrf_token %}
-                        <button type="submit" class="btn btn-primary btn-md mb-3" id="post-btn">Submit</buttom>
-                       </p>
-                   </div>
+    <form method="post" enctype="multipart/form-data">
+        <div class="row">
+            <div class='col card mb-4 mt-4 left top mx-auto'>
+                <div class='card-body mx-auto'>
+                    <p class='card-text'>
+                        <h3>Create a Post</h3>
+                        <hr>
+                        {{ post_form | crispy }}
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-primary btn-md mb-3" id="post-btn">Submit</button>
+                    </p>
                 </div>
-            </form>
-        {% endif %}
+            </div>
+        </div>
+    </form>
+    {% endif %}
     {% endif %}
 
 </div>
 
-
-
 {% endblock %}
-
