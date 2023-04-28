@@ -41,7 +41,6 @@
                             <span class="text-success">{{ recipe.num_of_favorites }}</span>
                         </div>
                         <div class="col-sm-1 mb-3">
-
                             <form action="{% url 'favourite-view' recipe.slug %}" method="POST">
                                 {% csrf_token %}
                                 {% if user.is_authenticated %}
@@ -91,7 +90,8 @@
 <div class="container">
     {% if comment %}
     <div class="alert alert-success" role="alert">
-        <p id="comment-info">Your comment is awaiting approval</p></div>
+        <p id="comment-info">Your comment is awaiting approval</p>
+    </div>
     {% else %}
     {% if user.is_authenticated %}
     <h3 class="recipe-comment-title">Leave a comment</h3>
@@ -116,6 +116,7 @@
 </div>
 
 <!-- Recipe comments -->
+
 <h3 class="recipe-comment-title">Comments</h3>
 {% for comment in comments %}
 
@@ -135,9 +136,7 @@
 
 {% empty %}
 
-
 <p class="recipe-page-text">There are no comments for this post</p>
-
 
 {% endfor %}
 
