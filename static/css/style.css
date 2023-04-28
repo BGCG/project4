@@ -26,6 +26,7 @@ h3 {
 body {
     font-family: "EB Garamond", sans-serif;
     font-size: 20px;
+    margin: 0 0 100px;
 }
 
 a:hover {
@@ -136,6 +137,9 @@ body>header>ul {
 footer {
     height: 50px;
     width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 #copyright {
