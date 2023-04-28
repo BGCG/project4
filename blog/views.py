@@ -11,7 +11,8 @@ from django.db import IntegrityError
 class RecipeList(generic.ListView):
 
     model = Recipe
-    queryset = Recipe.objects.filter(article_approved=True, status=1).order_by('-publication_date')
+    queryset = Recipe.objects.filter(article_approved=True, status=1).order_by(
+                                                           '-publication_date')
     template_name = 'index.html'
     paginate_by = 4
 
@@ -91,9 +92,11 @@ class FavouriteView(View):
 
     def get(self, request, *args, **kwargs):
 
-        fav_recipes = Recipe.objects.filter(favourites=request.user, article_approved=True)
+        fav_recipes = Recipe.objects.filter(favourites=request.user,
+                                            article_approved=True)
 
-        return render(request, 'favourite_list.html', {'fav_recipes': fav_recipes})
+        return render(request, 'favourite_list.html',
+                               {'fav_recipes': fav_recipes})
 
 
 def create_post(request):
@@ -108,15 +111,19 @@ def create_post(request):
             post_form.save()
 
             if new_post.status == 0:
-                messages.info(request, "Your draft post has been saved in 'Your post list'!")
+                messages.info(request, "Your draft post has been saved in"
+                              " 'Your post list'!")
             elif new_post.status == 1:
                 messages.info(request, "Your post is awaiting approval!")
             return redirect('home')
         else:
             if IntegrityError:
-                messages.error(request, "We could not create your post due to invalid input. Please ensure your title is unqiue.")
+                messages.error(request, "We could not create your post due to"
+                                        "invalid input. Please ensure your "
+                                        "title is unqiue.")
             else:
-                messages.error(request, "Something went wrong - please try to create your post again.")
+                messages.error(request, "Something went wrong - "
+                               "please try to create your post again.")
 
     post_form = PostForm()
 
@@ -130,7 +137,8 @@ def create_post(request):
 
 def your_posts_view(request):
 
-    your_published_posts = Recipe.objects.filter(author=request.user, status=1, article_approved=True)
+    your_published_posts = Recipe.objects.filter(author=request.user, status=1,
+                                                 article_approved=True)
     your_draft_posts = Recipe.objects.filter(author=request.user, status=0)
 
     context = {
@@ -152,19 +160,25 @@ def edit_post(request, slug):
             recipe.article_approved = False
             post_form.save()
             if recipe.status == 0:
-                messages.info(request, "Your draft post has been saved in 'Your post list'!")
+                messages.info(request, "Your draft post has been saved "
+                                       "in 'Your post list'!")
             elif recipe.status == 1:
-                messages.info(request, "Your edited post is awaiting approval!")
+                messages.info(request,
+                              "Your edited post is awaiting approval!")
             return redirect('home')
         else:
             if IntegrityError:
-                messages.error(request, "We could not create your post due to invalid input. Please ensure your title is unqiue.")
+                messages.error(request, "We could not create your post due to "
+                               "invalid input. Please ensure your title"
+                               "is unqiue.")
             else:
-                messages.error(request, "Something went wrong - please try to create your post again.")
+                messages.error(request, "Something went wrong"
+                               "- please try to create your post again.")
 
     post_form = PostForm(instance=recipe)
 
-    return render(request, 'edit_post.html', {'post_form':post_form, 'recipe': recipe})
+    return render(request, 'edit_post.html', {'post_form': post_form,
+                                              'recipe': recipe})
 
 
 def delete_post(request, slug):
