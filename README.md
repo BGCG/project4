@@ -241,6 +241,7 @@ Reason for non-completion: In the project inception, I thought the ability for u
 * Once they submit a form they will be redirected to the login page where they will be asked to login with their newly created login details.
 
 ![screenshot-of-signup-page](https://res.cloudinary.com/delase5lw/image/upload/v1682611690/readme-imgs/signup_or9c8r.jpg)
+
 ### Testing 
 
 Manual tests are documented in the following docs:
@@ -307,9 +308,9 @@ The Code Institute student template for GitPod which has all the preinstalled to
 
 ## References for introduction to README
 
-Souza et al. 2020 : https://www.researchgate.net/publication/338804012_Perceptions_about_Veganism
-Google trends : https://trends.google.com/trends/explore?date=all&q=%2Fm%2F07_hy,environmental%20impact%20of%20farming%20industry
-Economist 2020 : https://www.economist.com/graphic-detail/2020/01/29/interest-in-veganism-is-surging?utm_medium=cpc.adword.pd&utm_source=google&ppccampaignID=18156330227&ppcadID=&utm_campaign=a.22brand_pmax&utm_content=conversion.direct-response.anonymous&gclid=Cj0KCQjw3a2iBhCFARIsAD4jQB3TlocNmcIDk-WQztWGP6RmM0A30D7lwWv92GTlDcOK1A6riYDJwDIaAtUJEALw_wcB&gclsrc=aw.ds
-Sentient Media 2022 : https://sentientmedia.org/increase-in-veganism/#:~:text=Is%20Veganism%20a%20Growing%20Industry,how%20much%20meat%20they%20eat.
-Forbes 2018 : https://www.forbes.com/sites/janetforgrieve/2018/11/02/picturing-a-kindler-gentler-world-vegan-month/?sh=d1fc8ff2f2bb
+* [Souza et al. 2020](https://www.researchgate.net/publication/338804012_Perceptions_about_Veganism)
+* [Google trends](https://trends.google.com/trends/explore?date=all&q=%2Fm%2F07_hy,environmental%20impact%20of%20farming%20industry)
+* [Economist 2020](https://www.economist.com/graphic-detail/2020/01/29/interest-in-veganism-is-surging?utm_medium=cpc.adword.pd&utm_source=google&ppccampaignID=18156330227&ppcadID=&utm_campaign=a.22brand_pmax&utm_content=conversion.direct-response.anonymous&gclid=Cj0KCQjw3a2iBhCFARIsAD4jQB3TlocNmcIDk-WQztWGP6RmM0A30D7lwWv92GTlDcOK1A6riYDJwDIaAtUJEALw_wcB&gclsrc=aw.ds)
+* [Sentient Media 2022](https://sentientmedia.org/increase-in-veganism/#:~:text=Is%20Veganism%20a%20Growing%20Industry,how%20much%20meat%20they%20eat.)
+* [Forbes 2018](https://www.forbes.com/sites/janetforgrieve/2018/11/02/picturing-a-kindler-gentler-world-vegan-month/?sh=d1fc8ff2f2bb)
 
