@@ -8,6 +8,8 @@
 
 <div class="container">
 
+  <!-- alert for when user submits draft or post -->
+
   {% if new_post and new_post.status == 1 %}
   <div class="alert alert-success" role="alert">
     Your post is awaiting approval </div>
@@ -18,6 +20,7 @@
 
   {% if user.is_authenticated %}
 
+  <!-- edit post form -->
   <h3>Edit Post</h3>
   <div class="row">
     <div class='col card mb-4 mt-4 left top mx-auto'>
@@ -27,13 +30,15 @@
             {{ post_form | crispy }}
             {% csrf_token %}
           </p>
-          <button type="submit" class="btn btn-primary btn-md d-inline">Update</buttom>
+          <button type="submit" class="btn btn-primary btn-md d-inline">Update</button>
+        </div>
       </form>
       <br>
     </div>
     <div class="d-flex flex-row-reverse">
       <button type="submit" class="btn btn-link" id="delete-btn">Delete post</button>
     </div>
+    <!-- Modal for delete confirmation -->
     <div id="modal" class="modal" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -55,13 +60,10 @@
     </div>
   </div>
 </div>
-</div>
 
 
 {% endif %}
 {% endif %}
-
-</div>
 
 
 {% endblock %}
