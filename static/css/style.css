@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Crimson+Pro:wght@300;400;500&family=EB+Garamond:wght@400;600&family=NTR&display=swap');
 
-
 /* Creation of stick footer helped by following post -
 https://stackoverflow.com/questions/21805590/css-sticky-footer */
 
@@ -24,7 +23,6 @@ h3 {
     color: #359359;
 }
 
-
 body {
     font-family: "EB Garamond", sans-serif;
     font-size: 20px;
@@ -35,22 +33,15 @@ a:hover {
     text-decoration: none;
 }
 
-/* 
-.dropdown-item:active {
-    color: black;
-} */
-
 #delete-btn {
     text-decoration: none;
     color: #359359;
     font-size: 18px;
 }
+
 /* logo and navigation dropdown styling */
 
 #logo {
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
     float: left;
     height: 70px;
     padding-top: 12px;
@@ -58,11 +49,11 @@ a:hover {
     margin-left: 10px;
 }
 
-#logo > h1 > a {
+#logo>h1>a {
     color: #359359;
 }
 
-#logo > h1 > a:hover {
+#logo>h1>a:hover {
     text-decoration: none;
 }
 
@@ -86,7 +77,7 @@ a {
     background-color: #359359;
 }
 
-body > header > ul {
+body>header>ul {
     padding: 0;
 }
 
@@ -118,10 +109,10 @@ body > header > ul {
     padding: 10px;
 }
 
-
 /* footer including social media links styling */
 
-#social-media-heading, #social-media-links {
+#social-media-heading,
+#social-media-links {
     display: flex;
     width: 100%;
     align-items: center;
@@ -144,14 +135,8 @@ body > header > ul {
 
 footer {
     height: 50px;
-    /* position: absolute; */
-    /* bottom: 0; */
     width: 100%;
 }
-
-/* #social-media-links {
-    margin: 0 auto;
-} */
 
 #copyright {
     font-size: 15px;
@@ -160,12 +145,9 @@ footer {
     float: right;
     padding: 5px;
 }
-/* 
-body > section > footer > ul {
-    padding: 0;
-} */
 
-body > footer > ul, #content > footer > ul {
+body>footer>ul,
+#content>footer>ul {
     padding: 0;
 }
 
@@ -173,7 +155,7 @@ body > footer > ul, #content > footer > ul {
 
 .recipe-box {
     height: 400px;
-    color:#406551;
+    color: #406551;
 }
 
 .card {
@@ -197,13 +179,13 @@ body > footer > ul, #content > footer > ul {
     padding: 0 10px;
 }
 
-
 #recipe-list-title {
     justify-content: center;
     text-align: center;
 }
 
-.like-button,.fav-button {
+.like-button,
+.fav-button {
     background-color: inherit;
 }
 
@@ -216,7 +198,7 @@ body > footer > ul, #content > footer > ul {
 
 /* recipe detail page styling  */
 
-#content > div:nth-child(1) {
+#content>div:nth-child(1) {
     padding-top: 80px;
 }
 
@@ -234,8 +216,9 @@ body > footer > ul, #content > footer > ul {
 
 /* logout, login and register page styling */
 
-#logout-background, #login-background, #signup-background {
-    /* background-color: #359359; */
+#logout-background,
+#login-background,
+#signup-background {
     background-image: url('https://res.cloudinary.com/delase5lw/image/upload/v1682512836/pexels-engin-akyurt-2456435_2_k5lqzn.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -245,24 +228,23 @@ body > footer > ul, #content > footer > ul {
     margin-top: 80px;
 }
 
-#logout-box, #login-box, #signup-box {
+#logout-box,
+#login-box,
+#signup-box {
     background-color: white;
     padding: 20px;
     border-radius: 25px;
     width: fit-content;
 }
 
-/* #login-box > form {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-} */
-
-#id_login, #id_password, #id_username, #id_email, 
-#id_password, #id_password1, #id_password2 {
-    /* width: auto; */
+#id_login,
+#id_password,
+#id_username,
+#id_email,
+#id_password,
+#id_password1,
+#id_password2 {
     display: block;
-    /* float: none; */
 }
 
 /* edit post page styling */
@@ -270,7 +252,7 @@ body > footer > ul, #content > footer > ul {
 #delete-btn {
     width: fit-content !important;
     background-color: white !important;
-} 
+}
 
 
 /* favourite list page styling */
@@ -280,11 +262,8 @@ body > footer > ul, #content > footer > ul {
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 50px;
-    /* background-color: #359359; */
     width: 100%;
     height: 400px;
-    /* position: relative;
-    align-content: center; */
 }
 
 .banners {
@@ -300,7 +279,7 @@ body > footer > ul, #content > footer > ul {
     text-align: center;
 }
 
-
+/* media queries for screens 750px and below */
 
 @media (max-width: 750px) {
 
@@ -321,9 +300,12 @@ body > footer > ul, #content > footer > ul {
 
 }
 
+/* media queries for screens 400px and below */
+
 @media (max-width: 400px) {
 
-    #logo, .dropdown {
+    #logo,
+    .dropdown {
         float: none;
         margin: 0 auto;
         padding: 0;
@@ -347,11 +329,14 @@ body > footer > ul, #content > footer > ul {
         margin-top: 0;
     }
 
-    #your-posts-break, #home-break {
+    #your-posts-break,
+    #home-break {
         display: none;
     }
 
 }
+
+/* media queries for screens 350px and below */
 
 @media (max-width: 350px) {
 
