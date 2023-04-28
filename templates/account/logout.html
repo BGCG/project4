@@ -9,13 +9,10 @@
 <div class="container-fluid" id="logout-background">
   <div class="row">
     <div class="col-md-8 offset-md-2 mx-auto">
-
       <div class="col-md-8 offset-md-2 mx-auto" id="logout-box">
-
         <h2><strong>{% trans "Sign Out" %}</strong></h2>
-
         <p>{% trans 'Are you sure you want to sign out?' %}</p>
-
+        <!-- logout form -->
         <form method="post" action="{% url 'account_logout' %}">
           {% csrf_token %}
           {% if redirect_field_value %}
