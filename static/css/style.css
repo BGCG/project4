@@ -207,6 +207,13 @@ body > footer > ul, #content > footer > ul {
     background-color: inherit;
 }
 
+/* all recipes page styling */
+
+#all-recipes-title {
+    justify-content: center;
+    text-align: center;
+}
+
 /* recipe detail page styling  */
 
 #content > div:nth-child(1) {

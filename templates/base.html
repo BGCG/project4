@@ -25,6 +25,7 @@
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
               <button class="dropdown-item" type="button"><a href="{% url 'home' %}">Home</a></button>
+              <button class="dropdown-item" type="button"><a href="{% url 'all-recipes' %}">All recipes</a></button>
               {% if user.is_authenticated%}
               <button class="dropdown-item" type="button"><a href="{% url 'favourite-list' %}">Favourite list</a></button>
               <button class="dropdown-item" type="button"><a href="{% url 'your-posts-list' %}">Your post list</a></button>
@@ -90,7 +91,7 @@
             alert.close();
             }, 3000);
         }
-        
+
         $('#delete-btn').click(function() {
             $('#modal').modal('show');
         })

@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}All recipes{% endblock %}
+
+{% block content %}
+
+<div id="all-recipes-title">
+    <h2>All recipes</h2>
+</div>
+
+<div class="container">
+    <div class="row">
+        {% for recipe in recipe_list %}
+            <div  class="mx-auto card recipe-box col-sm-5 d-inline">
+                {% if 'placeholder' in recipe.recipe_image.url %}
+                <img class="card-img-top" alt="recipe image"
+                src="https://res.cloudinary.com/delase5lw/image/upload/v1682324192/project/default.jpg.jpg">
+                {% else %}
+                <img class="card-img-top" id="recipe-img" src="{{ recipe.recipe_image.url }}">
+                {% endif %} 
+            <div class='card-body'>
+                <p class='card-text'>
+                    <a href="{{ recipe.get_absolute_url }}">
+                        <h3 class="post-title">{{ recipe.title }}</h3>
+                    </a>
+                    Posted on {{ reicpe.publication_date }} by <strong>{{ recipe.author }}</strong>
+                </p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

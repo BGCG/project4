@@ -16,6 +16,13 @@ class RecipeList(generic.ListView):
     paginate_by = 4
 
 
+class AllRecipes(generic.ListView):
+
+    model = Recipe
+    queryset = Recipe.objects.filter(article_approved=True, status=1)
+    template_name = 'all_recipes.html'
+
+
 def recipe_detail(request, slug):
 
     recipe = get_object_or_404(Recipe, slug=slug)
