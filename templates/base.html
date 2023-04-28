@@ -82,12 +82,13 @@
     <script src="https://kit.fontawesome.com/d521ba99a7.js" crossorigin="anonymous"></script>
     <script>
 
-        // Timeout function from 'I think therefore I am' CI tutorial
-        setTimeout(function() {
-            let messages = document.getElementById("msg");
+        // Writing of timeout function helped by 'I think therefore I am' CI tutorial
+        let messages = document.getElementById("msg");
+        if (messages) {
+            setTimeout(function() {
             let alert = new bootstrap.Alert(messages);
             alert.close();
-        }, 3000);
+            }, 3000);
 
         $('#delete-btn').click(function() {
             $('#modal').modal('show');
