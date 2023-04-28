@@ -5,45 +5,46 @@
 
 {% block content %}
 
-{% load cloudinary %}
-
-
 <!-- Hero image banner and welcome to site text -->
 <br id="home-break">
 <div id="hero-image">
-    <div id="intro-text"><h2>Plant-based recipes for all.</h2>
+    <div id="intro-text">
+        <h2>Plant-based recipes for all.</h2>
     </div>
 </div>
 
 <div id="welcome-text">
     <hr>
     <p>
-        Here at VeggieBytes we provide a platform for users to share plant-based recipes. 
-        Switching partially or completely to a plant-based diet can be overwhelming as many of our favourite dishes often require animal products. 
-        Here the community and the VeggieBytes team provide recipes of varying difficulties - allowing users of varying confidence levels in cooking to try plant-based recipes.
-        Whether you're concerned about animal welfare, the environment, or simply just want to try out some plant-based recipes - this is the place for you! 
-        If you would like to post your own plant-based recipes, interact with the conversation or create your own favourite recipe list - please sign up with us and join the community!    
+        Here at VeggieBytes we provide a platform for users to share plant-based recipes.
+        Switching partially or completely to a plant-based diet can be overwhelming as many of our favourite dishes
+        often require animal products.
+        Here the community and the VeggieBytes team provide recipes of varying difficulties - allowing users of varying
+        confidence levels in cooking to try plant-based recipes.
+        Whether you're concerned about animal welfare, the environment, or simply just want to try out some plant-based
+        recipes - this is the place for you!
+        If you would like to post your own plant-based recipes, interact with the conversation or create your own
+        favourite recipe list - please sign up with us and join the community!
     </p>
     <hr>
 </div>
-<!-- Recipe cards -->
-<div class="sm-sceen-box">
 
 <div id="recipe-list-title">
     <h2>Recently posted recipes</h2>
 </div>
 
+<!-- Recipe cards -->
+
 <div class="container">
     <div class="row">
         {% for recipe in recipe_list %}
-            <div  class="mx-auto card recipe-box col-sm-5 d-inline">
-                {% if 'placeholder' in recipe.recipe_image.url %}
-                <img class="card-img-top" alt="recipe image"
+        <div class="mx-auto card recipe-box col-sm-5 d-inline">
+            {% if 'placeholder' in recipe.recipe_image.url %}
+            <img class="card-img-top" alt="recipe image"
                 src="https://res.cloudinary.com/delase5lw/image/upload/v1682324192/project/default.jpg.jpg">
-                {% else %}
-                <!-- {% cloudinary recipe.recipe_image width=100 height=100 %} -->
-                <img class="card-img-top" id="recipe-img" src="{{ recipe.recipe_image.url }}">
-                {% endif %} 
+            {% else %}
+            <img class="card-img-top" id="recipe-img" src="{{ recipe.recipe_image.url }}">
+            {% endif %}
             <div class='card-body'>
                 <p class='card-text'>
                     <a href="{{ recipe.get_absolute_url }}">
@@ -56,7 +57,5 @@
         {% endfor %}
     </div>
 </div>
-</div>
-    
 
 {% endblock %}
