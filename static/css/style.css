@@ -221,6 +221,10 @@ body > footer > ul, #content > footer > ul {
     text-align: center;
 }
 
+#comment-info {
+    text-align: center;
+}
+
 /* logout, login and register page styling */
 
 #logout-background, #login-background, #signup-background {
