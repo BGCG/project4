@@ -16,6 +16,9 @@
                     <h2 class="post-title">{{ recipe.title }}</h2>
                     <strong>Author:</strong> {{ recipe.author }}<br>
                     <strong>Publication date:</strong> {{ recipe.publication_date }}<br>
+                    {% if recipe.publication_date != recipe.edited_date %}
+                    <strong>Edited on:</strong> {{ recipe.edited_date }}<br>
+                    {% endif %}
                     <hr>
                     {% if 'placeholder' in recipe.recipe_image.url %}
                     <img class="card-img-top" alt="recipe-image"
