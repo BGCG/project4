@@ -9,7 +9,9 @@ from django.db import IntegrityError
 
 
 class RecipeList(generic.ListView):
-
+    """
+    View paginated recipe list
+    """
     model = Recipe
     queryset = Recipe.objects.filter(article_approved=True, status=1).order_by(
                                                            '-publication_date')
@@ -18,13 +20,19 @@ class RecipeList(generic.ListView):
 
 
 class AllRecipes(generic.ListView):
-
+    """
+    View all recipes in site
+    """
     model = Recipe
     queryset = Recipe.objects.filter(article_approved=True, status=1)
     template_name = 'all_recipes.html'
 
 
 def recipe_detail(request, slug):
+
+    """
+    View details of recipe and comments, as well as post a comment
+    """
 
     recipe = get_object_or_404(Recipe, slug=slug)
     comments = recipe.comments.filter(approved=True)
@@ -65,6 +73,10 @@ def recipe_detail(request, slug):
 
 class LikeToggle(View):
 
+    """
+    Toggling of the like button
+    """
+
     def post(self, request, slug, *args, **kwargs):
 
         recipe = get_object_or_404(Recipe, slug=slug)
@@ -78,6 +90,11 @@ class LikeToggle(View):
 
 
 class FavouriteView(View):
+
+    """
+    Toggling of favourite button
+    Get user's favourite recipe list
+    """
 
     def post(self, request, slug, *args, **kwargs):
 
@@ -100,6 +117,10 @@ class FavouriteView(View):
 
 
 def create_post(request):
+
+    """
+    Create new post on site
+    """
 
     new_post = None
 
@@ -137,6 +158,10 @@ def create_post(request):
 
 def your_posts_view(request):
 
+    """
+    View your post list
+    """
+
     your_published_posts = Recipe.objects.filter(author=request.user, status=1,
                                                  article_approved=True)
     your_draft_posts = Recipe.objects.filter(author=request.user, status=0)
@@ -150,6 +175,10 @@ def your_posts_view(request):
 
 
 def edit_post(request, slug):
+
+    """
+    Edit a post
+    """
 
     recipe = get_object_or_404(Recipe, slug=slug)
 
@@ -182,6 +211,11 @@ def edit_post(request, slug):
 
 
 def delete_post(request, slug):
+
+    """
+    Delete a post
+    """
+
     recipe = get_object_or_404(Recipe, slug=slug)
     recipe.delete()
     messages.info(request, "Post successfully deleted")
