@@ -47,8 +47,6 @@ def recipe_detail(request, slug):
             comment = form.save(commit=False)
             comment.recipe = recipe
             comment.save()
-            # messages.info(request, "Your comment is awaiting approval!")
-            # return redirect('recipe-detail', slug=recipe.slug)
     else:
         form = CommentForm()
 
@@ -101,14 +99,14 @@ class FavouriteView(View):
 def create_post(request):
 
     new_post = None
-    
+
     if request.method == 'POST':
         post_form = PostForm(request.POST, request.FILES)
         if post_form.is_valid():
             new_post = post_form.save(commit=False)
             new_post.author = request.user
             post_form.save()
-            
+
             if new_post.status == 0:
                 messages.info(request, "Your draft post has been saved in 'Your post list'!")
             elif new_post.status == 1:
@@ -117,16 +115,16 @@ def create_post(request):
         else:
             if IntegrityError:
                 messages.error(request, "We could not create your post due to invalid input. Please ensure your title is unqiue.")
-            else: 
+            else:
                 messages.error(request, "Something went wrong - please try to create your post again.")
-    
+
     post_form = PostForm()
-    
+
     context = {
         'post_form': post_form,
         'new_post': new_post,
     }
-    
+
     return render(request, 'create_post.html', context)
 
 
