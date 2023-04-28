@@ -4,6 +4,10 @@ from django import forms
 
 class PostForm(forms.ModelForm):
 
+    """
+    Create a post and edit post form
+    """
+
     class Meta:
         model = Recipe
         fields = ('title', 'recipe_image', 'ingredients', 'instructions',
@@ -12,6 +16,10 @@ class PostForm(forms.ModelForm):
 
 
 class CommentForm(forms.ModelForm):
+
+    """
+    Comment form
+    """
 
     class Meta:
         model = Comment
