@@ -10,9 +10,17 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 
 class Recipe(models.Model):
 
+    """
+    Set choices for status, difficulty and taste fields
+    """
+
     STATUS = ((0, "Draft"), (1, "Published"))
     DIFFICULTY = ((None, "Choose diffucluty level"), (0, "Easy"), (1, "Intermediate"), (2, "Advanced"),)
     TASTE = ((None, "Choose your taste"), (1, "Sweet"), (2, "Savoury"),)
+
+    """
+    Define Recipe model fields
+    """
 
     title = models.CharField(max_length=150, unique=True)
     slug = models.SlugField(max_length=150, null=False, unique=True)
@@ -30,6 +38,10 @@ class Recipe(models.Model):
     likes = models.ManyToManyField(User, related_name='blog_likes', blank=True)
     favourites = models.ManyToManyField(User, related_name='blog_favourites', blank=True)
 
+    """
+    order recipes publication date descending
+    """
+
     class Meta:
         ordering = ['-publication_date']
 
@@ -43,8 +55,15 @@ class Recipe(models.Model):
     def get_absolute_url(self):
         return reverse("recipe-detail", kwargs={"slug": self.slug})
 
+    """
+    return total numbers of likes for each recipe
+    """
     def num_of_likes(self):
         return self.likes.count()
+
+    """
+    return total numbers of favourites for each recipe
+    """
 
     def num_of_favorites(self):
         return self.favourites.count()
@@ -52,12 +71,19 @@ class Recipe(models.Model):
 
 class Comment(models.Model):
 
+    """ 
+    Define Comment model fields
+    """
+
     recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE, related_name='comments')
     name = models.CharField(max_length=80)
     created_on = models.DateTimeField(auto_now_add=True)
     body = models.TextField()
     approved = models.BooleanField(default=False)
 
+    """
+    order based on which comment was created first
+    """
     class Meta:
         ordering = ['created_on']
 
