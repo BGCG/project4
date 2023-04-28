@@ -241,6 +241,14 @@ Reason for non-completion: In the project inception, I thought the ability for u
 * Once they submit a form they will be redirected to the login page where they will be asked to login with their newly created login details.
 
 ![screenshot-of-signup-page](https://res.cloudinary.com/delase5lw/image/upload/v1682611690/readme-imgs/signup_or9c8r.jpg)
+### Testing 
+
+Manual tests are documented in the following docs:
+
+* [Unique features testing - Page 1](https://res.cloudinary.com/delase5lw/image/upload/v1682698344/readme-imgs/manual-testing-p1_z0kv2i.jpg)
+* [Unique features testing - Page 2](https://res.cloudinary.com/delase5lw/image/upload/v1682698344/readme-imgs/manual-testing-p2_vmdrsy.jpg)
+* [General features testing](https://res.cloudinary.com/delase5lw/image/upload/v1682698344/readme-imgs/general-features-manual-testing_txvlvr.jpg)
+* [Admin features testing](https://res.cloudinary.com/delase5lw/image/upload/v1682698344/readme-imgs/admin-manual-testing_ep8fd5.jpg)
 
 ### Credits
 
@@ -261,6 +269,7 @@ I have provided further credits in the troubleshooting section.
 All images were from pexels.com
 
 ### Deployment
+
 I deployed the app on Heroku by following [these](https://docs.google.com/document/d/1P5CWvS5cYalkQOLeQiijpSViDPogtKM7ZGyqK-yehhQ/edit) instructions.
 
 The steps I followed - 
