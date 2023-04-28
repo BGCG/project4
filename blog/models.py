@@ -39,11 +39,11 @@ class Recipe(models.Model):
     favourites = models.ManyToManyField(User, related_name='blog_favourites', blank=True)
 
     """
-    order recipes publication date descending
+    order recipes by most recently published
     """
 
     class Meta:
-        ordering = ['-publication_date']
+        ordering = ['publication_date']
 
     def __str__(self):
         return self.title
