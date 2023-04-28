@@ -1,6 +1,20 @@
-### Strategy plane
+# VeggieBytes
 
-With UX principles in mind, I wanted to address what target audience the site would serve, what are their goals and what are their concerns. With this in mind, I found that I wanted to create a vegan recipe site that was all inclusive and also had varying difficulties to cater to people of all cooking confidences. I also wanted to create a community recipes site to address the lack of support an individual can sometimes feel when they are switching to a complete or partial plant-based diet.
+### Background
+
+Curiosity in Veganism is on the rise. Google trends analysis has suggested an increase in the searching of the term 'Veganism' from the years 2004 and 2022, with the top countries for searches including Israel, Australia, UK, Australia and New Zealand (Google Trends). Based on a poll analysis, the number of vegans in the UK quadrupled between 2014 and 2018, from 150,000 and 600,000 people (Economist, 2020). Furthermore, the number of US consumers who identify with eating a vegan diet has increased from 1% to 6% between 2014 and 2017 (Forbes, 2018).
+
+This rise in interest in veganism and plant-based diets has not gone unnoticed by big business, with many supermarkets and fast-food chains offering vegan options as they cater to a new consumer base. The global Vegan food industry grew from $14.44 to $15.77 billion in 2020 compared to 2021 and there is projected growth over the next several years (Sentient media, 2022).
+
+A qualitative based survey analysis has suggested that non-vegan participants mentioned that there is a low variety of vegan food and veganism is 'too difficult'. However, other non-vegan participants suggested that one of the reasons that attracts them to veganism is feeling a part of a community (Souza et al. 2020). 
+
+VeggieBytes aims to tackle the growing interest in veganism and plant-based diets by offering an online platform for users who are curious about a plant-based diet, have a partial plant-based diet or a complete plant-based diet to share recipes of varying difficulty levels and connect through commenting and recipe sharing.
+
+### Site purpose
+
+VeggieBytes is a plant-based recipe sharing site which aims to connect users through sharing recipes, commenting and connecting to the VeggieBytes social media groups. It aims to provide recipes of varying difficulty levels to cater those for all cooking confidence levels. 
+
+VeggieBytes is hosted on Heroku and can be accessed [here](https://vegan-recipe-app.herokuapp.com/). This project was created for the purpose of the Code Institute Full Stack Development Diploma portfolio 4 project submission.
 
 ## Target audience
 
@@ -282,4 +296,11 @@ I would like to thank my mentor, Martina Terlevic for advice on this project
 
 The Code Institute student template for GitPod which has all the preinstalled tools to begin this project.
 
+## References for introduction to README
+
+Souza et al. 2020 : https://www.researchgate.net/publication/338804012_Perceptions_about_Veganism
+Google trends : https://trends.google.com/trends/explore?date=all&q=%2Fm%2F07_hy,environmental%20impact%20of%20farming%20industry
+Economist 2020 : https://www.economist.com/graphic-detail/2020/01/29/interest-in-veganism-is-surging?utm_medium=cpc.adword.pd&utm_source=google&ppccampaignID=18156330227&ppcadID=&utm_campaign=a.22brand_pmax&utm_content=conversion.direct-response.anonymous&gclid=Cj0KCQjw3a2iBhCFARIsAD4jQB3TlocNmcIDk-WQztWGP6RmM0A30D7lwWv92GTlDcOK1A6riYDJwDIaAtUJEALw_wcB&gclsrc=aw.ds
+Sentient Media 2022 : https://sentientmedia.org/increase-in-veganism/#:~:text=Is%20Veganism%20a%20Growing%20Industry,how%20much%20meat%20they%20eat.
+Forbes 2018 : https://www.forbes.com/sites/janetforgrieve/2018/11/02/picturing-a-kindler-gentler-world-vegan-month/?sh=d1fc8ff2f2bb
 
