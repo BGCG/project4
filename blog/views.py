@@ -141,7 +141,7 @@ def edit_post(request, slug):
     recipe = get_object_or_404(Recipe, slug=slug)
 
     if request.method == 'POST':
-        post_form = PostForm(request.POST, instance=recipe)
+        post_form = PostForm(request.POST, request.FILES, instance=recipe)
 
         if post_form.is_valid():
             recipe.article_approved = False
