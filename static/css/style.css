@@ -373,4 +373,9 @@ body>footer>ul,
         display: none;
     }
 
+    #login-background, 
+    #signup-background {
+        padding: 0;
+    }
+
 }
