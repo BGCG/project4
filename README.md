@@ -242,6 +242,54 @@ Reason for non-completion: In the project inception, I thought the ability for u
 
 ![screenshot-of-signup-page](https://res.cloudinary.com/delase5lw/image/upload/v1682611690/readme-imgs/signup_or9c8r.jpg)
 
+### Technologies used
+
+#### Integrated development environment
+
+* GitPod
+
+#### Storage and version control
+
+* Github
+
+#### Storage and hosting
+
+* Heroku
+* Cloudinary
+
+#### Libraries, Frameworks and templates
+
+* Django
+* Bootstrap
+* jQuery
+* Google Fonts
+* Font Awesome
+
+#### Languages used 
+
+* Python
+* Javascript
+* HTML
+* CSS
+
+#### Databases
+
+* SQLite3 for development
+* PostgreSQL for productions
+
+#### Other tools
+
+* PEP8 validator
+* JShint validator
+* Google Developer tools (including Lighthouse)
+* W3C HTML Validator
+* W3C Jigsaw CSS Validator
+
+
+
+
+
+
 ### Testing 
 
 Manual tests are documented in the following docs:
