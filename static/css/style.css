@@ -35,7 +35,8 @@ header {
 
 #home-break, 
 #all-recipes-break,
-#recipe-detail-break {
+#recipe-detail-break,
+.auth-pages-break {
     display: none;
 }
 
@@ -234,10 +235,9 @@ body>footer>ul,
     background-image: url('https://res.cloudinary.com/delase5lw/image/upload/v1682512836/pexels-engin-akyurt-2456435_2_k5lqzn.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 20px;
     height: 700px;
+    padding: 50px;
     align-items: center;
-    margin-top: 80px;
 }
 
 #logout-box,
@@ -349,7 +349,8 @@ body>footer>ul,
 
     #home-break,
     #all-recipes-break,
-    #recipe-detail-break {
+    #recipe-detail-break,
+    .auth-pages-break {
         display: block;
     }
 
