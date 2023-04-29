@@ -202,9 +202,9 @@ body>footer>ul,
 
 /* recipe detail page styling  */
 
-#content>div:nth-child(1) {
+/* #content>div:nth-child(1) {
     padding-top: 80px;
-}
+} */
 
 .recipe-comment-title {
     text-align: center;
@@ -268,13 +268,18 @@ body>footer>ul,
     margin-top: 50px;
     width: 100%;
     height: 400px;
+    position: relative;
 }
 
 .banners {
     background-color: white;
     padding: 5px;
-    margin-top: 270px;
     width: fit-content;
+}
+
+#fav-page-image > div {
+    position: absolute;
+    margin-top: 350px;
 }
 
 /* styling your posts page */
@@ -295,11 +300,8 @@ body>footer>ul,
         height: 200px;
     }
 
-    .banners {
-        background-color: white;
-        padding: 5px;
-        margin-top: 80px;
-        width: fit-content;
+    #fav-page-image > div {
+        margin-top: 150px;
     }
 
 }
