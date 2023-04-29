@@ -30,7 +30,7 @@ body {
 }
 
 header {
-    height: 100px;
+    height: 90px;
 }
 
 #home-break, 
@@ -274,7 +274,7 @@ body>footer>ul,
     background-image: url('https://res.cloudinary.com/delase5lw/image/upload/v1682515487/fav-list-image_baw0u7.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: 50px;
+    margin-top: 5px;
     width: 100%;
     height: 400px;
     position: relative;
@@ -301,12 +301,17 @@ body>footer>ul,
 
 @media (max-width: 750px) {
 
+    header {
+        height: 95px;
+    }
+    
     #fav-page-image {
         background-image: url('https://res.cloudinary.com/delase5lw/image/upload/v1682515733/fav-list-image_baw0u7_a83c61_4ee779.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
         height: 200px;
+        margin-top: 5px;
     }
 
     #fav-page-image > div {
@@ -341,7 +346,7 @@ body>footer>ul,
     }
 
     #fav-page-image {
-        margin-top: 0;
+        margin-top: 30px;
     }
 
     #your-posts-break {
