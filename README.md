@@ -219,7 +219,7 @@ Reason for non-completion: In the project inception, I thought the ability for u
 * All recipes that the user has favourited will appear here in the form of recipe cards
 * If the user clicks on the recipe card link the user is taken to that particular recipe
 
-![screenshot-of-favourite-list-page](https://res.cloudinary.com/delase5lw/image/upload/v1682611690/readme-imgs/edit-post_emae3t.jpg)
+![screenshot-of-favourite-list-page](https://res.cloudinary.com/delase5lw/image/upload/v1682611691/readme-imgs/favourites-page_eesgtr.jpg)
 
 ### Logout
 
