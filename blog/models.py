@@ -43,7 +43,7 @@ class Recipe(models.Model):
     """
 
     class Meta:
-        ordering = ['publication_date']
+        ordering = ['-publication_date']
 
     def __str__(self):
         return self.title
