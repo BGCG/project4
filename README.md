@@ -285,12 +285,19 @@ Reason for non-completion: In the project inception, I thought the ability for u
 * W3C HTML Validator
 * W3C Jigsaw CSS Validator
 
-
-
-
-
-
 ### Testing 
+
+#### Lighthouse report
+
+#### HTML validation
+
+![HTML validaion results](https://res.cloudinary.com/delase5lw/image/upload/v1682757835/html-validator_eydlts.jpg)
+
+#### CSS validation
+
+![CSS validaion results](https://res.cloudinary.com/delase5lw/image/upload/v1682757824/css-validator_uuqbyw.jpg)
+
+#### Manual testing
 
 Manual tests are documented in the following docs:
 
