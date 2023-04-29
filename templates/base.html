@@ -109,6 +109,15 @@
         $('#delete-btn').click(function () {
             $('#modal').modal('show');
         });
+
+        // Comment notification timeout
+        let commentAlert = document.getElementById("comment-notification");
+        if (commentAlert) {
+            setTimeout(function () {
+                let alert = new bootstrap.Alert(commentAlert);
+                alert.close();
+            }, 3000);
+        }
     </script>
 
 </body>
