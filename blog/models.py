@@ -71,7 +71,7 @@ class Recipe(models.Model):
 
 class Comment(models.Model):
 
-    """ 
+    """
     Define Comment model fields
     """
 
