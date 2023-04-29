@@ -23,10 +23,10 @@
                     {% endif %}
                     <hr>
                     {% if 'placeholder' in recipe.recipe_image.url %}
-                    <img class="card-img-top" alt="recipe-image"
+                    <img class="card-img-top" alt="recipe image default"
                         src="https://res.cloudinary.com/delase5lw/image/upload/v1682324192/project/default.jpg.jpg">
                     {% else %}
-                    <img class="card-img-top" src="{{ recipe.recipe_image.url }}">
+                    <img class="card-img-top" alt="custom recipe image" src="{{ recipe.recipe_image.url }}">
                     {% endif %}
                     <strong>Taste type:</strong> {{ recipe.get_taste_type_display }}<br>
                     <strong>Skill level:</strong> {{ recipe.get_skill_level_display }}<br>
