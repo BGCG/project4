@@ -201,7 +201,7 @@ Reason for non-completion: In the project inception, I thought the ability for u
 
 * Logged in users will be able to fill out a form to submit their own recipe posts.
 * They can either set the status of the post to draft or published.
-* If the post is set to draft, it will be saved in your posts list, where knowone except the user (and admin in the admin panel) can see.
+* If the post is set to draft, it will be saved in your posts list, where no one except the user (and admin in the admin panel) can see.
 * If the post is set to Published and once Admin approves it, it will be visible on the homepage.
 
 ![screenshot-of-create-post](https://res.cloudinary.com/delase5lw/image/upload/v1682611690/readme-imgs/create-post_xiftd2.jpg)
