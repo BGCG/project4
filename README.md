@@ -297,6 +297,22 @@ Reason for non-completion: In the project inception, I thought the ability for u
 
 ![CSS validaion results](https://res.cloudinary.com/delase5lw/image/upload/v1682757824/css-validator_uuqbyw.jpg)
 
+#### JShint validation
+
+* [JShint validation results](https://res.cloudinary.com/delase5lw/image/upload/v1682757737/JShint-29Apr23_rwkavw.jpg)
+
+#### PEP8 Validation
+
+I performed PEP8 validation on all custom python files in the Django app:
+
+* [views.py](https://res.cloudinary.com/delase5lw/image/upload/v1682757737/view.py-validation_pmxjqv.jpg)
+* [models.py](https://res.cloudinary.com/delase5lw/image/upload/v1682758665/model.py-validation_t1zcqi.jpg)
+* [forms.py](https://res.cloudinary.com/delase5lw/image/upload/v1682757737/view.py-validation_pmxjqv.jpg)
+* [admin.py](https://res.cloudinary.com/delase5lw/image/upload/v1682757737/admin.py-validation_mcxfvc.jpg)
+* [blogs/urls.py](https://res.cloudinary.com/delase5lw/image/upload/v1682757737/blog.urls.py-validation_i30o33.jpg)
+* [veganrecipes/urls.py](https://res.cloudinary.com/delase5lw/image/upload/v1682757737/veganrecipes.urls.py-validation_dmegcq.jpg)
+* [settings.py](https://res.cloudinary.com/delase5lw/image/upload/v1682758665/settings.py-validation_w9jaio.jpg)
+
 #### Manual testing
 
 Manual tests are documented in the following docs:
