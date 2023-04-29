@@ -51,9 +51,9 @@ VeggieBytes is hosted on Heroku and can be accessed [here](https://vegan-recipe-
 
 ### Design
 
-#### Logo
+#### Logo and font
 
-The logo displays the name of the site in Caveat, which is a handwriting family provided by Google Fonts. It has a very organic look to represent the leaves of certain vegetables or sprouts from a plant. The font is coloured in green to further add to this organic theme.
+The logo displays the name of the site in Caveat, which is a handwriting family provided by Google Fonts. It has a very organic look to represent the leaves of certain vegetables or sprouts from a plant. The font is coloured in green to further add to this organic theme. The logo contrasts with the serif font EB Garamond from Google Fonts, which is used for the body text.
 
 #### Imagery
 
