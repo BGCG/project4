@@ -6,7 +6,7 @@ Curiosity in Veganism is on the rise. Google trends analysis has suggested an in
 
 This rise in interest in veganism and plant-based diets has not gone unnoticed by big business, with many supermarkets and fast-food chains offering vegan options as they cater to a new consumer base. The global Vegan food industry grew from $14.44 to $15.77 billion in 2020 compared to 2021 and there is projected growth over the next several years (Sentient media, 2022).
 
-A qualitative based survey analysis has suggested that non-vegan participants mentioned that there is a low variety of vegan food and veganism is 'too difficult'. However, other non-vegan participants suggested that one of the reasons that attracts them to veganism is feeling a part of a community (Souza et al. 2020). 
+Even though there has been an increased interest in veganism and plant-based diets, there are still certain perceptions around veganism. A qualitative based survey analysis has suggested that a subset of non-vegan participants think that there is a low variety of vegan food available and veganism is 'too difficult'. That said, other non-vegan participants suggested that one of the reasons that attracts them to veganism is feeling a part of a community (Souza et al. 2020).
 
 VeggieBytes aims to tackle the growing interest in veganism and plant-based diets by offering an online platform for users who are curious about a plant-based diet, have a partial plant-based diet or a complete plant-based diet to share recipes of varying difficulty levels and connect through commenting and recipe sharing.
 
