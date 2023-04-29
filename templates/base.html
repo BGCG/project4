@@ -47,18 +47,16 @@
                 Navigation
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <button class="dropdown-item" type="button"><a href="{% url 'home' %}">Home</a></button>
-                <button class="dropdown-item" type="button"><a href="{% url 'all-recipes' %}">All recipes</a></button>
+                <a href="{% url 'home' %}" class="dropdown-item">Home</a>
+                <a href="{% url 'all-recipes' %}" class="dropdown-item">All recipes</a>
                 {% if user.is_authenticated%}
-                <button class="dropdown-item" type="button"><a href="{% url 'favourite-list' %}">Favourite
-                        list</a></button>
-                <button class="dropdown-item" type="button"><a href="{% url 'your-posts-list' %}">Your post
-                        list</a></button>
-                <button class="dropdown-item" type="button"><a href="{% url 'create-post' %}">Create Post</a></button>
-                <button class="dropdown-item" type="button"><a href="{% url 'account_logout' %}">Logout</a></button>
+                <a href="{% url 'favourite-list' %}" class="dropdown-item">Favourite list</a>
+                <a href="{% url 'your-posts-list' %}" class="dropdown-item">Your post list</a>
+                <a href="{% url 'create-post' %}" class="dropdown-item">Create Post</a>
+                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                 {% else %}
-                <button class="dropdown-item" type="button"><a href="{% url 'account_login' %}">Login</a></button>
-                <button class="dropdown-item" type="button"><a href="{% url 'account_signup' %}">Signup</a></button>
+                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                <a href="{% url 'account_signup' %}" class="dropdown-item">Signup</a>
                 {% endif%}
             </div>
         </div>
