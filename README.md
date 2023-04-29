@@ -296,7 +296,7 @@ The lighthouse report for the homepage showed excellent scores for accessibility
 
 The lighthouse reports for the other pages showed similar trends and can be accessed by the link below:
 
-* [All recpies](https://res.cloudinary.com/delase5lw/image/upload/v1682765183/all-recipes-lighthouse_njmehn.jpg)
+* [All recipes](https://res.cloudinary.com/delase5lw/image/upload/v1682765183/all-recipes-lighthouse_njmehn.jpg)
 * [Favourites list](https://res.cloudinary.com/delase5lw/image/upload/v1682765183/fav-list-lighthouse_nwhkex.jpg)
 * [Your posts](https://res.cloudinary.com/delase5lw/image/upload/v1682765183/your-posts-lighthouse_ce5mya.jpg)
 * [Create a post](https://res.cloudinary.com/delase5lw/image/upload/v1682765183/create-post-lighthouse_qu9ukt.jpg)
