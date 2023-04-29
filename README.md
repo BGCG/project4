@@ -289,6 +289,21 @@ Reason for non-completion: In the project inception, I thought the ability for u
 
 #### Lighthouse report
 
+The lighthouse report for the homepage showed excellent scores for accessibility and best practices, while showing a medium score for performance.
+
+![Homepage lighthouse report](https://res.cloudinary.com/delase5lw/image/upload/v1682765183/lighthouse-home_hqy2uf.jpg)
+
+The lighthouse reports for the other pages showed similar trends and can be accessed by the link below:
+
+* [All recpies](https://res.cloudinary.com/delase5lw/image/upload/v1682765183/all-recipes-lighthouse_njmehn.jpg)
+* [Favourites list](https://res.cloudinary.com/delase5lw/image/upload/v1682765183/fav-list-lighthouse_nwhkex.jpg)
+* [Your posts](https://res.cloudinary.com/delase5lw/image/upload/v1682765183/your-posts-lighthouse_ce5mya.jpg)
+* [Create a post](https://res.cloudinary.com/delase5lw/image/upload/v1682765183/create-post-lighthouse_qu9ukt.jpg)
+* [Edit a post](https://res.cloudinary.com/delase5lw/image/upload/v1682765631/edit-post-lighthouse_zzdki3.jpg)
+* [Register](https://res.cloudinary.com/delase5lw/image/upload/v1682765183/register-lighthouse_xg5cuu.jpg)
+* [Login](https://res.cloudinary.com/delase5lw/image/upload/v1682765183/signin-lighthouse_wv1kke.jpg)
+* [Logout](https://res.cloudinary.com/delase5lw/image/upload/v1682765183/signout-lighthouse_nvy7o4.jpg)
+
 #### HTML validation
 
 ![HTML validaion results](https://res.cloudinary.com/delase5lw/image/upload/v1682757835/html-validator_eydlts.jpg)
@@ -299,7 +314,7 @@ Reason for non-completion: In the project inception, I thought the ability for u
 
 #### JShint validation
 
-* [JShint validation results](https://res.cloudinary.com/delase5lw/image/upload/v1682757737/JShint-29Apr23_rwkavw.jpg)
+![JShint validation results](https://res.cloudinary.com/delase5lw/image/upload/v1682757737/JShint-29Apr23_rwkavw.jpg)
 
 #### PEP8 Validation
 
