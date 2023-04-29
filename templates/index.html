@@ -46,10 +46,10 @@
             <img class="card-img-top" alt="custom recipe image" src="{{ recipe.recipe_image.url }}">
             {% endif %}
             <div class='card-body'>
+                <a href="{{ recipe.get_absolute_url }}">
+                    <h3 class="post-title">{{ recipe.title }}</h3>
+                </a>
                 <p class='card-text'>
-                    <a href="{{ recipe.get_absolute_url }}">
-                        <h3 class="post-title">{{ recipe.title }}</h3>
-                    </a>
                     Posted on {{ reicpe.publication_date }} by <strong>{{ recipe.author }}</strong>
                 </p>
             </div>
