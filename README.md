@@ -315,7 +315,7 @@ The lighthouse reports for the other pages showed similar trends and can be acce
 
 #### JShint validation
 
-![JShint validation results](https://res.cloudinary.com/delase5lw/image/upload/v1682757737/JShint-29Apr23_rwkavw.jpg)
+![JShint validation results](https://res.cloudinary.com/delase5lw/image/upload/v1682779766/JShint-validationv2_zjro2y.jpg)
 
 #### PEP8 Validation
 
