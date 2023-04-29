@@ -36,7 +36,8 @@ header {
 #home-break, 
 #all-recipes-break,
 #recipe-detail-break,
-.auth-pages-break {
+.auth-pages-break,
+#create-post-break {
     display: none;
 }
 
@@ -350,7 +351,8 @@ body>footer>ul,
     #home-break,
     #all-recipes-break,
     #recipe-detail-break,
-    .auth-pages-break {
+    .auth-pages-break,
+    #create-post-break {
         display: block;
     }
 
