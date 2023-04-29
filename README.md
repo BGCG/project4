@@ -110,6 +110,7 @@ Epic | CONTENT OBSERVATION
 * As a site user I can view number of likes on each recipe so that I can see which recipe is the most popular (MUST HAVE)
 * As a site user I can open a recipe post so that I can read the recipe post (MUST HAVE)
 * As a site user I can view a list of recipe posts so that I can select which one I want to read (MUST HAVE)
+* As a site user I can favourite/unfavourite a recipe post so that I can add or remove that post from my favourites list
 
 Epics | CONTENT CREATION 
 
