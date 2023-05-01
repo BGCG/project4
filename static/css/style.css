@@ -321,6 +321,10 @@ body>footer>ul,
 
 @media (max-width: 400px) {
 
+    #content {
+        margin-top: 30px;
+    }
+
     #logo,
     .dropdown {
         float: none;
