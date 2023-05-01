@@ -26,7 +26,7 @@ class Recipe(models.Model):
     slug = models.SlugField(max_length=150, null=False, unique=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='blog_post')
     publication_date = models.DateField('date published', auto_now_add=True)
-    edited_date = models.DateField(auto_now_add=True)
+    edited_date = models.DateField(auto_now=True)
     ingredients = models.TextField(default=None)
     instructions = models.TextField(default=None)
     recipe_image = CloudinaryField('image', default='placeholder')
@@ -43,7 +43,7 @@ class Recipe(models.Model):
     """
 
     class Meta:
-        ordering = ['-publication_date']
+        ordering = ['-edited_date']
 
     def __str__(self):
         return self.title
