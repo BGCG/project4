@@ -35,7 +35,7 @@
       </form>
       <br>
     <div class="d-flex flex-row-reverse">
-      <button type="submit" class="btn btn-link" id="delete-btn">Delete post</button>
+      <button type="submit" class="btn mb-2" id="delete-btn">Delete post</button>
     </div>
   </div>
     <!-- Modal for delete confirmation -->
@@ -52,7 +52,7 @@
             <p>Are you sure you would like to delete this post?</p>
           </div>
           <div class="modal-footer">
-            <a class="btn btn-secondary" href="{% url 'delete-post' recipe.slug %}" role="button">Delete post</a>
+            <a class="btn btn-secondary" href="{% url 'delete-post' recipe.slug %}" role="button" id="delete-btn">Delete post</a>
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
           </div>
         </div>

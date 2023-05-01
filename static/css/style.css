@@ -49,7 +49,7 @@ a:hover {
 
 #delete-btn {
     text-decoration: none;
-    color: #359359;
+    background-color: red !important;
     font-size: 18px;
 }
 
@@ -261,9 +261,9 @@ body>footer>ul,
 
 #delete-btn {
     width: fit-content !important;
-    background-color: white !important;
+    background-color: #c7362c !important;
+    color: white;
 }
-
 
 /* favourite list page styling */
 
