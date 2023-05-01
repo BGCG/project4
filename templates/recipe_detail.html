@@ -10,6 +10,12 @@
 
 <!-- Recipe card detail -->
 
+{% if recipe.status == 0 and user != recipe.author %}
+
+<p>Opps! Sorry you do not have access to this page. </p>
+
+{% else %}
+
 <div class="container">
     <div class="row">
         <div class='col card mb-4 mt-3 left top col-lg-6 mx-auto'>
@@ -141,5 +147,7 @@
 <p class="recipe-page-text">There are no comments for this post</p>
 
 {% endfor %}
+
+{% endif %}
 
 {% endblock %}
