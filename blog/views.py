@@ -138,13 +138,12 @@ def create_post(request):
                 messages.info(request, "Your post is awaiting approval!")
             return redirect('home')
         else:
-            if IntegrityError:
-                messages.error(request, "We could not create your post due to"
-                                        "invalid input. Please ensure your "
-                                        "title is unqiue.")
-            else:
-                messages.error(request, "Something went wrong - "
-                               "please try to create your post again.")
+            request.session['new_post_data'] = request.POST
+            return render(request, 'create_post.html',
+                                   {'post_form': post_form})
+    else:
+        form_data = request.session.get('new_post_data')
+        PostForm(form_data)
 
     post_form = PostForm()
 
