@@ -51,7 +51,7 @@
                 <a href="{% url 'all-recipes' %}" class="dropdown-item">All recipes</a>
                 {% if user.is_authenticated%}
                 <a href="{% url 'favourite-list' %}" class="dropdown-item">Favourite list</a>
-                <a href="{% url 'your-posts-list' %}" class="dropdown-item">Your post list</a>
+                <a href="{% url 'your-posts-list' %}" class="dropdown-item">Post management</a>
                 <a href="{% url 'create-post' %}" class="dropdown-item">Create Post</a>
                 <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                 {% else %}
