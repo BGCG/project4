@@ -308,7 +308,7 @@ The lighthouse reports for the other pages showed similar trends and can be acce
 #### HTML validation
 
 ![HTML validaion results](https://res.cloudinary.com/delase5lw/image/upload/v1682757835/html-validator_eydlts.jpg)
-Furthermore, the validation results for the all recipes, login page, recipe detail and sign up page showed no errors. The screenshots of the pages are below - 
+Furthermore, the validation results for the all recipes, login, recipe detail and sign up page showed no errors. The screenshots of the pages are below - 
 
 * [Login](https://res.cloudinary.com/delase5lw/image/upload/v1683892541/login-html-validation_frgrbs.jpg)
 * [Signup](https://res.cloudinary.com/delase5lw/image/upload/v1683892541/signup-html-validation_ihmucg.jpg)
