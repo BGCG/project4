@@ -21,13 +21,11 @@
         <div class="row">
             <div class='col card mb-4 mt-4 left top mx-auto'>
                 <div class='card-body mx-auto'>
-                    <p class='card-text'>
-                        <h3>Create a Post</h3>
-                        <hr>
-                        {{ post_form | crispy }}
-                        {% csrf_token %}
-                        <button type="submit" class="btn btn-primary btn-md mb-3" id="post-btn">Submit</button>
-                    </p>
+                    <h3>Create a Post</h3>
+                    <hr>
+                    {{ post_form | crispy }}
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-primary btn-md mb-3" id="post-btn">Submit</button>
                 </div>
             </div>
         </div>
