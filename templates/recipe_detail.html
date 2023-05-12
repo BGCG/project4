@@ -20,7 +20,6 @@
     <div class="row">
         <div class='col card mb-4 mt-3 left top col-lg-6 mx-auto'>
             <div class='card-body mx-auto'>
-                <p class='card-text'>
                     <h2 class="post-title">{{ recipe.title }}</h2>
                     <strong>Author:</strong> {{ recipe.author }}<br>
                     <strong>Publication date:</strong> {{ recipe.publication_date }}<br>
@@ -41,7 +40,6 @@
                     <strong>Ingredients:</strong> {{ recipe.ingredients | linebreaks }}
                     <hr>
                     <strong>Instructions:</strong> {{ recipe.instructions | linebreaks }}
-                </p>
                 <div class="container">
                     <div class="d-flex flex-row-reverse">
                         <!-- Favourite/Unfavourite button -->
@@ -53,11 +51,11 @@
                                 {% csrf_token %}
                                 {% if user.is_authenticated %}
                                 {% if favourited %}
-                                <button input="submit" name="favourite-button" class="text-success border-0 fav-button"
+                                <button type="submit" name="favourite-button" class="text-success border-0 fav-button"
                                     value="{{ recipe.slug }}"><i class="fa-solid fa-bookmark"></i></button>
                                 {% else %}
-                                <button input="submit" name="favourite-button" class="text-success border-0 fav-button"
-                                    value="{{ recipe.slug }}"><i class="fa-regular fa-bookmark"></i></i></button>
+                                <button type="submit" name="favourite-button" class="text-success border-0 fav-button"
+                                    value="{{ recipe.slug }}"><i class="fa-regular fa-bookmark"></i></button>
                                 {% endif %}
                                 {% else %}
                                 <span class="text-secondary"><i class="fa-regular fa-bookmark"></i></span>
@@ -75,10 +73,10 @@
                                 {% csrf_token %}
                                 {% if user.is_authenticated %}
                                 {% if liked %}
-                                <button input="submit" name="likes-button" class="text-success border-0 like-button"
+                                <button type="submit" name="likes-button" class="text-success border-0 like-button"
                                     value="{{ recipe.slug }}"><i class="fas fa-heart"></i></button>
                                 {% else %}
-                                <button input="submit" name="likes-button" class="text-success border-0 like-button"
+                                <button type="submit" name="likes-button" class="text-success border-0 like-button"
                                     value="{{ recipe.slug }}"><i class="far fa-heart"></i></button>
                                 {% endif %}
                                 {% else %}
@@ -110,10 +108,11 @@
                     <p class='card-text'>
                         {{ comment_form | crispy }}
                         {% csrf_token %}
-                        <button type="submit" class="btn btn-success mb-3">Submit</buttom>
+                        <button type="submit" class="btn btn-success mb-3">Submit</button>
                     </p>
                 </div>
             </div>
+        </div>
     </form>
     {% else %}
     <p class="recipe-page-text">Please <a href="{% url 'account_login' %}">Login</a> or <a
