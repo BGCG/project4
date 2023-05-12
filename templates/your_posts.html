@@ -59,11 +59,9 @@
                 <img class="card-img-top" alt="custom recipe image" src="{{ post.recipe_image.url }}">
                 {% endif %}
                 <div class='card-body'>
-                    <p class='card-text'>
                         <a href="{{ post.get_absolute_url }}">
                             <h3 class="post-title">{{ post.title }}</h3>
                         </a>
-                    </p>
                     <div class="col-sm">
                         <p><a href="{% url 'edit-post' post.slug %}">Edit post</a></p>
                     </div>
