@@ -20,26 +20,26 @@
     <div class="row">
         <div class='col card mb-4 mt-3 left top col-lg-6 mx-auto'>
             <div class='card-body mx-auto'>
-                    <h2 class="post-title">{{ recipe.title }}</h2>
-                    <strong>Author:</strong> {{ recipe.author }}<br>
-                    <strong>Publication date:</strong> {{ recipe.publication_date }}<br>
-                    {% if recipe.publication_date != recipe.edited_date %}
-                    <strong>Edited on:</strong> {{ recipe.edited_date }}<br>
-                    {% endif %}
-                    <hr>
-                    {% if 'placeholder' in recipe.recipe_image.url %}
-                    <img class="card-img-top" alt="recipe image default"
-                        src="https://res.cloudinary.com/delase5lw/image/upload/v1682324192/project/default.jpg">
-                    {% else %}
-                    <img class="card-img-top" alt="custom recipe image" src="{{ recipe.recipe_image.url }}">
-                    {% endif %}
-                    <strong>Taste type:</strong> {{ recipe.get_taste_type_display }}<br>
-                    <strong>Skill level:</strong> {{ recipe.get_skill_level_display }}<br>
-                    <strong>Prepartion time: </strong>{{ recipe.preparation_time }} minutes
-                    <hr>
-                    <strong>Ingredients:</strong> {{ recipe.ingredients | linebreaks }}
-                    <hr>
-                    <strong>Instructions:</strong> {{ recipe.instructions | linebreaks }}
+                <h2 class="post-title">{{ recipe.title }}</h2>
+                <strong>Author:</strong> {{ recipe.author }}<br>
+                <strong>Publication date:</strong> {{ recipe.publication_date }}<br>
+                {% if recipe.publication_date != recipe.edited_date %}
+                <strong>Edited on:</strong> {{ recipe.edited_date }}<br>
+                {% endif %}
+                <hr>
+                {% if 'placeholder' in recipe.recipe_image.url %}
+                <img class="card-img-top" alt="recipe image default"
+                    src="https://res.cloudinary.com/delase5lw/image/upload/v1682324192/project/default.jpg">
+                {% else %}
+                <img class="card-img-top" alt="custom recipe image" src="{{ recipe.recipe_image.url }}">
+                {% endif %}
+                <strong>Taste type:</strong> {{ recipe.get_taste_type_display }}<br>
+                <strong>Skill level:</strong> {{ recipe.get_skill_level_display }}<br>
+                <strong>Prepartion time: </strong>{{ recipe.preparation_time }} minutes
+                <hr>
+                <strong>Ingredients:</strong> {{ recipe.ingredients | linebreaks }}
+                <hr>
+                <strong>Instructions:</strong> {{ recipe.instructions | linebreaks }}
                 <div class="container">
                     <div class="d-flex flex-row-reverse">
                         <!-- Favourite/Unfavourite button -->
