@@ -213,7 +213,7 @@ Reason for non-completion: In the project inception, I thought the ability for u
 * The user can also delete the post if they wish here, which a pop up box will show to make them confirm whether they do in fact wish to delete the post/draft.
 
 ![screenshot-of-edit-post-page](https://res.cloudinary.com/delase5lw/image/upload/v1682611690/readme-imgs/edit-post_emae3t.jpg)
-![screenshot-of-edit-post-page-delete-confirm-popup](https://res.cloudinary.com/delase5lw/image/upload/v1682611690/readme-imgs/delete-confirmation_fizwz2.jpg)
+![screenshot-of-edit-post-page-delete-confirm-popup](https://res.cloudinary.com/delase5lw/image/upload/v1683877090/delete-post-button-confirm_hs0iqt.jpg)
 
 ### Your favourites list
 
