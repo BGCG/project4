@@ -52,7 +52,7 @@
             <p>Are you sure you would like to delete this post?</p>
           </div>
           <div class="modal-footer">
-            <a class="btn btn-secondary" href="{% url 'delete-post' recipe.slug %}" role="button" id="delete-btn">Delete post</a>
+            <a class="btn" href="{% url 'delete-post' recipe.slug %}" role="button" id="delete-confirm">Delete post</a>
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
           </div>
         </div>

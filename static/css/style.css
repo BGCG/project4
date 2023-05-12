@@ -47,9 +47,11 @@ a:hover {
     text-decoration: none;
 }
 
-#delete-btn {
+#delete-btn,
+#delete-confirm {
     text-decoration: none;
     background-color: red !important;
+    color: white !important;
     font-size: 18px;
 }
 
