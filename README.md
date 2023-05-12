@@ -308,6 +308,20 @@ The lighthouse reports for the other pages showed similar trends and can be acce
 #### HTML validation
 
 ![HTML validaion results](https://res.cloudinary.com/delase5lw/image/upload/v1682757835/html-validator_eydlts.jpg)
+Furthermore, the validation results for the all recipes, login page, recipe detail and sign up page showed no errors. The screenshots of the pages are below - 
+
+* [Login](https://res.cloudinary.com/delase5lw/image/upload/v1683892541/login-html-validation_frgrbs.jpg)
+* [Signup](https://res.cloudinary.com/delase5lw/image/upload/v1683892541/signup-html-validation_ihmucg.jpg)
+* [Recipe detail](https://res.cloudinary.com/delase5lw/image/upload/v1683893106/recipe-detail-html-validation_yyg7cr.jpg)
+* [All recipes](https://res.cloudinary.com/delase5lw/image/upload/v1683892541/all-recipes-html-validation_w9ttcu.jpg)
+
+For the pages that required user login, I had to input the code as text into the HTML validator. The results are shown below -
+
+* [Logout page](https://res.cloudinary.com/delase5lw/image/upload/v1683892541/logout-html-validation_elkgys.jpg)
+* [Favourites list](https://res.cloudinary.com/delase5lw/image/upload/v1683892541/fovourite-list-html-validation_kzaph1.jpg)
+* [Post management](https://res.cloudinary.com/delase5lw/image/upload/v1683892541/your-post-page-validation_d55ht1.jpg)
+* [Create post](https://res.cloudinary.com/delase5lw/image/upload/v1683892541/create-post-html-validation_g5msje.jpg)
+* [Edit post](https://res.cloudinary.com/delase5lw/image/upload/v1683892541/edit-post-html-validation_xkzqnx.jpg)
 
 #### CSS validation
 
