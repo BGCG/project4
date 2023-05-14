@@ -102,6 +102,7 @@ Epic | CONTENT REACTION
 
 * As a site user who is registered I can comment on a recipe post so that I can participate in the conversation (MUST HAVE)
 * As a site user I can like/unlike recipe posts so that I can react to content (MUST HAVE)
+* As a site user I can contact admin via a contact form so communicate with admin in case I have any issues with my account or the site or any suggestions for the site content (SHOULD HAVE)
 
 Epic | CONTENT OBSERVATION 
 
