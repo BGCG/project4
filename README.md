@@ -322,6 +322,7 @@ Furthermore, the validation results for the all recipes, login, recipe detail an
 * [Signup](https://res.cloudinary.com/delase5lw/image/upload/v1683892541/signup-html-validation_ihmucg.jpg)
 * [Recipe detail](https://res.cloudinary.com/delase5lw/image/upload/v1683893106/recipe-detail-html-validation_yyg7cr.jpg)
 * [All recipes](https://res.cloudinary.com/delase5lw/image/upload/v1683892541/all-recipes-html-validation_w9ttcu.jpg)
+* [Contact us](https://res.cloudinary.com/delase5lw/image/upload/v1684060409/contact-us-page-html-validation_oqzeed.jpg)
 
 For the pages that required user login, I had to input the code as text into the HTML validator. The results are shown below -
 
