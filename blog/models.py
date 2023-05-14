@@ -89,3 +89,16 @@ class Comment(models.Model):
 
     def __str__(self):
         return f"Comment {self.body} by {self.name}"
+
+
+class ContactRequest(models.Model):
+
+    """
+    Define Contact model fields
+    """
+    first_name = models.CharField(default='', null=True, blank=True, max_length=80)
+    last_name = models.CharField(default='', null=True, blank=True, max_length=80)
+    email = models.EmailField()
+    subject = models.CharField(max_length=180)
+    message = models.TextField()
+    contact_date = models.DateTimeField(auto_now_add=True)

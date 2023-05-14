@@ -3,7 +3,7 @@ from django.views import generic, View
 from django.views.generic import CreateView
 from django.http import HttpResponseRedirect
 from .models import Recipe
-from .forms import CommentForm, PostForm
+from .forms import CommentForm, PostForm, ContactForm
 from django.contrib import messages
 from django.db import IntegrityError
 
@@ -219,3 +219,27 @@ def delete_post(request, slug):
     recipe.delete()
     messages.info(request, "Post successfully deleted")
     return redirect('home')
+
+
+def contact_request(request):
+
+    """
+    Allow user to send contact request to admin
+    """
+
+    new_contact = None
+
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            new_contact = form.save(commit=False)
+            new_contact.save()
+    else:
+        contact_form = ContactForm()
+
+    context = {
+        'contact_form': ContactForm(),
+        'new_contact': new_contact,
+    }
+
+    return render(request, 'contact_us.html', context)

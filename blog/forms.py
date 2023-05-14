@@ -1,4 +1,4 @@
-from .models import Recipe, Comment
+from .models import Recipe, Comment, ContactRequest
 from django import forms
 
 
@@ -24,3 +24,16 @@ class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
         fields = ('body',)
+
+
+class ContactForm(forms.ModelForm):
+
+    """
+    Comment form
+    """
+
+    class Meta:
+        model = ContactRequest
+        fields = ('first_name', 'last_name', 'email', 'subject', 'message')
+        labels = {'first_name': 'First name (optional)',
+                  'last_name': 'Last name (optional)'}

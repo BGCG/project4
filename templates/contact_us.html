@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact Us{% endblock %}
+
+{% block content %}
+
+{% load crispy_forms_tags %}
+
+<div class="container">
+    {% if new_contact %}
+    <div class="alert alert-success" role="alert">
+        Our team will reply to your message shortly! </div>
+    {% else %}
+    <form method="post">
+        <div class="row">
+            <div class='col card mb-4 mt-4 left top mx-auto'>
+                <div class='card-body mx-auto'>
+                    <br>
+                    <h3>Contact the VeggieBytes team!</h3>
+                    <hr>
+                    <!-- contact form -->
+                    {{ contact_form | crispy }}
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-primary btn-md mb-3" id="post-btn">Submit</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    {% endif %}
+</div>
+
+{% endblock %}

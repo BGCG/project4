@@ -15,4 +15,5 @@ urlpatterns = [
     path('posts/edit-post/<slug:slug>', views.edit_post, name='edit-post'),
     path('posts/delete-post/<slug:slug>', views.delete_post,
          name='delete-post'),
+    path('contact-us/', views.contact_request, name='contact-request'),
 ]

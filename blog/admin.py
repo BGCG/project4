@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Recipe, Comment
+from .models import Recipe, Comment, ContactRequest
 from django_summernote.admin import SummernoteModelAdmin
 
 
@@ -29,3 +29,11 @@ class CommentAdmin(admin.ModelAdmin):
 
     def approve_comments(self, request, queryset):
         queryset.update(approved=True)
+
+
+@admin.register(ContactRequest)
+class ContactAdmin(admin.ModelAdmin):
+
+    list_display = ('email', 'subject', 'message', 'contact_date')
+    list_filter = ('contact_date',)
+    search_fields = ('email', 'subject', 'message')
