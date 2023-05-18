@@ -138,7 +138,7 @@ Reason for non-completion: In the project inception, I thought the ability for u
 
 ## Logic flow diagram
 
-![logic-flow-diagram](https://res.cloudinary.com/delase5lw/image/upload/v1682613513/readme-imgs/Logic_diagram_P4_ucowyt.jpg)
+![logic-flow-diagram](https://res.cloudinary.com/delase5lw/image/upload/v1684393585/Logic_diagram_P4_rjqkqc.jpg)
 
 ## Database schema
 
