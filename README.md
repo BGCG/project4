@@ -356,10 +356,10 @@ I performed PEP8 validation on all custom python files in the Django app:
 
 Manual tests are documented in the following docs:
 
-* [Unique features testing - Page 1](https://res.cloudinary.com/delase5lw/image/upload/v1682698344/readme-imgs/manual-testing-p1_z0kv2i.jpg)
-* [Unique features testing - Page 2](https://res.cloudinary.com/delase5lw/image/upload/v1682698344/readme-imgs/manual-testing-p2_vmdrsy.jpg)
-* [General features testing](https://res.cloudinary.com/delase5lw/image/upload/v1682698344/readme-imgs/general-features-manual-testing_txvlvr.jpg)
-* [Admin features testing](https://res.cloudinary.com/delase5lw/image/upload/v1682698344/readme-imgs/admin-manual-testing_ep8fd5.jpg)
+* [Unique features testing - Page 1](https://res.cloudinary.com/delase5lw/image/upload/v1684388797/manual-testing-pt1_q6shvh.jpg)
+* [Unique features testing - Page 2](https://res.cloudinary.com/delase5lw/image/upload/v1684389035/manual-testing-pt2_isn6tw.jpg)
+* [General features testing](https://res.cloudinary.com/delase5lw/image/upload/v1684389096/general-features-manual-testingv2_ej53ba.jpg)
+* [Admin features testing](https://res.cloudinary.com/delase5lw/image/upload/v1684388807/admin-manual-testing_lreohg.jpg)
 
 ### Credits
 
