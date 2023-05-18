@@ -142,7 +142,7 @@ Reason for non-completion: In the project inception, I thought the ability for u
 
 ## Database schema
 
-![database-schema](https://res.cloudinary.com/delase5lw/image/upload/v1682777729/database-schema_t2dvkf.jpg)
+![database-schema](https://res.cloudinary.com/delase5lw/image/upload/v1684390125/Database_schema_q0nsdv.jpg)
 
 ### Common features
 
