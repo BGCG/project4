@@ -347,7 +347,7 @@ I performed PEP8 validation on all custom python files in the Django app:
 * [views.py](https://res.cloudinary.com/delase5lw/image/upload/v1684059759/views.py-PEP8_u2wpzg.jpg)
 * [models.py](https://res.cloudinary.com/delase5lw/image/upload/v1684059759/models.py-PEP8_yevnnh.jpg)
 * [forms.py](https://res.cloudinary.com/delase5lw/image/upload/v1684059759/form.py-PEP8_imombm.jpg)
-* [admin.py](https://res.cloudinary.com/delase5lw/image/upload/v1682757737/admin.py-validation_mcxfvc.jpg)
+* [admin.py](https://res.cloudinary.com/delase5lw/image/upload/v1684386573/admin.py-PEP8_vhelxl.jpg)
 * [blogs/urls.py](https://res.cloudinary.com/delase5lw/image/upload/v1684059759/blog.urls.py-PEP8_usthbf.jpg)
 * [veganrecipes/urls.py](https://res.cloudinary.com/delase5lw/image/upload/v1682757737/veganrecipes.urls.py-validation_dmegcq.jpg)
 * [settings.py](https://res.cloudinary.com/delase5lw/image/upload/v1682758665/settings.py-validation_w9jaio.jpg)
