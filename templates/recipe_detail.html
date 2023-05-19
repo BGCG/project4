@@ -106,8 +106,8 @@
             <div class='col card mb-4 mt-4 left top col-lg-6 mx-auto'>
                 <div class='card-body mx-auto'>
                     <p class='card-text'>
-                        {{ comment_form | crispy }}
                         {% csrf_token %}
+                        {{ comment_form | crispy }}
                         <button type="submit" class="btn btn-success mb-3">Submit</button>
                     </p>
                 </div>

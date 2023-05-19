@@ -23,8 +23,8 @@
                 <div class='card-body mx-auto'>
                     <h3>Create a Post</h3>
                     <hr>
-                    {{ post_form | crispy }}
                     {% csrf_token %}
+                    {{ post_form | crispy }}
                     <button type="submit" class="btn btn-primary btn-md mb-3" id="post-btn">Submit</button>
                 </div>
             </div>
