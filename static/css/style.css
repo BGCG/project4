@@ -100,7 +100,7 @@ body>header>ul {
 /* hero image styling and overlayed text */
 
 #hero-image {
-    background-image: url('https://res.cloudinary.com/delase5lw/image/upload/v1682326336/project/hero-image.jpg');
+    background-image: url('https://res.cloudinary.com/delase5lw/image/upload/v1682326336/project/hero-image.webp');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -232,7 +232,7 @@ body>footer>ul,
 #logout-background,
 #login-background,
 #signup-background {
-    background-image: url('https://res.cloudinary.com/delase5lw/image/upload/v1682512836/pexels-engin-akyurt-2456435_2_k5lqzn.jpg');
+    background-image: url('https://res.cloudinary.com/delase5lw/image/upload/v1682513691/pexels-engin-akyurt-2456435_2_k5lqzn_0a6976.webp');
     background-size: cover;
     background-repeat: no-repeat;
     height: 700px;
@@ -305,7 +305,7 @@ body>footer>ul,
     }
     
     #fav-page-image {
-        background-image: url('https://res.cloudinary.com/delase5lw/image/upload/v1682515733/fav-list-image_baw0u7_a83c61_4ee779.jpg');
+        background-image: url('https://res.cloudinary.com/delase5lw/image/upload/v1682515594/fav-list-image_baw0u7_a83c61.webp');
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
