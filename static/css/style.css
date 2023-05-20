@@ -79,6 +79,10 @@ a:hover {
     margin-right: 55px;
 }
 
+.dropdown-item:active {
+    background-color: #359359;
+}
+
 .btn {
     background-color: #359359;
     border: none;
