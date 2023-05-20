@@ -143,6 +143,10 @@ body>header>ul {
     padding-right: 8px;
 }
 
+#social-media-links > ul {
+    padding: 0;
+}
+
 #social-media-links li {
     display: inline-block;
 }
