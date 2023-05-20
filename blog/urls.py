@@ -7,7 +7,7 @@ urlpatterns = [
     path('all-recipes/', views.AllRecipes.as_view(), name='all-recipes'),
     path('posts/<slug:slug>', views.recipe_detail, name='recipe-detail'),
     path('like/<slug:slug>', views.LikeToggle.as_view(), name='like-recipe'),
-    path('favourites/<slug:slug>', views.FavouriteView.as_view(),
+    path('favourite/<slug:slug>', views.FavouriteView.as_view(),
          name='favourite-view'),
     path('favourites/', views.FavouriteView.as_view(), name='favourite-list'),
     path('create-post/', views.create_post, name='create-post'),
