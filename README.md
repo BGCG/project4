@@ -367,7 +367,7 @@ Manual tests are documented in the following docs:
 
 I found the [Bootstrap 4 documentation](https://getbootstrap.com/docs/4.2/getting-started/introduction/) particularly helpful with creation of the recipe cards. Additionally, I utilised the Bootstrap 4 dropdown navbar code. 
 
-In the image upload on the user post form, I found the following [w3schools](https://www.w3schools.com/tags/att_form_enctype.asp) and the [cloudinary](https://cloudinary.com/documentation/django_image_and_video_upload) documentation helpful in achieving this.
+In the image upload on the user post form, I found the following [w3schools](https://www.w3schools.com/tags/att_form_enctype.asp) and the [cloudinary](https://cloudinary.com/documentation/django_image_and_video_upload) documentation helpful in achieving this which suggested include the `enctype` attribute set to `"multipart/form-data"` in the form element to specify that the form is recieving multiple types of data. 
 
 The Code Institute course materials including 'Hello Django' and 'I Think therefore I Blog' for guidelines in setting up and deploying the django app, as well as implementing the CRUD functionality. 
 
@@ -378,7 +378,11 @@ Addition of the favicon was assisted by following the [W3schools](https://www.w3
 I have provided further credits in the troubleshooting section.
 
 ### Troubleshooting
-Todo
+
+I had issue with allowing the form to accept image uploads, after searching online I found a number of resources suggesting that need to 1. specify how the form data should be encoded when sent to the server by including the `enctype` attribute set to `"multipart/form-data"` in the form element and 2. I need to intialise the form object with both the uploaded files and the form data `PostForm(request.POST, request.FILES)`. I found the [Django documentation](https://docs.djangoproject.com/en/4.2/topics/http/file-uploads/) particularly helpful in me achieving amoungst other resources stated in the credits section.
+
+One instance I experienced an issue when creating the ContactRequest model, where I wanted to add a first name and last name field to the contact form but when I added it I keep on getting an error when trying to apply the migrations `You are trying to add a non-nullable field`. I believe what happened was there was already contact requests in the database that did not have first name or last name fields which could not be blank, therefore this would an integrity error. Therefore, I had a look online how to resolve this as even when I commented out the model or set a default value and tried to update the migrations, I was still getting the same error. I found a [post](https://www.linkedin.com/pulse/how-do-i-reset-django-migration-nitin-raturi/?trk=pulse-article_more-articles_related-content-card) which suggested that you can drop the whole database and start again. This seemed like quite an extreme measure so I felt uncomfortable doing this, therefore I contacted Tutor support to see if they could help me find an alternative solution. Sean from Tutor support dropped the table from the ContectRequest model which resolved the issue. 
+
 #### Images
 
 All images were from pexels.com
