@@ -397,5 +397,15 @@ body>footer>ul,
     #signup-background {
         padding: 0;
     }
+ 
+    #login-background > div,
+    #logout-background > div,
+    #signup-background > div {
+    margin: 0;
+    }
+
+    #logout-background {
+        padding: 19px;
+    }
 
 }
