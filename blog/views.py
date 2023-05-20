@@ -6,6 +6,7 @@ from .models import Recipe
 from .forms import CommentForm, PostForm, ContactForm
 from django.contrib import messages
 from django.db import IntegrityError
+from django.contrib.auth.decorators import login_required
 
 
 class RecipeList(generic.ListView):
@@ -116,6 +117,7 @@ class FavouriteView(View):
                                {'fav_recipes': fav_recipes})
 
 
+@login_required
 def create_post(request):
 
     """
@@ -155,6 +157,7 @@ def create_post(request):
     return render(request, 'create_post.html', context)
 
 
+@login_required
 def your_posts_view(request):
 
     """
@@ -173,6 +176,7 @@ def your_posts_view(request):
     return render(request, 'your_posts.html', context)
 
 
+@login_required
 def edit_post(request, slug):
 
     """
@@ -209,6 +213,7 @@ def edit_post(request, slug):
                                               'recipe': recipe})
 
 
+@login_required
 def delete_post(request, slug):
 
     """
