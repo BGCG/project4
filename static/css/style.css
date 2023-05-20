@@ -192,6 +192,11 @@ body>footer>ul,
     opacity: 0.5;
 }
 
+.post-title,
+#create-post-title {
+    padding-top: 8px;
+}
+
 .recipe-box {
     padding: 0;
 }
@@ -269,6 +274,11 @@ body>footer>ul,
     width: fit-content !important;
     background-color: #c7362c !important;
     color: white;
+}
+
+#edit-post-title {
+    margin: 0 auto;
+    text-align: center;
 }
 
 /* favourite list page styling */
