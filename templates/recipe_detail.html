@@ -26,7 +26,7 @@
                 <strong>Author:</strong> {{ recipe.author }}<br>
                 <strong>Publication date:</strong> {{ recipe.publication_date }}<br>
                 {% if recipe.publication_date != recipe.edited_date %}
-                <strong>Edited on:</strong> {{ recipe.edited_date }}<br>
+                <strong>Updated on:</strong> {{ recipe.edited_date }}<br>
                 {% endif %}
                 <hr>
                 {% if 'placeholder' in recipe.recipe_image.url %}
