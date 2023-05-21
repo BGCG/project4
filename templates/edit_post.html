@@ -7,19 +7,6 @@
 {% load crispy_forms_tags %}
 
 <div class="container">
-
-  <!-- alert for when user submits draft or post -->
-
-  {% if new_post and new_post.status == 1 %}
-  <div class="alert alert-success" role="alert">
-    Your post is awaiting approval </div>
-  {% elif new_post and new_post.status == 0 %}
-  <div class="alert alert-success" role="alert">
-    Your draft has been saved </div>
-  {% else %}
-
-  {% if user.is_authenticated %}
-
   <!-- edit post form -->
   <h3 id="edit-post-title">Edit Post</h3>
   <div class="row">
@@ -60,10 +47,5 @@
     </div>
   </div>
 </div>
-
-
-{% endif %}
-{% endif %}
-
 
 {% endblock %}
