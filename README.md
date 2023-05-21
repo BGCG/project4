@@ -249,7 +249,7 @@ Reason for non-completion: In the project inception, I thought the ability for u
 * Users can contact the admin team via a contact form, in case the user has any issues with their account or suggestions for content on the site. 
 * Once the users posts the contact formt the message will be saved and can be viewed in the admin panel
 
-![screenshot-of-contact-form](https://res.cloudinary.com/delase5lw/image/upload/v1684058802/contact-form_h40ezo.jpg)
+![screenshot-of-contact-form](https://res.cloudinary.com/delase5lw/image/upload/v1684687078/contact-formv2_qncctm.jpg)
 
 ### Technologies used
 
