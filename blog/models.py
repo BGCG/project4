@@ -96,9 +96,19 @@ class ContactRequest(models.Model):
     """
     Define Contact model fields
     """
-    first_name = models.CharField(default='', null=True, blank=True, max_length=80)
-    last_name = models.CharField(default='', null=True, blank=True, max_length=80)
+
+    QUESTION_CATEGORIES = [
+        (None, "How can we help?"),
+        ("Accounts", "There's something wrong with my account"),
+        ("Feedback", "I would like to provide some feedback"),
+        ("Complaint", "I would like to make a complaint"),
+        ("Technical issue", "I would like to report a technical issue"),
+        ("Other", "Other"),
+    ]
+
+    name = models.CharField(default='', null=True, blank=True, max_length=80)
     email = models.EmailField()
+    question_type = models.CharField(choices=QUESTION_CATEGORIES, max_length=80)
     subject = models.CharField(max_length=180)
     message = models.TextField()
     contact_date = models.DateTimeField(auto_now_add=True)

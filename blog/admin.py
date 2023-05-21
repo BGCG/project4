@@ -34,6 +34,6 @@ class CommentAdmin(admin.ModelAdmin):
 @admin.register(ContactRequest)
 class ContactAdmin(admin.ModelAdmin):
 
-    list_display = ('email', 'subject', 'message', 'contact_date')
+    list_display = ('email', 'question_type', 'subject', 'message', 'contact_date')
     list_filter = ('contact_date',)
     search_fields = ('email', 'subject', 'message')

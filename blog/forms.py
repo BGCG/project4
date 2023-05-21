@@ -34,6 +34,5 @@ class ContactForm(forms.ModelForm):
 
     class Meta:
         model = ContactRequest
-        fields = ('first_name', 'last_name', 'email', 'subject', 'message')
-        labels = {'first_name': 'First name (optional)',
-                  'last_name': 'Last name (optional)'}
+        fields = ('name', 'email', 'question_type', 'subject', 'message')
+        labels = {'name': 'Name (optional)'}
