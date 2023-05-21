@@ -18,9 +18,9 @@
         <div class="mx-auto card recipe-box col-sm-5 d-inline">
             {% if 'placeholder' in recipe.recipe_image.url %}
                 <img class="card-img-top" alt="recipe image default"
-                src="https://res.cloudinary.com/delase5lw/image/upload/q_auto/v1682324192/project/default.webp">
+                src="https://res.cloudinary.com/delase5lw/image/upload/c_crop,q_auto/v1682324192/project/default.webp">
             {% else %}
-            <img class="card-img-top" alt="custom recipe image" src="{{ recipe.recipe_image.url }}?c_crop">
+            <img class="card-img-top" alt="custom recipe image" src="{{ recipe.recipe_image.url }}">
             {% endif %}
             <div class='card-body'>
                 <a href="{{ recipe.get_absolute_url }}">
