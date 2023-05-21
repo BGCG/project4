@@ -193,7 +193,7 @@ def edit_post(request, slug):
             post_form.save()
             if recipe.status == 0:
                 messages.info(request, "Your draft post has been saved "
-                                       "in 'Your post list'!")
+                                       "in 'Post management'!")
             elif recipe.status == 1:
                 messages.info(request,
                               "Your edited post is awaiting approval!")
