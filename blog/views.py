@@ -135,7 +135,7 @@ def create_post(request):
 
             if new_post.status == 0:
                 messages.info(request, "Your draft post has been saved in"
-                              " 'Your post list'!")
+                              " 'Post management'!")
             elif new_post.status == 1:
                 messages.info(request, "Your post is awaiting approval!")
             return redirect('home')
