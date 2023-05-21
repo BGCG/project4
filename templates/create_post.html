@@ -11,12 +11,6 @@
 <br id="create-post-break">
 
 <div class="container">
-
-    {% if new_post %}
-    <div class="alert alert-success" role="alert">
-        Your post is awaiting approval </div>
-    {% else %}
-    {% if user.is_authenticated %}
     <form method="post" enctype="multipart/form-data">
         <div class="row">
             <div class='col card mb-4 mt-4 left top mx-auto'>
@@ -30,9 +24,6 @@
             </div>
         </div>
     </form>
-    {% endif %}
-    {% endif %}
-
 </div>
 
 {% endblock %}
