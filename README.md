@@ -283,8 +283,8 @@ Reason for non-completion: In the project inception, I thought the ability for u
 
 #### Databases
 
-* SQLite3 for development
-* PostgreSQL for productions
+* SQLite3 briefly in the initial stages of development
+* PostgreSQL for vast majority of the development stage and for the production phase
 
 #### Other tools
 
