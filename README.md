@@ -295,6 +295,7 @@ Reason for non-completion: In the project inception, I thought the ability for u
 * Google Developer tools (including Lighthouse)
 * W3C HTML Validator
 * W3C Jigsaw CSS Validator
+* Mobile simulator Chrome extension (to generate screenshot of how site looks across different devices)
 
 ### Testing 
 
