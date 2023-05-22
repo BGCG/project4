@@ -10,6 +10,8 @@ Even though there has been an increased interest in veganism and plant-based die
 
 VeggieBytes aims to tackle the growing interest in veganism and plant-based diets by offering an online platform for users who are curious about a plant-based diet, have a partial plant-based diet or a complete plant-based diet to share recipes of varying difficulty levels and connect through commenting and recipe sharing.
 
+![VeggieBytes-responsive-screenshot](https://res.cloudinary.com/delase5lw/image/upload/v1684742468/project/Responsive_screenshot_uj0har.jpg)
+
 ### Site purpose
 
 VeggieBytes is a plant-based recipe sharing site which aims to connect users through sharing recipes, commenting and connecting to the VeggieBytes social media groups. It aims to provide recipes of varying difficulty levels to cater those for all cooking confidence levels. 
