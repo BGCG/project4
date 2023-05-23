@@ -448,7 +448,7 @@ In the deploy tab:
 
 ## Acknowledgement
 
-I would like to thank my mentor, Martina Terlevic for advice on this project
+I would like to thank my mentor, Martina Terlevic for advice on this project, as well as Sean and Joshua from tutor support for their help with resolving my database errors.
 
 ## Sources 
 
