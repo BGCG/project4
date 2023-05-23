@@ -398,28 +398,51 @@ I deployed the app on Heroku by following [these](https://docs.google.com/docume
 
 The steps I followed - 
 
-*Note everything labelled (secret) is a secret environmental variable, key, url so cannot be reported in this README.*
+*Note everything labelled (secret) is a secret environmental variable, so cannot be reported in this README.*
 
 **Create a new app in Heroku**
 
 1. Click new on dashboard
 2. Select app name and location (Europe)
-3. Set Config variables - `DATABASE_URL : (secret)`, `SECRET KEY : (secret)`, `PORT : 8000`, `CLOUDINARY_URL: (secret)`
+3. Set Config variables in settings tab - `DATABASE_URL : (secret)`, `SECRET KEY : (secret)`, `PORT : 8000`, `CLOUDINARY_URL: (secret)`
 
 **In Gitpod**
 
 1. Create env.py file 
-2. Import os
-3. Set up environmental variables for database `os.environ["DATABASE_URL"]="secret"`
-4. Add secret key `os.environ["DATABASE_URL"]="secret"`
+2. `import os`
+3. Set up environmental variables for database `os.environ["DATABASE_URL"]="secret ElephatSQL database URL"`
+4. Add secret key `os.environ["SECRET_KEY"]="secret randomSecretKey"`
 
+***Prepare settings.py***
 
+1.  Reference env.py (conditional to check env.py exists):
+```Reference env.py
+from pathlib import Path
+import os
+import dj_database_url
+if os.path.isfile('env.py'):
+    import env
+```
+2. Remove insercure secret key and grab the secret key with the following: `SECRET_KEY = os.environ.get('SECRET_KEY')`
+3. Comment out old database config var which specifies usage of the SQLite3 database
+4. Instead put in a new databases section wiring up to the PostgreSQL database:
+```Add new database section
+DATABASES = {
+     'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+}
+```
+5. Save files and make migrations: `python3 manage.py migrate`
+
+***Create Procfile***
 1. Create Procfile and add the following code `web: gunicorn appname.wsgi`
 2. Commit and push changes
 
-Back in Heroku
+***Back in Heroku***
 
-1. Click manual deploy in deployment tab
+In the deploy tab:
+1. Click deploy via Github
+1. Connect app to Github (select the project repository)
+2. Select main branch and click 'Deploy branch' in the Manual deploy section
 
 ## Acknowledgement
 
