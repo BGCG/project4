@@ -42,14 +42,14 @@ VeggieBytes is hosted on Heroku and can be accessed [here](https://vegan-recipe-
 * To browse the site for newly posted vegan recipes
 * To post own recipes
 * To interact with other members through commenting of recipes
-* To provide a platform to share their own recipes and build there account (note: this could be particularly useful for Food influencers)
+* To provide a platform to share their own recipes and build their account (note: this could be particularly useful for food influencers)
 
 ### Superuser goals
 
 * To be able to post recipes from the Admin team
 * To be able to moderate post content
 * To be able to moderate comments
-* To filter through recipes and comments to ensure can ease the process of moderating site
+* To filter through recipes and comments to ease the process of moderating site
 
 ### Design
 
@@ -59,11 +59,11 @@ The logo displays the name of the site in Caveat, which is a handwriting family 
 
 #### Imagery
 
-The imagery is all of different dishes where I selected those that displayed bursts of color as I wanted to create a contrast with the white background of the body of the site.
+The imagery is all of different dishes where I selected those that displayed bursts of colour as I wanted to create a contrast with the white background of the body of the site.
 
 #### Colour scheme
 
-The colour scheme represents the greenness of certain fruits and vegetables, while also sporting some bursts of colors (such as various shades of oranges, reds, pink) from the imagery used in the site, all contrasting with the white background of the site. 
+The colour scheme represents the greenness of certain fruits and vegetables, while also sporting some bursts of colours (such as various shades of oranges, reds, pink) from the imagery used in the site, all contrasting with the white background of the site. 
 
 ### Agile epics
 
@@ -158,7 +158,7 @@ Reason for non-completion: In the project inception, I thought the ability for u
 
 * Is present on the top right-hand corner of each page providing navigation to authentication/signup features and home
 * If logged in it provides routes to:
- - users published and draft posts ('your posts list') - which also contains links to 'Edit post' pages where a user can update their post or delete it.
+ - user’s published and draft posts ('Post management') - which also contains links to 'Edit post' pages where a user can update their post or delete it.
  - users 'favourites list' 
  - create a post form
 
@@ -249,7 +249,7 @@ Reason for non-completion: In the project inception, I thought the ability for u
 ### Contact form
 
 * Users can contact the admin team via a contact form, in case the user has any issues with their account or suggestions for content on the site. 
-* Once the users posts the contact formt the message will be saved and can be viewed in the admin panel
+* Once the users posts the contact format the message will be saved and can be viewed in the admin panel
 
 ![screenshot-of-contact-form](https://res.cloudinary.com/delase5lw/image/upload/v1684687078/contact-formv2_qncctm.jpg)
 
@@ -301,7 +301,7 @@ Reason for non-completion: In the project inception, I thought the ability for u
 
 #### Lighthouse report
 
-The lighthouse report for the homepage showed excellent scores for accessibility and best practices, while showing a medium score for performance.
+The lighthouse report for the homepage showed excellent scores for accessibility and best practices, while showing a medium to high score for performance (I have discussed my performance troubleshooting in the troubleshooting section).
 
 ![Homepage lighthouse report](https://res.cloudinary.com/delase5lw/image/upload/v1682765183/lighthouse-home_hqy2uf.jpg)
 
@@ -315,11 +315,12 @@ The lighthouse reports for the other pages showed similar trends and can be acce
 * [Register](https://res.cloudinary.com/delase5lw/image/upload/v1682765183/register-lighthouse_xg5cuu.jpg)
 * [Login](https://res.cloudinary.com/delase5lw/image/upload/v1682765183/signin-lighthouse_wv1kke.jpg)
 * [Logout](https://res.cloudinary.com/delase5lw/image/upload/v1682765183/signout-lighthouse_nvy7o4.jpg)
+* [Contact request]()
 
 #### HTML validation
 
-![HTML validaion results](https://res.cloudinary.com/delase5lw/image/upload/v1682757835/html-validator_eydlts.jpg)
-Furthermore, the validation results for the all recipes, login, recipe detail and sign up page showed no errors. The screenshots of the pages are below - 
+![HTML validation results](https://res.cloudinary.com/delase5lw/image/upload/v1682757835/html-validator_eydlts.jpg)
+Furthermore, the validation results for all recipes, login, recipe detail and sign up page showed no errors. The screenshots of the pages are below - 
 
 * [Login](https://res.cloudinary.com/delase5lw/image/upload/v1683892541/login-html-validation_frgrbs.jpg)
 * [Signup](https://res.cloudinary.com/delase5lw/image/upload/v1683892541/signup-html-validation_ihmucg.jpg)
@@ -337,7 +338,7 @@ For the pages that required user login, I had to input the code as text into the
 
 #### CSS validation
 
-![CSS validaion results](https://res.cloudinary.com/delase5lw/image/upload/v1682757824/css-validator_uuqbyw.jpg)
+![CSS validation results](https://res.cloudinary.com/delase5lw/image/upload/v1682757824/css-validator_uuqbyw.jpg)
 
 #### JShint validation
 
@@ -366,13 +367,13 @@ Manual tests are documented in the following docs:
 
 ### Troubleshooting
 
-I had issue with allowing the form to accept image uploads, after searching online I found a number of resources suggesting that need to 1. specify how the form data should be encoded when sent to the server by including the `enctype` attribute set to `"multipart/form-data"` in the form element and 2. I need to intialise the form object with both the uploaded files and the form data `PostForm(request.POST, request.FILES)`. I found the [Django documentation](https://docs.djangoproject.com/en/4.2/topics/http/file-uploads/) particularly helpful in me achieving amoungst other resources stated in the credits section.
+I had an issue with allowing the form to accept image uploads, after searching online I found a number of resources suggesting that I need to 1. specify how the form data should be encoded when sent to the server by including the `enctype` attribute set to `"multipart/form-data"` in the form element and 2. I need to initialise the form object with both the uploaded files and the form data `PostForm(request.POST, request.FILES)`. I found the [Django documentation](https://docs.djangoproject.com/en/4.2/topics/http/file-uploads/) particularly helpful in achieving amongst other resources stated in the credits section.
 
-On the topic of images, I had issues with the card images on the homepage, all recipes and favourite list pages slowing down the performance (as determined by the Lighthouse report) due to 'Explicitly set width and height of images' and 'set images to next gen formats'. I decided to make full use of the Cloudinary image hosting service and all it's available image transformations. By following Cloudinarys guide on [Python image transformations](https://cloudinary.com/documentation/django_image_manipulation), where I used the Cloudinary template tags to embed the images as so - `{% cloudinary recipe.recipe_image.url quality="auto:low" width="100%" height="100%" crop="scale" alt="custom recipe image" %}`. This allowed me to set parameters for cropping, width, height and quality where Cloudinary will perform these transformations on the fly, which vastly improved the performance. Furthermore, ensuring all default recipe images and decorative images on the site, as well as adjusting the size of the default recipe image to what is required (as we don't require a large image size for a card image) greatly increased the performance.
+On the topic of images, I had issues with the card images on the homepage, all recipes and favourite list pages slowing down the performance (as determined by the Lighthouse report) due to 'Explicitly set width and height of images' and 'set images to next gen formats'. I decided to make full use of the Cloudinary image hosting service and all its available image transformations. By following Cloudinarys guide on [Python image transformations](https://cloudinary.com/documentation/django_image_manipulation), where I used the Cloudinary template tags to embed the images as so - `{% cloudinary recipe.recipe_image.url quality="auto:low" width="100%" height="100%" crop="scale" alt="custom recipe image" %}`. This allowed me to set parameters for cropping, width, height and quality where Cloudinary will perform these transformations on the fly, which vastly improved the performance. Furthermore, ensuring all default recipe images and decorative images on the site, as well as adjusting the size of the default recipe image to what is required (as we don't require a large image size for a card image) greatly increased the performance.
 
-One instance I experienced an issue when creating the ContactRequest model, where I wanted to add a first name and last name field to the contact form but when I added it I keep on getting an error when trying to apply the migrations `You are trying to add a non-nullable field`. I believe what happened was there was already contact requests in the database that did not have first name or last name fields which could not be blank, therefore this would an integrity error. Therefore, I had a look online how to resolve this as even when I commented out the model or set a default value and tried to update the migrations, I was still getting the same error. I found a [post](https://www.linkedin.com/pulse/how-do-i-reset-django-migration-nitin-raturi/?trk=pulse-article_more-articles_related-content-card) which suggested that you can drop the whole database and start again. This seemed like quite an extreme measure so I felt uncomfortable doing this, therefore I contacted Tutor support to see if they could help me find an alternative solution. Sean from Tutor support dropped the table for the ContectRequest model which resolved the issue. 
+One instance I experienced an issue when creating the ContactRequest model, where I wanted to add a first name and last name field to the contact form but when I added it I keep on getting an error when trying to apply the migrations `You are trying to add a non-nullable field`. I believe what happened was there were already contact requests in the database that did not have first name or last name fields which could not be blank, therefore this would be an integrity error. I had a look online to resolve this as even when I commented out the model or set a default value and tried to update the migrations, I was still getting the same error. I found a [post](https://www.linkedin.com/pulse/how-do-i-reset-django-migration-nitin-raturi/?trk=pulse-article_more-articles_related-content-card) which suggested that you can drop the whole database and start again. This seemed like quite an extreme measure so I felt uncomfortable doing this, therefore I contacted Tutor support to see if they could help me find an alternative solution. Sean from Tutor support dropped the table for the ContectRequest model which resolved the issue. 
 
-Another time I wanted to add a dropdown menu so the user can request the nature of their query in the contact form and so admin can sort through the question type easily to manage admin tasks more efficiently. When I added the new model field  `question_type` I incorrectly added the field type to be an  `IntegerField` rather than a `Charfield` and at that time put a default value of the last of the available options `Other`. When trying to migrate these changes I got a `ValueError` stating that default value for this field should be a number. I then noticed that I had declared the wrong field type and promptly changed it to `CharField` and made a new migration in an attempt to update the field. However, the error still persisted when trying to migrate the changes. I thought from my previous experience that I could perhaps just drop the contactrequest table. However, after attempting to do this by the following this [stack overflow post](https://stackoverflow.com/questions/8597322/how-to-remove-models-from-django), this did not work. Unsure about the best course of action, while also being aware that changes to databases should be handled with extreme caution, I contacted tutor support again. Joshua from Tutor support suggested I should drop the database this time and instructed me to delete all my migrations file except `__init__.py`, on ElephantSQL press `reset` next to the database name on the dashboard and then makemigrations and migrate changes, which resolved the error.
+Another time I wanted to add a dropdown menu so the user can request the nature of their query in the contact form and so admin can sort through the question type easily to manage admin tasks more efficiently. When I added the new model field  `question_type` I incorrectly added the field type to be an  `IntegerField` rather than a `Charfield` and at that time put a default value of the last of the available options `Other`. When trying to migrate these changes I got a `ValueError` stating that default value for this field should be a number. I then noticed that I had declared the wrong field type and promptly changed it to `CharField` and made a new migration in an attempt to update the field. However, the error still persisted when trying to migrate the changes. I thought from my previous experience that I could perhaps just drop the contact request table. However, after attempting to do this by following [stack overflow post](https://stackoverflow.com/questions/8597322/how-to-remove-models-from-django), this did not work. Unsure about the best course of action, while also being aware that changes to databases should be handled with extreme caution, I contacted tutor support again. Joshua from Tutor support suggested I should drop the database this time and instructed me to delete all my migrations file except `__init__.py`, on ElephantSQL press `reset` next to the database name on the dashboard and then makemigrations and migrate changes, which resolved the error.
 
 ### Credits
 
@@ -380,7 +381,9 @@ Another time I wanted to add a dropdown menu so the user can request the nature 
 
 I found the [Bootstrap 4 documentation](https://getbootstrap.com/docs/4.2/getting-started/introduction/) particularly helpful with creation of the recipe cards. Additionally, I utilised the Bootstrap 4 dropdown navbar code. 
 
-In the image upload on the user post form, I found the following [w3schools](https://www.w3schools.com/tags/att_form_enctype.asp) and the [cloudinary](https://cloudinary.com/documentation/django_image_and_video_upload) documentation helpful in achieving this which suggested include the `enctype` attribute set to `"multipart/form-data"` in the form element to specify that the form is recieving multiple types of data. 
+In the image upload on the user post form, I found the following [w3schools](https://www.w3schools.com/tags/att_form_enctype.asp) and the [Cloudinary](https://cloudinary.com/documentation/django_image_and_video_upload) documentation helpful in achieving this which suggested include the `enctype` attribute set to `"multipart/form-data"` in the form element to specify that the form is receiving multiple types of data. 
+
+The [Django documentation](https://docs.djangoproject.com/en/4.2/ref/models/fields/) was very helpful in outlining different model field types which was helpful when I was specifying the fields in the models.
 
 The Code Institute course materials including 'Hello Django' and 'I Think therefore I Blog' for guidelines in setting up and deploying the django app, as well as implementing the CRUD functionality. 
 
@@ -412,7 +415,7 @@ The steps I followed -
 
 1. Create env.py file 
 2. `import os`
-3. Set up environmental variables for database `os.environ["DATABASE_URL"]="secret ElephatSQL database URL"`
+3. Set up environmental variables for database `os.environ["DATABASE_URL"]="secret ElephantSQL database URL"`
 4. Add secret key `os.environ["SECRET_KEY"]="secret randomSecretKey"`
 
 ***Prepare settings.py***
@@ -425,7 +428,7 @@ import dj_database_url
 if os.path.isfile('env.py'):
     import env
 ```
-2. Remove insercure secret key and grab the secret key with the following: `SECRET_KEY = os.environ.get('SECRET_KEY')`
+2. Remove insecure secret key and grab the secret key with the following: `SECRET_KEY = os.environ.get('SECRET_KEY')`
 3. Comment out old database config var which specifies usage of the SQLite3 database
 4. Instead put in a new databases section wiring up to the PostgreSQL database:
 ```Add new database section
@@ -461,4 +464,5 @@ The Code Institute student template for GitPod which has all the preinstalled to
 * [Economist 2020](https://www.economist.com/graphic-detail/2020/01/29/interest-in-veganism-is-surging?utm_medium=cpc.adword.pd&utm_source=google&ppccampaignID=18156330227&ppcadID=&utm_campaign=a.22brand_pmax&utm_content=conversion.direct-response.anonymous&gclid=Cj0KCQjw3a2iBhCFARIsAD4jQB3TlocNmcIDk-WQztWGP6RmM0A30D7lwWv92GTlDcOK1A6riYDJwDIaAtUJEALw_wcB&gclsrc=aw.ds)
 * [Sentient Media 2022](https://sentientmedia.org/increase-in-veganism/#:~:text=Is%20Veganism%20a%20Growing%20Industry,how%20much%20meat%20they%20eat.)
 * [Forbes 2018](https://www.forbes.com/sites/janetforgrieve/2018/11/02/picturing-a-kindler-gentler-world-vegan-month/?sh=d1fc8ff2f2bb)
+
 
