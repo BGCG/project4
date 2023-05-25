@@ -7,10 +7,6 @@
 {% load crispy_forms_tags %}
 
 <div class="container">
-    {% if new_contact %}
-    <div class="alert alert-success" role="alert">
-        Our team will reply to your message shortly! </div>
-    {% else %}
     <form method="post">
         <div class="row">
             <div class='col card mb-4 mt-4 left top mx-auto'>
@@ -26,7 +22,6 @@
             </div>
         </div>
     </form>
-    {% endif %}
 </div>
 
 {% endblock %}

@@ -239,12 +239,9 @@ def contact_request(request):
         if form.is_valid():
             new_contact = form.save(commit=False)
             new_contact.save()
+            messages.info(request, "Our team will reply to your message shortly!")
+            return redirect('home')
     else:
         contact_form = ContactForm()
 
-    context = {
-        'contact_form': ContactForm(),
-        'new_contact': new_contact,
-    }
-
-    return render(request, 'contact_us.html', context)
+    return render(request, 'contact_us.html', {'contact_form': ContactForm()})
