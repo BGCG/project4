@@ -161,9 +161,11 @@ Reason for non-completion: In the project inception, I thought the ability for u
  - user’s published and draft posts ('Post management') - which also contains links to 'Edit post' pages where a user can update their post or delete it.
  - users 'favourites list' 
  - create a post form
+ - Contact us page - where use can contact admin if they have any questions, account issues or feedback
+ - Logout
 
 ![screenshot-of-navbar-dropdown-closed](https://res.cloudinary.com/delase5lw/image/upload/v1682611690/readme-imgs/nav-dropdown_ridbh5.jpg)
-![screenshot-of-navbar-dropdown-open](https://res.cloudinary.com/delase5lw/image/upload/v1682611690/readme-imgs/dropdown-open_jetku5.jpg)
+![screenshot-of-navbar-dropdown-open](https://res.cloudinary.com/delase5lw/image/upload/v1685018092/nav-dropdownv2_idmhqs.jpg)
 
 ### Footer 
 
