@@ -30,9 +30,9 @@
                 {% endif %}
                 <hr>
                 {% if 'placeholder' in recipe.recipe_image.url %}
-                    {% cloudinary image="https://res.cloudinary.com/delase5lw/image/upload/c_scale,w_1367/v1682324192/project/default.webp" width="100%" alt="recipe image default" %}
+                    <img src="https://res.cloudinary.com/delase5lw/image/upload/w_1367/v1682324192/project/default.webp" class="card-img" alt="recipe image default">
                 {% else %}
-                    {% cloudinary recipe.recipe_image.url width="100%" crop="scale" alt="custom recipe image" %}
+                    <img src="{{ recipe.recipe_image.url }}" class="card-img" alt="custom recipe image">
                 {% endif %}
                 <strong>Taste type:</strong> {{ recipe.get_taste_type_display }}<br>
                 <strong>Skill level:</strong> {{ recipe.get_skill_level_display }}<br>
