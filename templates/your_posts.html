@@ -19,9 +19,10 @@
     <div class="row">
         <div class="mx-auto card recipe-box col-sm-6 d-inline">
             {% if 'placeholder' in post.recipe_image.url %}
-                <img src="https://res.cloudinary.com/delase5lw/image/upload/w_966/v1682324192/project/default.webp" class="card-img" alt="recipe image default">
+            <img src="https://res.cloudinary.com/delase5lw/image/upload/w_966/v1682324192/project/default.webp"
+                class="card-img" alt="recipe image default">
             {% else %}
-                <img src="{{ post.recipe_image.url }}" class="card-img" alt="custom recipe image">
+            <img src="{{ post.recipe_image.url }}" class="card-img" alt="custom recipe image">
             {% endif %}
             <div class='card-body'>
                 <a href="{{ post.get_absolute_url }}">
@@ -53,11 +54,11 @@
     <div class="container">
         <div class="row">
             <div class="mx-auto card recipe-box col-sm-6 d-inline">
-            {% if 'placeholder' in post.recipe_image.url %}
+                {% if 'placeholder' in post.recipe_image.url %}
                 {% cloudinary image="https://res.cloudinary.com/delase5lw/image/upload/c_scale,w_966/v1682324192/project/default.webp" quality="auto:low" width="100%" height="100%" alt="recipe image default" %}
-            {% else %}
+                {% else %}
                 {% cloudinary post.recipe_image.url quality="auto:low" width="100%" height="100%" crop="scale" alt="custom recipe image" %}
-            {% endif %}
+                {% endif %}
                 <div class='card-body'>
                     <a href="{{ post.get_absolute_url }}">
                         <h3 class="post-title">{{ post.title }}</h3>

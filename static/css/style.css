@@ -33,15 +33,6 @@ header {
     height: 90px;
 }
 
-#home-break, 
-#all-recipes-break,
-#recipe-detail-break,
-.auth-pages-break,
-#create-post-break,
-#your-posts-break {
-    display: none;
-}
-
 a:hover {
     color: #406551;
     text-decoration: none;
@@ -150,7 +141,7 @@ body>header>ul {
     padding-right: 8px;
 }
 
-#social-media-links > ul {
+#social-media-links>ul {
     padding: 0;
 }
 
@@ -310,7 +301,7 @@ body>footer>ul,
     width: fit-content;
 }
 
-#fav-page-image > div {
+#fav-page-image>div {
     position: absolute;
     margin-top: 350px;
 }
@@ -321,6 +312,17 @@ body>footer>ul,
     text-align: center;
 }
 
+/* Breaks for header responsiveness */
+
+#home-break,
+#all-recipes-break,
+#recipe-detail-break,
+.auth-pages-break,
+#create-post-break,
+#your-posts-break {
+    display: none;
+}
+
 /* media queries for screens 750px and below */
 
 @media (max-width: 750px) {
@@ -328,7 +330,7 @@ body>footer>ul,
     header {
         height: 95px;
     }
-    
+
     #fav-page-image {
         background-image: url('https://res.cloudinary.com/delase5lw/image/upload/v1682515594/fav-list-image_baw0u7_a83c61.webp');
         background-size: cover;
@@ -338,7 +340,7 @@ body>footer>ul,
         margin-top: 5px;
     }
 
-    #fav-page-image > div {
+    #fav-page-image>div {
         margin-top: 150px;
     }
 
@@ -385,7 +387,7 @@ body>footer>ul,
     #all-recipes-break,
     #recipe-detail-break,
     .auth-pages-break,
-    #create-post-break, 
+    #create-post-break,
     #your-posts-break {
         display: block;
     }
@@ -400,15 +402,15 @@ body>footer>ul,
         display: none;
     }
 
-    #login-background, 
+    #login-background,
     #signup-background {
         padding: 0;
     }
- 
-    #login-background > div,
-    #logout-background > div,
-    #signup-background > div {
-    margin: 0;
+
+    #login-background>div,
+    #logout-background>div,
+    #signup-background>div {
+        margin: 0;
     }
 
     #logout-background {
