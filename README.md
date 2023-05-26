@@ -340,23 +340,23 @@ For the pages that required user login, I had to input the code as text into the
 
 #### CSS validation
 
-![CSS validation results](https://res.cloudinary.com/delase5lw/image/upload/v1682757824/css-validator_uuqbyw.jpg)
+![CSS validation results](https://res.cloudinary.com/delase5lw/image/upload/v1685085755/jigsawvalidationv2_aravyo.jpg)
 
 #### JShint validation
 
-![JShint validation results](https://res.cloudinary.com/delase5lw/image/upload/v1682779766/JShint-validationv2_zjro2y.jpg)
+![JShint validation results](https://res.cloudinary.com/delase5lw/image/upload/v1685085790/jshintv2_v7fjvy.jpg)
 
 #### PEP8 Validation
 
 I performed PEP8 validation on all custom python files in the Django app:
 
-* [views.py](https://res.cloudinary.com/delase5lw/image/upload/v1684059759/views.py-PEP8_u2wpzg.jpg)
-* [models.py](https://res.cloudinary.com/delase5lw/image/upload/v1684059759/models.py-PEP8_yevnnh.jpg)
-* [forms.py](https://res.cloudinary.com/delase5lw/image/upload/v1684059759/form.py-PEP8_imombm.jpg)
-* [admin.py](https://res.cloudinary.com/delase5lw/image/upload/v1684386573/admin.py-PEP8_vhelxl.jpg)
-* [blogs/urls.py](https://res.cloudinary.com/delase5lw/image/upload/v1684059759/blog.urls.py-PEP8_usthbf.jpg)
-* [veganrecipes/urls.py](https://res.cloudinary.com/delase5lw/image/upload/v1682757737/veganrecipes.urls.py-validation_dmegcq.jpg)
-* [settings.py](https://res.cloudinary.com/delase5lw/image/upload/v1682758665/settings.py-validation_w9jaio.jpg)
+* [views.py](https://res.cloudinary.com/delase5lw/image/upload/v1685085757/views.pyv2_iu8u0i.jpg)
+* [models.py](https://res.cloudinary.com/delase5lw/image/upload/v1685085756/model.pyv2_ujvavw.jpg)
+* [forms.py](https://res.cloudinary.com/delase5lw/image/upload/v1685085755/forms.pyv2_vmufaw.jpg)
+* [admin.py](https://res.cloudinary.com/delase5lw/image/upload/v1685085755/admin.pyv2_p9t9c7.jpg)
+* [blogs/urls.py](https://res.cloudinary.com/delase5lw/image/upload/v1685085757/urls.pyv2_ty6oy5.jpg)
+* [veganrecipes/urls.py](https://res.cloudinary.com/delase5lw/image/upload/v1685085757/veganrecipes.urls.pyv2_rrdl1c.jpg)
+* [settings.py](https://res.cloudinary.com/delase5lw/image/upload/v1685085757/settings.pyv2_hhyecy.jpg)
 
 #### Manual testing
 
