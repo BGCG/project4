@@ -305,18 +305,18 @@ Reason for non-completion: In the project inception, I thought the ability for u
 
 The lighthouse report for the homepage showed excellent scores for accessibility and best practices, while showing a medium to high score for performance (I have discussed my performance troubleshooting in the troubleshooting section).
 
-![Homepage lighthouse report](https://res.cloudinary.com/delase5lw/image/upload/v1682765183/lighthouse-home_hqy2uf.jpg)
+![Homepage lighthouse report](https://res.cloudinary.com/delase5lw/image/upload/v1685085756/lighthouse-home_vnydpy.jpg)
 
 The lighthouse reports for the other pages showed similar trends and can be accessed by the link below:
 
-* [All recipes](https://res.cloudinary.com/delase5lw/image/upload/v1682765183/all-recipes-lighthouse_njmehn.jpg)
-* [Favourites list](https://res.cloudinary.com/delase5lw/image/upload/v1682765183/fav-list-lighthouse_nwhkex.jpg)
-* [Your posts](https://res.cloudinary.com/delase5lw/image/upload/v1682765183/your-posts-lighthouse_ce5mya.jpg)
-* [Create a post](https://res.cloudinary.com/delase5lw/image/upload/v1682765183/create-post-lighthouse_qu9ukt.jpg)
-* [Edit a post](https://res.cloudinary.com/delase5lw/image/upload/v1682765631/edit-post-lighthouse_zzdki3.jpg)
-* [Register](https://res.cloudinary.com/delase5lw/image/upload/v1682765183/register-lighthouse_xg5cuu.jpg)
-* [Login](https://res.cloudinary.com/delase5lw/image/upload/v1682765183/signin-lighthouse_wv1kke.jpg)
-* [Logout](https://res.cloudinary.com/delase5lw/image/upload/v1682765183/signout-lighthouse_nvy7o4.jpg)
+* [All recipes](https://res.cloudinary.com/delase5lw/image/upload/v1685085755/lighthouse-allrecipes_vpt5jz.jpg)
+* [Favourites list](https://res.cloudinary.com/delase5lw/image/upload/v1685085756/lighthouse-favrecipes_ymrqdg.jpg)
+* [Your posts](https://res.cloudinary.com/delase5lw/image/upload/v1685085756/lighthouse-yourposts_r5qj50.jpg)
+* [Create a post](https://res.cloudinary.com/delase5lw/image/upload/v1685085756/lighthouse-createpost_rrpyyz.jpg)
+* [Edit a post](https://res.cloudinary.com/delase5lw/image/upload/v1685085756/lighthouse-editpost_faux1d.jpg)
+* [Signup](https://res.cloudinary.com/delase5lw/image/upload/v1685088467/signup-lighthouse_mk9cyt.jpg)
+* [Login](https://res.cloudinary.com/delase5lw/image/upload/v1685085756/lighthouse-login_bumjzk.jpg)
+* [Logout](https://res.cloudinary.com/delase5lw/image/upload/v1685085756/lighthouse-logout_wntbfj.jpg)
 * [Contact request](https://res.cloudinary.com/delase5lw/image/upload/v1685085756/lighthouse-contactus_bjakhz.jpg)
 
 #### HTML validation
