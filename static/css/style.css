@@ -131,7 +131,7 @@ body>header>ul {
 
 .card-img {
     width: 100%;
-    image-rendering: optimizeSpeed;
+    image-rendering: crisp-edges;
 }
 
 /* footer including social media links styling */
