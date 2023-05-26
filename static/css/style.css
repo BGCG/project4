@@ -127,6 +127,12 @@ body>header>ul {
     padding: 10px;
 }
 
+/* Recipe card styling */
+
+.card-img {
+    width: 100%;
+}
+
 /* footer including social media links styling */
 
 #social-media-heading,

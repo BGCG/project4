@@ -42,9 +42,9 @@
         {% for recipe in recipe_list %}
         <div class="mx-auto card recipe-box col-sm-5 d-inline">
             {% if 'placeholder' in recipe.recipe_image.url %}
-                {% cloudinary image="https://res.cloudinary.com/delase5lw/image/upload/c_scale,w_966/v1682324192/project/default.webp" quality="auto:low" width="100%" height="100%" alt="recipe image default" %}
+                {% cloudinary image="https://res.cloudinary.com/delase5lw/image/upload/c_scale,w_966/v1682324192/project/default.webp" quality="auto:low" class="card-img" alt="recipe image default" %}
             {% else %}
-                {% cloudinary recipe.recipe_image.url quality="auto:low" width="100%" height="100%" crop="scale" alt="custom recipe image" %}
+                {% cloudinary recipe.recipe_image.url quality="auto:low" class="card-img" crop="scale" alt="custom recipe image" %}
             {% endif %}
             <div class='card-body'>
                 <a href="{{ recipe.get_absolute_url }}">
