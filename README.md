@@ -351,13 +351,13 @@ For the pages that required user login, I had to input the code as text into the
 
 I performed PEP8 validation on all custom python files in the Django app:
 
-* [views.py](https://res.cloudinary.com/delase5lw/image/upload/v1685085757/views.pyv2_iu8u0i.jpg)
-* [models.py](https://res.cloudinary.com/delase5lw/image/upload/v1685085756/model.pyv2_ujvavw.jpg)
-* [forms.py](https://res.cloudinary.com/delase5lw/image/upload/v1685085755/forms.pyv2_vmufaw.jpg)
-* [admin.py](https://res.cloudinary.com/delase5lw/image/upload/v1685085755/admin.pyv2_p9t9c7.jpg)
-* [blogs/urls.py](https://res.cloudinary.com/delase5lw/image/upload/v1685085757/urls.pyv2_ty6oy5.jpg)
-* [veganrecipes/urls.py](https://res.cloudinary.com/delase5lw/image/upload/v1685085757/veganrecipes.urls.pyv2_rrdl1c.jpg)
-* [settings.py](https://res.cloudinary.com/delase5lw/image/upload/v1685085757/settings.pyv2_hhyecy.jpg)
+* [views.py](https://res.cloudinary.com/delase5lw/image/upload/v1685345990/views-PEP8_uhgrh2.jpg)
+* [models.py](https://res.cloudinary.com/delase5lw/image/upload/v1685345990/models-PEP8_txujqy.jpg)
+* [forms.py](https://res.cloudinary.com/delase5lw/image/upload/v1685345990/forms-PEP8_bqthwz.jpg)
+* [admin.py](https://res.cloudinary.com/delase5lw/image/upload/v1685345991/admin-PEP8_o5cpw9.jpg)
+* [blogs/urls.py](https://res.cloudinary.com/delase5lw/image/upload/v1685345990/blog.urls-PEP8_fvjhn6.jpg)
+* [veganrecipes/urls.py](https://res.cloudinary.com/delase5lw/image/upload/v1685345990/veganrecipes.urls-PEP8_vlzmaj.jpg)
+* [settings.py](https://res.cloudinary.com/delase5lw/image/upload/v1685345990/settings-PEP8_vqynzs.jpg)
 
 #### Manual testing
 
