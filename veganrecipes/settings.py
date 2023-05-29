@@ -32,7 +32,7 @@ DEBUG = False
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = ['vegan-recipe-app.herokuapp.com', 'localhost', '8000-bgcg-project4-pykluy3ro1k.ws-eu97.gitpod.io']
+ALLOWED_HOSTS = ['vegan-recipe-app.herokuapp.com', 'localhost']
 
 
 # Application definition
