@@ -6,6 +6,7 @@ from .forms import CommentForm, PostForm, ContactForm
 from django.contrib import messages
 from django.db import IntegrityError
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 
 class RecipeList(generic.ListView):
@@ -89,7 +90,7 @@ class LikeToggle(View):
         return HttpResponseRedirect(reverse('recipe-detail', args=[slug]))
 
 
-class FavouriteView(View):
+class FavouriteView(LoginRequiredMixin, View):
 
     """
     Toggling of favourite button
