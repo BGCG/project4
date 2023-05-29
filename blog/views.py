@@ -189,23 +189,21 @@ def edit_post(request, slug):
         post_form = PostForm(request.POST, request.FILES, instance=recipe)
 
         if post_form.is_valid():
-            recipe.article_approved = False
-            post_form.save()
-            if recipe.status == 0:
-                messages.info(request, "Your draft post has been saved "
-                                       "in 'Post management'!")
-            elif recipe.status == 1:
-                messages.info(request,
-                              "Your edited post is awaiting approval!")
-            return redirect('home')
-        else:
-            if IntegrityError:
+            try:
+                recipe.article_approved = False
+                post_form.save()
+                if recipe.status == 0:
+                    messages.info(request, "Your draft post has been saved "
+                                           "in 'Post management'!")
+                elif recipe.status == 1:
+                    messages.info(request, "Your edited post is awaiting approval!")
+                return redirect('home')
+
+            except IntegrityError:
                 messages.error(request, "We could not create your post due to "
                                "invalid input. Please ensure your title"
                                "is unqiue.")
-            else:
-                messages.error(request, "Something went wrong"
-                               "- please try to create your post again.")
+        return render(request, 'edit_post.html', {'post_form': post_form})
 
     post_form = PostForm(instance=recipe)
 

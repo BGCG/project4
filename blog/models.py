@@ -3,7 +3,6 @@ from django.contrib.auth.models import User
 from django.urls import reverse
 from django.utils.text import slugify
 from cloudinary.models import CloudinaryField
-from django.core.validators import MaxValueValidator, MinValueValidator
 
 # Create your models here.
 
@@ -34,7 +33,7 @@ class Recipe(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
     taste_type = models.IntegerField(choices=TASTE)
     skill_level = models.IntegerField(choices=DIFFICULTY)
-    preparation_time = models.PositiveIntegerField(blank=False, validators=[MinValueValidator(1), MaxValueValidator(2000)])
+    preparation_time = models.PositiveIntegerField(blank=False)
     likes = models.ManyToManyField(User, related_name='blog_likes', blank=True)
     favourites = models.ManyToManyField(User, related_name='blog_favourites', blank=True)
 
