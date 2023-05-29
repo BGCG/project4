@@ -41,6 +41,8 @@ VeggieBytes is hosted on Heroku and can be accessed [here](https://vegan-recipe-
 
 * To browse the site for newly posted vegan recipes
 * To post own recipes
+* To edit published posts and delete them if they wish
+* To create draft posts and delete them if they wish (functionality available without accessing admin panel)
 * To interact with other members through commenting of recipes
 * To provide a platform to share their own recipes and build their account (note: this could be particularly useful for food influencers)
 
