@@ -304,11 +304,11 @@ Reason for non-completion: In the project inception, I thought the ability for u
 
 #### Lighthouse report
 
-The lighthouse report for the homepage showed excellent scores for accessibility and best practices, while showing a medium to high score for performance (I have discussed my performance troubleshooting in the troubleshooting section).
+The lighthouse report for the homepage showed excellent scores for accessibility, best practices and performance.
 
 ![Homepage lighthouse report](https://res.cloudinary.com/delase5lw/image/upload/v1685085756/lighthouse-home_vnydpy.jpg)
 
-The lighthouse reports for the other pages showed similar trends and can be accessed by the link below:
+The lighthouse reports for the other pages showed similar trends, though some pages showed medium performance. Screenshots of the lighthouse reports for the respective pages can be accessed by the link below:
 
 * [All recipes](https://res.cloudinary.com/delase5lw/image/upload/v1685085755/lighthouse-allrecipes_vpt5jz.jpg)
 * [Favourites list](https://res.cloudinary.com/delase5lw/image/upload/v1685085756/lighthouse-favrecipes_ymrqdg.jpg)
