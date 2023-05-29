@@ -246,7 +246,6 @@ Reason for non-completion: In the project inception, I thought the ability for u
 
 * Users can create an account on the register page (accessed in the nav dropdown for unauthenticated users), where they can fill out and submit a form with their desired username, optional email and password (must enter password twice for validation).
 * If their username has already been taken they will be asked to provide new details.
-* Once they submit a form they will be redirected to the login page where they will be asked to login with their newly created login details.
 
 ![screenshot-of-signup-page](https://res.cloudinary.com/delase5lw/image/upload/v1682611690/readme-imgs/signup_or9c8r.jpg)
 
