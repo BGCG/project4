@@ -327,17 +327,17 @@ Furthermore, the validation results for all recipes, login, recipe detail and si
 
 * [Login](https://res.cloudinary.com/delase5lw/image/upload/v1685085756/login-html-val_nglajv.jpg)
 * [Signup](https://res.cloudinary.com/delase5lw/image/upload/v1685085757/signup-html-val_v7xs8w.jpg)
-* [Recipe detail](https://res.cloudinary.com/delase5lw/image/upload/v1685085757/recipedetail-htmlval_hqj6ys.jpg)
+* [Recipe detail](https://res.cloudinary.com/delase5lw/image/upload/v1685345991/recipe-detail-cardv2_ohtnjg.jpg)
 * [All recipes](https://res.cloudinary.com/delase5lw/image/upload/v1685085755/allrecipes-html-val_bdudgu.jpg)
 * [Contact us](https://res.cloudinary.com/delase5lw/image/upload/v1685085755/contactus-html-val_abl6al.jpg)
 
 For the pages that required user login, I had to input the code as text into the HTML validator. The results are shown below -
 
-* [Logout page](https://res.cloudinary.com/delase5lw/image/upload/v1685085757/logout-htmlval_mtruop.jpg)
-* [Favourites list](https://res.cloudinary.com/delase5lw/image/upload/v1685085755/favlist-html-val_fe2z9f.jpg)
-* [Post management](https://res.cloudinary.com/delase5lw/image/upload/v1685085757/postmanagement-htmlval_hgqrux.jpg)
-* [Create post](https://res.cloudinary.com/delase5lw/image/upload/v1685085755/createpost-html-val_ks6tjx.jpg)
-* [Edit post](https://res.cloudinary.com/delase5lw/image/upload/v1685085755/editpost-html-val_awd94s.jpg)
+* [Logout page](https://res.cloudinary.com/delase5lw/image/upload/v1685345991/logout-validation_nzt6x1.jpg)
+* [Favourites list](https://res.cloudinary.com/delase5lw/image/upload/v1685345991/fav-list-validation_lziand.jpg)
+* [Post management](https://res.cloudinary.com/delase5lw/image/upload/v1685345991/post-management-validation_wvnlxf.jpg)
+* [Create post](https://res.cloudinary.com/delase5lw/image/upload/v1685345991/create-post-validation_ll91e9.jpg)
+* [Edit post](https://res.cloudinary.com/delase5lw/image/upload/v1685345991/edit-post-validation_vgvskr.jpg)
 
 #### CSS validation
 
