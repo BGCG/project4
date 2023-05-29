@@ -1,6 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.views import generic, View
-from django.views.generic import CreateView
 from django.http import HttpResponseRedirect
 from .models import Recipe
 from .forms import CommentForm, PostForm, ContactForm
