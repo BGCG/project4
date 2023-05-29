@@ -215,7 +215,7 @@ Reason for non-completion: In the project inception, I thought the ability for u
 #### Edit post page
 
 * Once the user has clicked on the 'Edit post' link on the 'Your posts page', they will be taken to the edit post page where they can edit all fields of the recipe.
-* The user can also delete the post if they wish here, which a pop up box will show to make them confirm whether they do in fact wish to delete the post/draft.
+* The user can also delete the post (published or draft post) if they wish here, which a pop up box will show to make them confirm whether they do in fact wish to delete the post/draft.
 
 ![screenshot-of-edit-post-page](https://res.cloudinary.com/delase5lw/image/upload/v1682611690/readme-imgs/edit-post_emae3t.jpg)
 ![screenshot-of-edit-post-page-delete-confirm-popup](https://res.cloudinary.com/delase5lw/image/upload/v1683877090/delete-post-button-confirm_hs0iqt.jpg)
