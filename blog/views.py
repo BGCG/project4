@@ -128,23 +128,24 @@ def create_post(request):
     if request.method == 'POST':
         post_form = PostForm(request.POST, request.FILES)
         if post_form.is_valid():
-            new_post = post_form.save(commit=False)
-            new_post.author = request.user
-            post_form.save()
+            try:
+                new_post = post_form.save(commit=False)
+                new_post.author = request.user
+                post_form.save()
 
-            if new_post.status == 0:
-                messages.info(request, "Your draft post has been saved in"
-                              " 'Post management'!")
-            elif new_post.status == 1:
-                messages.info(request, "Your post is awaiting approval!")
-            return redirect('home')
-        else:
-            request.session['new_post_data'] = request.POST
-            return render(request, 'create_post.html',
-                                   {'post_form': post_form})
-    else:
-        form_data = request.session.get('new_post_data')
-        PostForm(form_data)
+                if new_post.status == 0:
+                    messages.info(request, "Your draft post has been saved in"
+                                           " 'Post management'!")
+                elif new_post.status == 1:
+                    messages.info(request, "Your post is awaiting approval!")
+                return redirect('home')
+
+            except IntegrityError:
+                messages.error(request, "We could not create your post due to "
+                                        "invalid input. Please ensure your"
+                                        " title is unqiue.")
+
+        return render(request, 'create_post.html', {'post_form': post_form})
 
     post_form = PostForm()
 
