@@ -184,7 +184,7 @@ Reason for non-completion: In the project inception, I thought the ability for u
 * When the recipe title is clicked it will take the user to the specific recipe detail page
 
 ![screenshot-of-homepage-top](https://res.cloudinary.com/delase5lw/image/upload/v1682614404/readme-imgs/homepage-top-v2_ejxmet.jpg)
-![screenshot-of-homepage-recipes](https://res.cloudinary.com/delase5lw/image/upload/v1682611691/readme-imgs/homepage-recipes_vu71pr.jpg)
+![screenshot-of-homepage-recipes](https://res.cloudinary.com/delase5lw/image/upload/v1685343382/homepage-recipesv2_fljfip.jpg)
 
 #### Recipe detail page
 
@@ -193,17 +193,17 @@ Reason for non-completion: In the project inception, I thought the ability for u
 * Furthermore, for logged in users there will be a comment box where they can post a comment. When they post a comment a message will come up showing 'Your post is awaiting approval'.
 * For non-logged in users a help text will show 'If you wish to like, favourite or comment on this recipe please login or signup'. 'Login' and 'Signup' in the help text will contain links to the login or signup pages, respectively.
 
-![screenshot-of-recipe-detail](https://res.cloudinary.com/delase5lw/image/upload/v1682611691/readme-imgs/recipe-detail-card_qn5qya.jpg)
-![screenshot-of-recipe-detail-comments](https://res.cloudinary.com/delase5lw/image/upload/v1682611691/readme-imgs/comment-box-w-comments_gyhytp.jpg)
+![screenshot-of-recipe-detail](https://res.cloudinary.com/delase5lw/image/upload/v1685343382/recipe-cardv2_uveynh.jpg)
+![screenshot-of-recipe-detail-comments](https://res.cloudinary.com/delase5lw/image/upload/v1685343580/comments_m7emvj.jpg)
 ![screenshot-of-recipe-detail-comments-help-text](https://res.cloudinary.com/delase5lw/image/upload/v1682613493/readme-imgs/comment-helptext_ccfeoc.jpg)
 
-#### Your post list
+#### Post management
 
 * Has a list of published recipes (in the format of recipe cards) that the logged in user has posted 
 * Additionally the your post list page has a list of draft recipes (in the format of recipe cards) written by the logged in user
 * Inside both the published recipes and draft posts recipe cards has an 'Edit post' link which takes them to the edit post page for that particular post/draft
 
-![screenshot-of-your-posts-list](https://res.cloudinary.com/delase5lw/image/upload/v1682611690/readme-imgs/your-posts_vne5j4.jpg)
+![screenshot-of-your-posts-list](https://res.cloudinary.com/delase5lw/image/upload/v1685343382/post-management_v80wcn.jpg)
 
 #### Create a post
 
@@ -227,7 +227,7 @@ Reason for non-completion: In the project inception, I thought the ability for u
 * All recipes that the user has favourited will appear here in the form of recipe cards
 * If the user clicks on the recipe card link the user is taken to that particular recipe
 
-![screenshot-of-favourite-list-page](https://res.cloudinary.com/delase5lw/image/upload/v1682611691/readme-imgs/favourites-page_eesgtr.jpg)
+![screenshot-of-favourite-list-page](https://res.cloudinary.com/delase5lw/image/upload/v1685343382/favourite-recipes_emdbwv.jpg)
 
 ### Logout
 
@@ -240,7 +240,7 @@ Reason for non-completion: In the project inception, I thought the ability for u
 * For unauthenticated users, they can access the login page in the navigation bar which will take them to the login page where they can input their username and password.
 * If their username or password is incorrect, they will be informed that their details are invalid.
 
-![screenshot-of-login-page](https://res.cloudinary.com/delase5lw/image/upload/v1682611690/readme-imgs/login_shjo5r.jpg)
+![screenshot-of-login-page](https://res.cloudinary.com/delase5lw/image/upload/v1685343382/login-page_xfpr9v.jpg)
 
 ### Register
 
