@@ -197,7 +197,8 @@ def edit_post(request, slug):
                     messages.info(request, "Your draft post has been saved "
                                            "in 'Post management'!")
                 elif recipe.status == 1:
-                    messages.info(request, "Your edited post is awaiting approval!")
+                    messages.info(request, "Your edited post is awaiting "
+                                           "approval!")
                 return redirect('home')
 
             except IntegrityError:
